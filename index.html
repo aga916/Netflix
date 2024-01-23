@@ -1,0 +1,2260 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Netflix</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="./style.css">
+
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+
+    <!-- Google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+
+    <!-- Favicon -->
+    <link rel="icon" type="images/png" href="./image/Favicon.png">
+
+    <!-- Fontawesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+</head>
+<body style="background-color: #222222; font-family: 'Roboto', sans-serif;">
+    <header>
+        <nav class="navbar navbar-expand-lg">
+            <div class="container-fluid" style="background-color: #00000000;">
+              <img src="./image/Logo.png" style="width: 100px; margin-left: 40px;"alt="Logo">
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarNavDropdown" style="margin-left: 40px; font-size: 15px;">
+                <ul class="navbar-nav">
+                  <li class="nav-item" style="padding-top:6px ;">
+                    <a class="nav-link active" aria-current="page" style="color: white;" href="#">Home</a>
+                  </li>
+                  <li class="nav-item" style="padding-top:6px ;">
+                    <a class="nav-link" style="color: white;" href="#">TV&nbsp;Shows</a>
+                  </li>
+                  <li class="nav-item" style="padding-top:6px ;">
+                    <a class="nav-link" style="color: white;" href="#">Movies</a>
+                  </li>
+                  <li class="nav-item" style="padding-top:6px ;">
+                    <a class="nav-link" style="color: white;" href="#">New&nbsp;&&nbsp;Popular</a>
+                  </li>
+                  <li class="nav-item" style="padding-top:6px ;">
+                    <a class="nav-link" style="color: white;" href="#">My&nbsp;List</a>
+                  </li>
+                  <li class="nav-item" style="padding-top:6px ;">
+                    <a class="nav-link" style="color: white;" href="#">Browse&nbsp;by&nbsp;Languages</a>
+                  </li>
+                  <li>
+                    <a href=""><i class="fa-solid fa-magnifying-glass fa-lg" style="color: #ffffff; margin-left: 550px; margin-top: 25px;"></i></a>
+                  </li>
+                  <li>
+                    <a href=""><i class="fa-regular fa-bell fa-lg" style="color: #ffffff; padding: 20px 10px; margin-top: 5px;"></i></a>
+                  </li>
+                  <li class="dropdown-container dropdown">
+                    <a class="nav-link dropdown-toggle color-light" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      <img src="./image/user.png" alt="" style="width: 35px; border-radius: 5px; border: none; margin-top: -3px;">
+                    </a>
+                    <ul class="dropdown-menu" style="width: 210px; top: 63px; left: -150px; padding-left: 10px; padding-top: 15px; background-color: rgba(0, 0, 0, 0.782);">
+                      <li><img src="./image/user.png" alt="" style="width: 32px; border-radius: 5px; border: none; margin-bottom: 8px;"><a href="">AGA</a></li>
+                      <li><a class="dropdown-item" style="color: white;" href="#"><i class="fa-solid fa-pen-to-square" style="color: #ffffff;"></i>&nbsp;&nbsp;&nbsp;Manage Profiles</a></li>
+                      <li><a class="dropdown-item" style="color: white;" href="#"><i class="fa-solid fa-arrow-right-arrow-left" style="color: #ffffff;"></i>&nbsp;&nbsp;&nbsp;Transfer Profile</a></li>
+                      <li><a class="dropdown-item" style="color: white;" href="#"><i class="fa-regular fa-user" style="color: #ffffff;"></i>&nbsp;&nbsp;&nbsp;Account</a></li>
+                      <li><a class="dropdown-item" style="color: white;" href="#"><i class="fa-regular fa-circle-question" style="color: #ffffff;"></i>&nbsp;&nbsp;&nbsp;Help Center</a></li><hr style="color: white; margin-left: -10px;">
+                      <li><a class="dropdown-item" style="font-size: 15px; text-align: center; padding-bottom: 10px; padding-top: 0; color: white;" href="#">Sign out of Netflix</a></li>
+                    </ul>
+                  </li>
+                </ul>
+              </div>
+            </div>
+        </nav>
+    </header>
+    
+    <!-- Banner -->
+
+    <video class="background-video" autoplay loop muted style="width: 1473px;">
+        <source src="./image/Jana Gana Mana.mp4" type="video/mp4">
+    </video> 
+    <div class="text-overlay" style="padding-left: 60px; padding-right: 300px; margin-top: 130px;">
+        <img src="./image/jana gana mana logo.png" style="width: 370px;" alt="">
+        <p style="font-size: 20px; font-weight: 550; color: rgb(255, 255, 255); font-family: 'Roboto', sans-serif; line-height: 25px; margin-top: 40px; ">
+            As a college professor's brutal murder sparks students unrest, a <br> cop launches an investigation while a lawyer seeks justice in the <br> courtroom.</p>
+        <button type="button" class="btn1" style="width: 120px; height: 50px; border-radius: 5px; margin-top: 13px; background-color: rgb(255, 255, 255);"><i class="fa-solid fa-play fa-xl" style="color: #000000;"></i>&nbsp;&nbsp;&nbsp;<b>Play</b></button>
+        <button type="button" class="btn1" style="width: 150px; height: 50px; border-radius: 5px; margin-top: 13px; background-color: rgba(255, 255, 255, 0.412); margin-left: 5px; color: white;"><i class="fa-solid fa-circle-info fa-xl" style="color: #ffffff;"></i>&nbsp;&nbsp;&nbsp;<b>More info</b></button>
+    </div>
+
+    <!-- Popular on Netflix  sec 1-->
+
+    <h1 style="color: white; font-size: 23px; font-weight: 550; margin-top: -40px; padding-left: 50px;">Popular on Netflix</h1>
+
+    <div class="card-container1">
+      <div class="card1" style="width: 14rem;">
+          <img src="https://occ-0-4994-2186.1.nflxso.net/dnm/api/v6/rkETp35xJVj-6WaffQsS77awykM/AAAABbXswu8Ki0ULiVZl9Pgc0TopDbt0pvOTu41Ntzzg8rpsCk8lUqNf4ISuQ2OitmEPzgbzSRqPOcFSYQJNBoJs8YectuwVK_IcozbdtkgLf_RK70pesKk2wAKnUTEgUv5XJMh2TVs7x67W82K2Ryb2tospbU6JXmm1C0GXbuai19Y7_R2Q_6LsW_8fRFeFbPiKGk5fZGW-eVcAlPOVYhNz5q29eR6iyTv1JQ2S4jOTDM_-_yuplSEamahD8BdDWk1mvkVaq_-qEi8QvLxNeO9pptC_Fg7o.webp?r=5b3" class="card-img-top" data-bs-toggle="modal" data-bs-target="#exampleModal" alt="...">
+          <!-- Modal -->
+          <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+              <img src="./image/Hi Nanna.png" style="width: 700px;" alt="">
+              <div class="modal-content" style="width: 700px; border: none; color: #c8c8c8;">
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                <div class="modal-body" style="background-color: #222222; padding-left: 40px; padding-right: 40px; margin-top: -30px;">
+                  <h2 style="font-size: 28px; color: white;"><b>Hi Nanna (Malayalam)</b></h2>
+                  <img src="./image/Hi Nanna 1.png" alt="">
+                  <p style="margin-top: 10px;">A 6-year-old with cystic fibrosis recruits the help of an enigmatic new friend to convince her single dad to tell her about her mother.</p>
+                  <p>cast : Nani, Mrunal Thakur, Kiara Khanna <br>
+                    Director : Shouryuv</p>
+                  <div class="d-flex" style="margin-left: -23px; margin-top: 20px;">
+                    <div>
+                      <button class="zoom-btn" style="width: 100px; height: 80px; background-color: transparent; border: none; color: #c8c8c8;"><i class="fa-solid fa-plus fa-2xl" style="color: #c8c8c8;"></i><p style="padding-top: 10px;">My List</p></button>
+                    </div>
+                    <div>
+                      <button class="zoom-btn" style="width: 80px; height: 80px; background-color: transparent; border: none; color: #c8c8c8;"><i class="fa-regular fa-thumbs-up fa-2xl" style="color: #c8c8c8;"></i><p style="padding-top: 10px;">Rate</p></button>
+                    </div>
+                    <div>
+                      <button class="zoom-btn" style="width: 100px; height: 80px; background-color: transparent; border: none; color: #c8c8c8;"><i class="fa-solid fa-arrow-down fa-2xl" style="color: #c8c8c8;"></i><p style="padding-top: 10px;">Download</p></button>
+                    </div>
+                  </div>
+
+                  <div class="d-flex" style="gap: 20px; margin-top: 20px;">
+                    <div class="card1" style="width: 20rem;">
+                      <img src="https://occ-0-4994-2186.1.nflxso.net/dnm/api/v6/rkETp35xJVj-6WaffQsS77awykM/AAAABdYfDMEGiOTCsGaXhX_G_tq73Ocf-Wa0wllMoTMKLETkfqXWaB9knMiMXcujEc65rLGH1rhmqMACAmwVqZAl8n8W8GP3I3wvWoU.webp?r=c60" class="card-img-top" alt="...">
+                    </div>
+                    <div class="card1" style="width: 20rem;">
+                      <img src="https://occ-0-2484-3663.1.nflxso.net/dnm/api/v6/rkETp35xJVj-6WaffQsS77awykM/AAAABdqS3LsYpbKa8-kl2GluHxRpXlk1SetRT8M1uF9REOlL6XceHYYB1BGUMvslZroEuDgYptaXjmhgrGiuSmugpuCbn6vZepbbptX5X-eTDwyRSyCJilsIDvAJM0LWpjixsQxc.jpg?r=4b3" class="card-img-top" alt="...">
+                    </div>
+                  </div>
+                  <div class="d-flex" style="gap: 20px; margin-top: 20px; margin-bottom: 20px;">
+                    <div class="card1" style="width: 20rem;">
+                      <img src="https://occ-0-2484-3663.1.nflxso.net/dnm/api/v6/rkETp35xJVj-6WaffQsS77awykM/AAAABRyxEvQd8ThJVekfQa4P_dqDxGDop0WyLaOVoOAmpL-HiilH1vAvylzGIvMucQDkWTKJKH3QPIro06_vO6lQ3rBVRfPMNpInyxc.webp?r=81c" class="card-img-top" alt="...">
+                    </div>
+                    <div class="card1" style="width: 20rem;">
+                      <img src="https://occ-0-2484-3663.1.nflxso.net/dnm/api/v6/rkETp35xJVj-6WaffQsS77awykM/AAAABQRWWOkyyWI0ZOUiQW5WqDqgqpS-vkUsUinX7rp6cjofIsolMBJy41CzXjcm07ylrAXVPyMhc_kkRCS1jEnrDQZKsuwn-Ep0i2h17o9hXl_Mof6Pbb-Tt56A02xc8k6xLT7X.jpg?r=d72" class="card-img-top" alt="...">
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+      </div>
+      <div class="card1" style="width: 14rem;">
+        <img src="https://occ-0-4994-2186.1.nflxso.net/dnm/api/v6/rkETp35xJVj-6WaffQsS77awykM/AAAABQikrgrKTDp5-Duum1cRO1FZ64i7L7cBkCzZk8HdykGXLpNN8OcYVvc_Y_dAPSyyEFSp7E9C0jnVCoBsRlurSqwZl2qyLjbagNDsSWDcqxp4DZUfK4GePcbeARS4NQ7gXuzAG62Fv85MzWjUnbemJJuuD3sQQN518BMZrgff1Xl2AT2MobWcLmdyT_iiOxYUenpzGRvTEw9BRaFKI8dkN3b4HzKs90UsWk9K8RpwCfj-XdUW9ET_Gmn-zNXTrdLSg7QNpzWyGqZDafVVAAH3MfJQDe44.webp?r=52e" data-bs-toggle="modal" data-bs-target="#exampleModal1" class="card-img-top" alt="...">
+        <!-- Modal -->
+        <div class="modal fade" id="exampleModal1" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+          <div class="modal-dialog">
+            <img src="./image/The Batman.png" style="width: 700px;" alt="">
+            <div class="modal-content" style="width: 700px; border: none; color: #c8c8c8;">
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              <div class="modal-body" style="background-color: #222222; padding-left: 40px; padding-right: 40px; margin-top: -30px;">
+                <h2 style="font-size: 28px; color: white;"><b>The Batman</b></h2>
+                <img src="./image/The Batman 1.png" alt="">
+                <p style="margin-top: 10px;">The Batman's hunt for a killer leads him into Gotham City's grimy underworld, which may be more entwined with its ruling elite than he'd ever imagined.</p>
+                <p>caste : Robert Pattinson, Zoe Kravitz, Jeffrey Wright<br>
+                  Director : Matt Reeves</p>
+                <div class="d-flex" style="margin-left: -23px; margin-top: 20px;">
+                  <div>
+                    <button class="zoom-btn" style="width: 100px; height: 80px; background-color: transparent; border: none; color: #c8c8c8;"><i class="fa-solid fa-plus fa-2xl" style="color: #c8c8c8;"></i><p style="padding-top: 10px;">My List</p></button>
+                  </div>
+                  <div>
+                    <button class="zoom-btn" style="width: 80px; height: 80px; background-color: transparent; border: none; color: #c8c8c8;"><i class="fa-regular fa-thumbs-up fa-2xl" style="color: #c8c8c8;"></i><p style="padding-top: 10px;">Rate</p></button>
+                  </div>
+                  <div>
+                    <button class="zoom-btn" style="width: 100px; height: 80px; background-color: transparent; border: none; color: #c8c8c8;"><i class="fa-solid fa-arrow-down fa-2xl" style="color: #c8c8c8;"></i><p style="padding-top: 10px;">Download</p></button>
+                  </div>
+                </div>
+
+                <div class="d-flex" style="gap: 20px; margin-top: 20px;">
+                  <div class="card1" style="width: 20rem;">
+                    <img src="https://occ-0-4994-2186.1.nflxso.net/dnm/api/v6/rkETp35xJVj-6WaffQsS77awykM/AAAABdYfDMEGiOTCsGaXhX_G_tq73Ocf-Wa0wllMoTMKLETkfqXWaB9knMiMXcujEc65rLGH1rhmqMACAmwVqZAl8n8W8GP3I3wvWoU.webp?r=c60" data-bs-toggle="modal" data-bs-target="#exampleModal2" class="card-img-top" alt="...">
+                  </div>
+                  <div class="card1" style="width: 20rem;">
+                    <img src="https://occ-0-2484-3663.1.nflxso.net/dnm/api/v6/rkETp35xJVj-6WaffQsS77awykM/AAAABdqS3LsYpbKa8-kl2GluHxRpXlk1SetRT8M1uF9REOlL6XceHYYB1BGUMvslZroEuDgYptaXjmhgrGiuSmugpuCbn6vZepbbptX5X-eTDwyRSyCJilsIDvAJM0LWpjixsQxc.jpg?r=4b3" data-bs-toggle="modal" data-bs-target="#exampleModal3" class="card-img-top" alt="...">
+                  </div>
+                </div>
+                <div class="d-flex" style="gap: 20px; margin-top: 20px; margin-bottom: 20px;">
+                  <div class="card1" style="width: 20rem;">
+                    <img src="https://occ-0-4994-2186.1.nflxso.net/dnm/api/v6/rkETp35xJVj-6WaffQsS77awykM/AAAABdYfDMEGiOTCsGaXhX_G_tq73Ocf-Wa0wllMoTMKLETkfqXWaB9knMiMXcujEc65rLGH1rhmqMACAmwVqZAl8n8W8GP3I3wvWoU.webp?r=c60" data-bs-toggle="modal" data-bs-target="#exampleModal4" class="card-img-top" alt="...">
+                  </div>
+                  <div class="card1" style="width: 20rem;">
+                    <img src="https://occ-0-2484-3663.1.nflxso.net/dnm/api/v6/rkETp35xJVj-6WaffQsS77awykM/AAAABdqS3LsYpbKa8-kl2GluHxRpXlk1SetRT8M1uF9REOlL6XceHYYB1BGUMvslZroEuDgYptaXjmhgrGiuSmugpuCbn6vZepbbptX5X-eTDwyRSyCJilsIDvAJM0LWpjixsQxc.jpg?r=4b3" data-bs-toggle="modal" data-bs-target="#exampleModal5" class="card-img-top" alt="...">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="card1" style="width: 14rem;">
+        <img src="https://occ-0-4994-2186.1.nflxso.net/dnm/api/v6/rkETp35xJVj-6WaffQsS77awykM/AAAABW6nWxM5myljS5bJOYnMUny3Mw0ettNL4VeHbaGckYNt2UrOIolBZ3czuPFIQE86dST1PAN1BZp6ugta7GBS7MA27d84-WWY3lnwtifgyofpML6GyC_8v58VqfYtPdc8v0_p.jpg?r=02b" data-bs-toggle="modal" data-bs-target="#exampleModal2" class="card-img-top" alt="...">
+        <!-- Modal -->
+        <div class="modal fade" id="exampleModal2" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+          <div class="modal-dialog">
+            <img src="./image/Outer Banks.png" style="width: 700px;" alt="">
+            <div class="modal-content" style="width: 700px; border: none; color: #c8c8c8;">
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              <div class="modal-body" style="background-color: #222222; padding-left: 40px; padding-right: 40px; margin-top: -30px;">
+                <h2 style="font-size: 28px; color: white;"><b>Outer Banks</b></h2>
+                <img src="./image/Outer Banks 1.png" alt="">
+                <p style="margin-top: 10px;">After a hurricane, Jhon B, JJ, Pope and Kiara plunge headlong into danger and adventure when they find a mysterious sunken wreck.</p>
+                <p>cast : Chase Stokes, Madelyn Cline, Madison Bailey <br>
+                  Creators : Josh Pate, Jonas Pate, Shannon Burke</p>
+                <div class="d-flex" style="margin-left: -23px; margin-top: 20px;">
+                  <div>
+                    <button class="zoom-btn" style="width: 100px; height: 80px; background-color: transparent; border: none; color: #c8c8c8;"><i class="fa-solid fa-plus fa-2xl" style="color: #c8c8c8;"></i><p style="padding-top: 10px;">My List</p></button>
+                  </div>
+                  <div>
+                    <button class="zoom-btn" style="width: 80px; height: 80px; background-color: transparent; border: none; color: #c8c8c8;"><i class="fa-regular fa-thumbs-up fa-2xl" style="color: #c8c8c8;"></i><p style="padding-top: 10px;">Rate</p></button>
+                  </div>
+                  <div>
+                    <button class="zoom-btn" style="width: 100px; height: 80px; background-color: transparent; border: none; color: #c8c8c8;"><i class="fa-solid fa-arrow-down fa-2xl" style="color: #c8c8c8;"></i><p style="padding-top: 10px;">Download</p></button>
+                  </div>
+                </div>
+
+                <div class="d-flex" style="gap: 20px; margin-top: 20px;">
+                  <div class="card1" style="width: 20rem;">
+                    <img src="https://occ-0-4994-2186.1.nflxso.net/dnm/api/v6/rkETp35xJVj-6WaffQsS77awykM/AAAABdYfDMEGiOTCsGaXhX_G_tq73Ocf-Wa0wllMoTMKLETkfqXWaB9knMiMXcujEc65rLGH1rhmqMACAmwVqZAl8n8W8GP3I3wvWoU.webp?r=c60" class="card-img-top" alt="...">
+                  </div>
+                  <div class="card1" style="width: 20rem;">
+                    <img src="https://occ-0-2484-3663.1.nflxso.net/dnm/api/v6/rkETp35xJVj-6WaffQsS77awykM/AAAABdqS3LsYpbKa8-kl2GluHxRpXlk1SetRT8M1uF9REOlL6XceHYYB1BGUMvslZroEuDgYptaXjmhgrGiuSmugpuCbn6vZepbbptX5X-eTDwyRSyCJilsIDvAJM0LWpjixsQxc.jpg?r=4b3" class="card-img-top" alt="...">
+                  </div>
+                </div>
+                <div class="d-flex" style="gap: 20px; margin-top: 20px; margin-bottom: 20px;">
+                  <div class="card1" style="width: 20rem;">
+                    <img src="https://occ-0-4994-2186.1.nflxso.net/dnm/api/v6/rkETp35xJVj-6WaffQsS77awykM/AAAABdYfDMEGiOTCsGaXhX_G_tq73Ocf-Wa0wllMoTMKLETkfqXWaB9knMiMXcujEc65rLGH1rhmqMACAmwVqZAl8n8W8GP3I3wvWoU.webp?r=c60" class="card-img-top" alt="...">
+                  </div>
+                  <div class="card1" style="width: 20rem;">
+                    <img src="https://occ-0-2484-3663.1.nflxso.net/dnm/api/v6/rkETp35xJVj-6WaffQsS77awykM/AAAABdqS3LsYpbKa8-kl2GluHxRpXlk1SetRT8M1uF9REOlL6XceHYYB1BGUMvslZroEuDgYptaXjmhgrGiuSmugpuCbn6vZepbbptX5X-eTDwyRSyCJilsIDvAJM0LWpjixsQxc.jpg?r=4b3" class="card-img-top" alt="...">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="card1" style="width: 14rem;">
+        <img src="https://occ-0-4994-2186.1.nflxso.net/dnm/api/v6/rkETp35xJVj-6WaffQsS77awykM/AAAABf4IG8x6hTCSoZrVKHzwznlSsL_rx6pnIll0x4XOV6dN36lOOCnurVN8TId_KQQ0_pDacxsB6Vi57sLuTrn4Asv7J23V23R5l8o.webp?r=e70" data-bs-toggle="modal" data-bs-target="#exampleModal3" class="card-img-top" alt="...">
+        <!-- Modal -->
+        <div class="modal fade" id="exampleModal3" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+          <div class="modal-dialog">
+            <img src="./image/The Dark Knight.png" style="width: 700px;" alt="">
+            <div class="modal-content" style="width: 700px; border: none; color: #c8c8c8;">
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              <div class="modal-body" style="background-color: #222222; padding-left: 40px; padding-right: 40px; margin-top: -30px;">
+                <h2 style="font-size: 28px; color: white;"><b>The Dark Knight</b></h2>
+                <img src="./image/The Dark Knight 1.png" alt="">
+                <p style="margin-top: 10px;">Batman, Lieutenant Gordon and District Attorney Harvey Dent go up against the Joker, a criminal mastermind in ghoulish makeup terrorizing Gotham City.</p>
+                <p>Cast : Christian Bale, Heath Ledger, Aaron Eckhart <br>
+                  Director : Christopher Nolan</p>
+                <div class="d-flex" style="margin-left: -23px; margin-top: 20px;">
+                  <div>
+                    <button class="zoom-btn" style="width: 100px; height: 80px; background-color: transparent; border: none; color: #c8c8c8;"><i class="fa-solid fa-plus fa-2xl" style="color: #c8c8c8;"></i><p style="padding-top: 10px;">My List</p></button>
+                  </div>
+                  <div>
+                    <button class="zoom-btn" style="width: 80px; height: 80px; background-color: transparent; border: none; color: #c8c8c8;"><i class="fa-regular fa-thumbs-up fa-2xl" style="color: #c8c8c8;"></i><p style="padding-top: 10px;">Rate</p></button>
+                  </div>
+                  <div>
+                    <button class="zoom-btn" style="width: 100px; height: 80px; background-color: transparent; border: none; color: #c8c8c8;"><i class="fa-solid fa-arrow-down fa-2xl" style="color: #c8c8c8;"></i><p style="padding-top: 10px;">Download</p></button>
+                  </div>
+                </div>
+
+                <div class="d-flex" style="gap: 20px; margin-top: 20px;">
+                  <div class="card1" style="width: 20rem;">
+                    <img src="https://occ-0-4994-2186.1.nflxso.net/dnm/api/v6/rkETp35xJVj-6WaffQsS77awykM/AAAABdYfDMEGiOTCsGaXhX_G_tq73Ocf-Wa0wllMoTMKLETkfqXWaB9knMiMXcujEc65rLGH1rhmqMACAmwVqZAl8n8W8GP3I3wvWoU.webp?r=c60" class="card-img-top" alt="...">
+                  </div>
+                  <div class="card1" style="width: 20rem;">
+                    <img src="https://occ-0-2484-3663.1.nflxso.net/dnm/api/v6/rkETp35xJVj-6WaffQsS77awykM/AAAABdqS3LsYpbKa8-kl2GluHxRpXlk1SetRT8M1uF9REOlL6XceHYYB1BGUMvslZroEuDgYptaXjmhgrGiuSmugpuCbn6vZepbbptX5X-eTDwyRSyCJilsIDvAJM0LWpjixsQxc.jpg?r=4b3" class="card-img-top" alt="...">
+                  </div>
+                </div>
+                <div class="d-flex" style="gap: 20px; margin-top: 20px; margin-bottom: 20px;">
+                  <div class="card1" style="width: 20rem;">
+                    <img src="https://occ-0-4994-2186.1.nflxso.net/dnm/api/v6/rkETp35xJVj-6WaffQsS77awykM/AAAABdYfDMEGiOTCsGaXhX_G_tq73Ocf-Wa0wllMoTMKLETkfqXWaB9knMiMXcujEc65rLGH1rhmqMACAmwVqZAl8n8W8GP3I3wvWoU.webp?r=c60" class="card-img-top" alt="...">
+                  </div>
+                  <div class="card1" style="width: 20rem;">
+                    <img src="https://occ-0-2484-3663.1.nflxso.net/dnm/api/v6/rkETp35xJVj-6WaffQsS77awykM/AAAABdqS3LsYpbKa8-kl2GluHxRpXlk1SetRT8M1uF9REOlL6XceHYYB1BGUMvslZroEuDgYptaXjmhgrGiuSmugpuCbn6vZepbbptX5X-eTDwyRSyCJilsIDvAJM0LWpjixsQxc.jpg?r=4b3" class="card-img-top" alt="...">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="card1" style="width: 14rem;">
+        <img src="https://occ-0-4994-2186.1.nflxso.net/dnm/api/v6/rkETp35xJVj-6WaffQsS77awykM/AAAABdYfDMEGiOTCsGaXhX_G_tq73Ocf-Wa0wllMoTMKLETkfqXWaB9knMiMXcujEc65rLGH1rhmqMACAmwVqZAl8n8W8GP3I3wvWoU.webp?r=c60" data-bs-toggle="modal" data-bs-target="#exampleModal4" class="card-img-top" alt="...">
+        <!-- Modal -->
+        <div class="modal fade" id="exampleModal4" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+          <div class="modal-dialog">
+            <img src="./image/Fast & Furious.png" style="width: 700px;" alt="">
+            <div class="modal-content" style="width: 700px; border: none; color: #c8c8c8;">
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              <div class="modal-body" style="background-color: #222222; padding-left: 40px; padding-right: 40px; margin-top: -30px;">
+                <h2 style="font-size: 28px; color: white;"><b>Fast & Furious</b></h2>
+                <img src="./image/Fast and Furious 1.png" alt="">
+                <p style="margin-top: 10px;">After six years on the lam, fugitive Dom Toretto returns to Los Angeles and teams up with rouge FBI agent Brian O'conner to bring down a common enemy.</p>
+                <p>Cast : Vin Diesel, Paul Walker, Jordana Brewster <br>
+                  Director : Justin Lin</p>
+                <div class="d-flex" style="margin-left: -23px; margin-top: 20px;">
+                  <div>
+                    <button class="zoom-btn" style="width: 100px; height: 80px; background-color: transparent; border: none; color: #c8c8c8;"><i class="fa-solid fa-plus fa-2xl" style="color: #c8c8c8;"></i><p style="padding-top: 10px;">My List</p></button>
+                  </div>
+                  <div>
+                    <button class="zoom-btn" style="width: 80px; height: 80px; background-color: transparent; border: none; color: #c8c8c8;"><i class="fa-regular fa-thumbs-up fa-2xl" style="color: #c8c8c8;"></i><p style="padding-top: 10px;">Rate</p></button>
+                  </div>
+                  <div>
+                    <button class="zoom-btn" style="width: 100px; height: 80px; background-color: transparent; border: none; color: #c8c8c8;"><i class="fa-solid fa-arrow-down fa-2xl" style="color: #c8c8c8;"></i><p style="padding-top: 10px;">Download</p></button>
+                  </div>
+                </div>
+
+                <div class="d-flex" style="gap: 20px; margin-top: 20px;">
+                  <div class="card1" style="width: 20rem;">
+                    <img src="https://occ-0-4994-2186.1.nflxso.net/dnm/api/v6/rkETp35xJVj-6WaffQsS77awykM/AAAABdYfDMEGiOTCsGaXhX_G_tq73Ocf-Wa0wllMoTMKLETkfqXWaB9knMiMXcujEc65rLGH1rhmqMACAmwVqZAl8n8W8GP3I3wvWoU.webp?r=c60" class="card-img-top" alt="...">
+                  </div>
+                  <div class="card1" style="width: 20rem;">
+                    <img src="https://occ-0-2484-3663.1.nflxso.net/dnm/api/v6/rkETp35xJVj-6WaffQsS77awykM/AAAABdqS3LsYpbKa8-kl2GluHxRpXlk1SetRT8M1uF9REOlL6XceHYYB1BGUMvslZroEuDgYptaXjmhgrGiuSmugpuCbn6vZepbbptX5X-eTDwyRSyCJilsIDvAJM0LWpjixsQxc.jpg?r=4b3" class="card-img-top" alt="...">
+                  </div>
+                </div>
+                <div class="d-flex" style="gap: 20px; margin-top: 20px; margin-bottom: 20px;">
+                  <div class="card1" style="width: 20rem;">
+                    <img src="https://occ-0-4994-2186.1.nflxso.net/dnm/api/v6/rkETp35xJVj-6WaffQsS77awykM/AAAABdYfDMEGiOTCsGaXhX_G_tq73Ocf-Wa0wllMoTMKLETkfqXWaB9knMiMXcujEc65rLGH1rhmqMACAmwVqZAl8n8W8GP3I3wvWoU.webp?r=c60" class="card-img-top" alt="...">
+                  </div>
+                  <div class="card1" style="width: 20rem;">
+                    <img src="https://occ-0-2484-3663.1.nflxso.net/dnm/api/v6/rkETp35xJVj-6WaffQsS77awykM/AAAABdqS3LsYpbKa8-kl2GluHxRpXlk1SetRT8M1uF9REOlL6XceHYYB1BGUMvslZroEuDgYptaXjmhgrGiuSmugpuCbn6vZepbbptX5X-eTDwyRSyCJilsIDvAJM0LWpjixsQxc.jpg?r=4b3" class="card-img-top" alt="...">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="card1" style="width: 14rem;">
+        <img src="https://occ-0-4994-2186.1.nflxso.net/dnm/api/v6/rkETp35xJVj-6WaffQsS77awykM/AAAABcVupydXJj8_sZLMEoHxuJ9ePg8qulbyiHdMDV3CjQtsygIofDGQ-ardjwHBQWzF8RAMXVXdJLYVQJByyKeOmSOyhIkqtDCpVYA.webp?r=9e9" data-bs-toggle="modal" data-bs-target="#exampleModal5" class="card-img-top" alt="...">
+        <!-- Modal -->
+        <div class="modal fade" id="exampleModal5" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+          <div class="modal-dialog">
+            <img src="./image/Thunivu.png" style="width: 700px;" alt="">
+            <div class="modal-content" style="width: 700px; border: none; color: #c8c8c8;">
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              <div class="modal-body" style="background-color: #222222; padding-left: 40px; padding-right: 40px; margin-top: -30px;">
+                <h2 style="font-size: 28px; color: white;"><b>Thunivu (Malayalam)</b></h2>
+                <img src="./image/Thunivu 1.png" alt="">
+                <p style="margin-top: 10px;">A major bank heist takes an unnerving turn when a mysterious interloper known only as Dark Devil Begins to hijack the operation.</p>
+                <div class="d-flex" style="margin-left: -23px; margin-top: 20px;">
+                  <div>
+                    <button class="zoom-btn" style="width: 100px; height: 80px; background-color: transparent; border: none; color: #c8c8c8;"><i class="fa-solid fa-plus fa-2xl" style="color: #c8c8c8;"></i><p style="padding-top: 10px;">My List</p></button>
+                  </div>
+                  <div>
+                    <button class="zoom-btn" style="width: 80px; height: 80px; background-color: transparent; border: none; color: #c8c8c8;"><i class="fa-regular fa-thumbs-up fa-2xl" style="color: #c8c8c8;"></i><p style="padding-top: 10px;">Rate</p></button>
+                  </div>
+                  <div>
+                    <button class="zoom-btn" style="width: 100px; height: 80px; background-color: transparent; border: none; color: #c8c8c8;"><i class="fa-solid fa-arrow-down fa-2xl" style="color: #c8c8c8;"></i><p style="padding-top: 10px;">Download</p></button>
+                  </div>
+                </div>
+
+                <div class="d-flex" style="gap: 20px; margin-top: 20px;">
+                  <div class="card1" style="width: 20rem;">
+                    <img src="https://occ-0-4994-2186.1.nflxso.net/dnm/api/v6/rkETp35xJVj-6WaffQsS77awykM/AAAABdYfDMEGiOTCsGaXhX_G_tq73Ocf-Wa0wllMoTMKLETkfqXWaB9knMiMXcujEc65rLGH1rhmqMACAmwVqZAl8n8W8GP3I3wvWoU.webp?r=c60" class="card-img-top" alt="...">
+                  </div>
+                  <div class="card1" style="width: 20rem;">
+                    <img src="https://occ-0-2484-3663.1.nflxso.net/dnm/api/v6/rkETp35xJVj-6WaffQsS77awykM/AAAABdqS3LsYpbKa8-kl2GluHxRpXlk1SetRT8M1uF9REOlL6XceHYYB1BGUMvslZroEuDgYptaXjmhgrGiuSmugpuCbn6vZepbbptX5X-eTDwyRSyCJilsIDvAJM0LWpjixsQxc.jpg?r=4b3" class="card-img-top" alt="...">
+                  </div>
+                </div>
+                <div class="d-flex" style="gap: 20px; margin-top: 20px; margin-bottom: 20px;">
+                  <div class="card1" style="width: 20rem;">
+                    <img src="https://occ-0-4994-2186.1.nflxso.net/dnm/api/v6/rkETp35xJVj-6WaffQsS77awykM/AAAABdYfDMEGiOTCsGaXhX_G_tq73Ocf-Wa0wllMoTMKLETkfqXWaB9knMiMXcujEc65rLGH1rhmqMACAmwVqZAl8n8W8GP3I3wvWoU.webp?r=c60" class="card-img-top" alt="...">
+                  </div>
+                  <div class="card1" style="width: 20rem;">
+                    <img src="https://occ-0-2484-3663.1.nflxso.net/dnm/api/v6/rkETp35xJVj-6WaffQsS77awykM/AAAABdqS3LsYpbKa8-kl2GluHxRpXlk1SetRT8M1uF9REOlL6XceHYYB1BGUMvslZroEuDgYptaXjmhgrGiuSmugpuCbn6vZepbbptX5X-eTDwyRSyCJilsIDvAJM0LWpjixsQxc.jpg?r=4b3" class="card-img-top" alt="...">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- New Releases  sec 2-->
+
+    <h1 style="color: white; font-size: 23px; font-weight: 550; margin-top: 40px; padding-left: 50px;">New Releases</h1>
+
+    <div class="card-container1">
+      <div class="card1" style="width: 14rem;">
+          <img src="https://occ-0-2484-3663.1.nflxso.net/dnm/api/v6/rkETp35xJVj-6WaffQsS77awykM/AAAABcG_o_TeDUcHPrZ7oL1abwQ27uQJNmYWETWzCC0TzBohfDjByh4NlMFMs_qMvPJPPOqw38HT3NGKG7EBnpwWyzNYaZLScQ1ubUdyofwJsdzFRIIjn8TzqZTnTw5-Ha4OoVu5XhtKHh7q9vlElMoSBsW24D04j1innT4.webp?r=77a" class="card-img-top" data-bs-toggle="modal" data-bs-target="#exampleModal00" alt="...">
+          <!-- Modal -->
+          <div class="modal fade" id="exampleModal00" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+              <img src="./image/Salar.png" style="width: 700px;" alt="">
+              <div class="modal-content" style="width: 700px; border: none; color: #c8c8c8;">
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                <div class="modal-body" style="background-color: #222222; padding-left: 40px; padding-right: 40px; margin-top: -30px;">
+                  <h2 style="font-size: 28px; color: white;"><b>Salar (Kannada)</b></h2>
+                  <img src="./image/Salar 1.png" alt="">
+                  <p style="margin-top: 10px;">The fate of a violently contested kingdom hangs on the fraught bond between two friends turned-foes in this saga of power, bloodshed and betrayal.</p>
+                  <p>cast : Prabhas, Prithviraj Sukumaran, Shruthi Hassan <br>
+                    Director : Prashanth Neel</p>
+                  <div class="d-flex" style="margin-left: -23px; margin-top: 20px;">
+                    <div>
+                      <button class="zoom-btn" style="width: 100px; height: 80px; background-color: transparent; border: none; color: #c8c8c8;"><i class="fa-solid fa-plus fa-2xl" style="color: #c8c8c8;"></i><p style="padding-top: 10px;">My List</p></button>
+                    </div>
+                    <div>
+                      <button class="zoom-btn" style="width: 80px; height: 80px; background-color: transparent; border: none; color: #c8c8c8;"><i class="fa-regular fa-thumbs-up fa-2xl" style="color: #c8c8c8;"></i><p style="padding-top: 10px;">Rate</p></button>
+                    </div>
+                    <div>
+                      <button class="zoom-btn" style="width: 100px; height: 80px; background-color: transparent; border: none; color: #c8c8c8;"><i class="fa-solid fa-arrow-down fa-2xl" style="color: #c8c8c8;"></i><p style="padding-top: 10px;">Download</p></button>
+                    </div>
+                  </div>
+
+                  <div class="d-flex" style="gap: 20px; margin-top: 20px;">
+                    <div class="card1" style="width: 20rem;">
+                      <img src="https://occ-0-4994-2186.1.nflxso.net/dnm/api/v6/rkETp35xJVj-6WaffQsS77awykM/AAAABdYfDMEGiOTCsGaXhX_G_tq73Ocf-Wa0wllMoTMKLETkfqXWaB9knMiMXcujEc65rLGH1rhmqMACAmwVqZAl8n8W8GP3I3wvWoU.webp?r=c60" class="card-img-top" alt="...">
+                    </div>
+                    <div class="card1" style="width: 20rem;">
+                      <img src="https://occ-0-2484-3663.1.nflxso.net/dnm/api/v6/rkETp35xJVj-6WaffQsS77awykM/AAAABdqS3LsYpbKa8-kl2GluHxRpXlk1SetRT8M1uF9REOlL6XceHYYB1BGUMvslZroEuDgYptaXjmhgrGiuSmugpuCbn6vZepbbptX5X-eTDwyRSyCJilsIDvAJM0LWpjixsQxc.jpg?r=4b3" class="card-img-top" alt="...">
+                    </div>
+                  </div>
+                  <div class="d-flex" style="gap: 20px; margin-top: 20px; margin-bottom: 20px;">
+                    <div class="card1" style="width: 20rem;">
+                      <img src="https://occ-0-4994-2186.1.nflxso.net/dnm/api/v6/rkETp35xJVj-6WaffQsS77awykM/AAAABdYfDMEGiOTCsGaXhX_G_tq73Ocf-Wa0wllMoTMKLETkfqXWaB9knMiMXcujEc65rLGH1rhmqMACAmwVqZAl8n8W8GP3I3wvWoU.webp?r=c60" class="card-img-top" alt="...">
+                    </div>
+                    <div class="card1" style="width: 20rem;">
+                      <img src="https://occ-0-2484-3663.1.nflxso.net/dnm/api/v6/rkETp35xJVj-6WaffQsS77awykM/AAAABdqS3LsYpbKa8-kl2GluHxRpXlk1SetRT8M1uF9REOlL6XceHYYB1BGUMvslZroEuDgYptaXjmhgrGiuSmugpuCbn6vZepbbptX5X-eTDwyRSyCJilsIDvAJM0LWpjixsQxc.jpg?r=4b3" class="card-img-top" alt="...">
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+      </div>
+      <div class="card1" style="width: 14rem;">
+        <img src="https://occ-0-2484-3663.1.nflxso.net/dnm/api/v6/rkETp35xJVj-6WaffQsS77awykM/AAAABQUSaN9CsKBngS7SL63PIB8K7VyHHeJRJbpcXL7tzDKkKLhrJVfB3f9tBNCQ4BERFH6KtRXRKQejM9lRSQ-51mzuGw6HCFCuR6VpibR0lzfupG9g5_oNcEM2LTKS2D9-uJAhf-07PCwYe_f_8N76kovr8hlYs-Uv2X3f1b4izJVKt2h1NQFx79nSWQp52eY.jpg?r=61b" data-bs-toggle="modal" data-bs-target="#exampleModal01" class="card-img-top" alt="...">
+        <!-- Modal -->
+        <div class="modal fade" id="exampleModal01" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+          <div class="modal-dialog">
+            <img src="./image/60 sec.png" style="width: 700px;" alt="">
+            <div class="modal-content" style="width: 700px; border: none; color: #c8c8c8;">
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              <div class="modal-body" style="background-color: #222222; padding-left: 40px; padding-right: 40px; margin-top: -30px;">
+                <h2 style="font-size: 28px; color: white;"><b>Sixty Minutes</b></h2>
+                <img src="./image/60 sec 1.png" alt="">
+                <p style="margin-top: 10px;">Desperate to keep custody of his daughter, a mixed arts fighter abondons a big match and race across Berlin to attend her birthday party.</p>
+                <p>Cast : Emilio Sakraya, Dennis Mojen, Marie Mouroum <br>
+                  Director : Oliver Kienle</p>
+                <div class="d-flex" style="margin-left: -23px; margin-top: 20px;">
+                  <div>
+                    <button class="zoom-btn" style="width: 100px; height: 80px; background-color: transparent; border: none; color: #c8c8c8;"><i class="fa-solid fa-plus fa-2xl" style="color: #c8c8c8;"></i><p style="padding-top: 10px;">My List</p></button>
+                  </div>
+                  <div>
+                    <button class="zoom-btn" style="width: 80px; height: 80px; background-color: transparent; border: none; color: #c8c8c8;"><i class="fa-regular fa-thumbs-up fa-2xl" style="color: #c8c8c8;"></i><p style="padding-top: 10px;">Rate</p></button>
+                  </div>
+                  <div>
+                    <button class="zoom-btn" style="width: 100px; height: 80px; background-color: transparent; border: none; color: #c8c8c8;"><i class="fa-solid fa-arrow-down fa-2xl" style="color: #c8c8c8;"></i><p style="padding-top: 10px;">Download</p></button>
+                  </div>
+                </div>
+
+                <div class="d-flex" style="gap: 20px; margin-top: 20px;">
+                  <div class="card1" style="width: 20rem;">
+                    <img src="https://occ-0-4994-2186.1.nflxso.net/dnm/api/v6/rkETp35xJVj-6WaffQsS77awykM/AAAABdYfDMEGiOTCsGaXhX_G_tq73Ocf-Wa0wllMoTMKLETkfqXWaB9knMiMXcujEc65rLGH1rhmqMACAmwVqZAl8n8W8GP3I3wvWoU.webp?r=c60" data-bs-toggle="modal" data-bs-target="#exampleModal2" class="card-img-top" alt="...">
+                  </div>
+                  <div class="card1" style="width: 20rem;">
+                    <img src="https://occ-0-2484-3663.1.nflxso.net/dnm/api/v6/rkETp35xJVj-6WaffQsS77awykM/AAAABdqS3LsYpbKa8-kl2GluHxRpXlk1SetRT8M1uF9REOlL6XceHYYB1BGUMvslZroEuDgYptaXjmhgrGiuSmugpuCbn6vZepbbptX5X-eTDwyRSyCJilsIDvAJM0LWpjixsQxc.jpg?r=4b3" data-bs-toggle="modal" data-bs-target="#exampleModal3" class="card-img-top" alt="...">
+                  </div>
+                </div>
+                <div class="d-flex" style="gap: 20px; margin-top: 20px; margin-bottom: 20px;">
+                  <div class="card1" style="width: 20rem;">
+                    <img src="https://occ-0-4994-2186.1.nflxso.net/dnm/api/v6/rkETp35xJVj-6WaffQsS77awykM/AAAABdYfDMEGiOTCsGaXhX_G_tq73Ocf-Wa0wllMoTMKLETkfqXWaB9knMiMXcujEc65rLGH1rhmqMACAmwVqZAl8n8W8GP3I3wvWoU.webp?r=c60" data-bs-toggle="modal" data-bs-target="#exampleModal4" class="card-img-top" alt="...">
+                  </div>
+                  <div class="card1" style="width: 20rem;">
+                    <img src="https://occ-0-2484-3663.1.nflxso.net/dnm/api/v6/rkETp35xJVj-6WaffQsS77awykM/AAAABdqS3LsYpbKa8-kl2GluHxRpXlk1SetRT8M1uF9REOlL6XceHYYB1BGUMvslZroEuDgYptaXjmhgrGiuSmugpuCbn6vZepbbptX5X-eTDwyRSyCJilsIDvAJM0LWpjixsQxc.jpg?r=4b3" data-bs-toggle="modal" data-bs-target="#exampleModal5" class="card-img-top" alt="...">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="card1" style="width: 14rem;">
+        <img src="https://occ-0-2484-3663.1.nflxso.net/dnm/api/v6/rkETp35xJVj-6WaffQsS77awykM/AAAABcoIgTnP8kyMIQqNUvvWTJtupUmjjBdCM09gT1AVf6txGa2tAFLTWxNaE3PA5B1M5wP5v7bjm0BWxK9sDqqZeWTQ37CB0frof2yZIb10CZKNJb8w_Mo-cSRvy93hAX7CL5CaSUObl4r64s0_EjeCnxofandPEkA3oTkYz4Hd-I7GSR705CQm1As-m9rX6kVoiFSBjPT0WYB7VAITXoG9KbLwDkNvMj7iBytMYoVSVcthaaOi-0Fhsq80x6eGFysM-lgD44TpUTSKUy1QZCf2eggJa0c8C3RxfHt_c_x0EjZQrv4tU0nbHP86Titmp2uQBKkNiNwoGdR10TqHlL7sy5K_iXHmzoKDa6DQqQ8ATqZH5jdkepy0hxgfQxX1CAzK26Q3mIVHWSBDZQNtmjt77-afytzvHIIDAkhpELvMZ6IVTqJpw4EiZUfKHiEklpuDtvaPyJ5W.jpg?r=fdf" data-bs-toggle="modal" data-bs-target="#exampleModal02" class="card-img-top" alt="...">
+        <!-- Modal -->
+        <div class="modal fade" id="exampleModal02" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+          <div class="modal-dialog">
+            <img src="./image/Outer Banks.png" style="width: 700px;" alt="">
+            <div class="modal-content" style="width: 700px; border: none; color: #c8c8c8;">
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              <div class="modal-body" style="background-color: #222222; padding-left: 40px; padding-right: 40px; margin-top: -30px;">
+                <h2 style="font-size: 28px; color: white;"><b>Outer Banks</b></h2>
+                <img src="./image/Outer Banks 1.png" alt="">
+                <p style="margin-top: 10px;">After a hurricane, Jhon B, JJ, Pope and Kiara plunge headlong into danger and adventure when they find a mysterious sunken wreck.</p>
+                <p>cast : Chase Stokes, Madelyn Cline, Madison Bailey <br>
+                  Creators : Josh Pate, Jonas Pate, Shannon Burke</p>
+                <div class="d-flex" style="margin-left: -23px; margin-top: 20px;">
+                  <div>
+                    <button class="zoom-btn" style="width: 100px; height: 80px; background-color: transparent; border: none; color: #c8c8c8;"><i class="fa-solid fa-plus fa-2xl" style="color: #c8c8c8;"></i><p style="padding-top: 10px;">My List</p></button>
+                  </div>
+                  <div>
+                    <button class="zoom-btn" style="width: 80px; height: 80px; background-color: transparent; border: none; color: #c8c8c8;"><i class="fa-regular fa-thumbs-up fa-2xl" style="color: #c8c8c8;"></i><p style="padding-top: 10px;">Rate</p></button>
+                  </div>
+                  <div>
+                    <button class="zoom-btn" style="width: 100px; height: 80px; background-color: transparent; border: none; color: #c8c8c8;"><i class="fa-solid fa-arrow-down fa-2xl" style="color: #c8c8c8;"></i><p style="padding-top: 10px;">Download</p></button>
+                  </div>
+                </div>
+
+                <div class="d-flex" style="gap: 20px; margin-top: 20px;">
+                  <div class="card1" style="width: 20rem;">
+                    <img src="https://occ-0-4994-2186.1.nflxso.net/dnm/api/v6/rkETp35xJVj-6WaffQsS77awykM/AAAABdYfDMEGiOTCsGaXhX_G_tq73Ocf-Wa0wllMoTMKLETkfqXWaB9knMiMXcujEc65rLGH1rhmqMACAmwVqZAl8n8W8GP3I3wvWoU.webp?r=c60" class="card-img-top" alt="...">
+                  </div>
+                  <div class="card1" style="width: 20rem;">
+                    <img src="https://occ-0-2484-3663.1.nflxso.net/dnm/api/v6/rkETp35xJVj-6WaffQsS77awykM/AAAABdqS3LsYpbKa8-kl2GluHxRpXlk1SetRT8M1uF9REOlL6XceHYYB1BGUMvslZroEuDgYptaXjmhgrGiuSmugpuCbn6vZepbbptX5X-eTDwyRSyCJilsIDvAJM0LWpjixsQxc.jpg?r=4b3" class="card-img-top" alt="...">
+                  </div>
+                </div>
+                <div class="d-flex" style="gap: 20px; margin-top: 20px; margin-bottom: 20px;">
+                  <div class="card1" style="width: 20rem;">
+                    <img src="https://occ-0-4994-2186.1.nflxso.net/dnm/api/v6/rkETp35xJVj-6WaffQsS77awykM/AAAABdYfDMEGiOTCsGaXhX_G_tq73Ocf-Wa0wllMoTMKLETkfqXWaB9knMiMXcujEc65rLGH1rhmqMACAmwVqZAl8n8W8GP3I3wvWoU.webp?r=c60" class="card-img-top" alt="...">
+                  </div>
+                  <div class="card1" style="width: 20rem;">
+                    <img src="https://occ-0-2484-3663.1.nflxso.net/dnm/api/v6/rkETp35xJVj-6WaffQsS77awykM/AAAABdqS3LsYpbKa8-kl2GluHxRpXlk1SetRT8M1uF9REOlL6XceHYYB1BGUMvslZroEuDgYptaXjmhgrGiuSmugpuCbn6vZepbbptX5X-eTDwyRSyCJilsIDvAJM0LWpjixsQxc.jpg?r=4b3" class="card-img-top" alt="...">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="card1" style="width: 14rem;">
+        <img src="https://occ-0-2484-3663.1.nflxso.net/dnm/api/v6/rkETp35xJVj-6WaffQsS77awykM/AAAABaBHhnlqrRWS5AGrYwF993jA_YIQecuTFMM8rh0DJMGnU2w811B0cGnktrS0S6awTmmx6kVpmjv6OO5RYGn39sMeHdXyM9bAzdhaSDsbuSJoyvMPfQRea6JW3qJM-hY6alXhHVQ9qQd5J7AW669T0uagTj7mVA9VDWqz7kptPjgJmF1vODV8ws7GQTtXeTM.jpg?r=fe5" data-bs-toggle="modal" data-bs-target="#exampleModal03" class="card-img-top" alt="...">
+        <!-- Modal -->
+        <div class="modal fade" id="exampleModal03" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+          <div class="modal-dialog">
+            <img src="./image/The Dark Knight.png" style="width: 700px;" alt="">
+            <div class="modal-content" style="width: 700px; border: none; color: #c8c8c8;">
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              <div class="modal-body" style="background-color: #222222; padding-left: 40px; padding-right: 40px; margin-top: -30px;">
+                <h2 style="font-size: 28px; color: white;"><b>The Dark Knight</b></h2>
+                <img src="./image/The Dark Knight 1.png" alt="">
+                <p style="margin-top: 10px;">Batman, Lieutenant Gordon and District Attorney Harvey Dent go up against the Joker, a criminal mastermind in ghoulish makeup terrorizing Gotham City.</p>
+                <p>Cast : Christian Bale, Heath Ledger, Aaron Eckhart <br>
+                  Director : Christopher Nolan</p>
+                <div class="d-flex" style="margin-left: -23px; margin-top: 20px;">
+                  <div>
+                    <button class="zoom-btn" style="width: 100px; height: 80px; background-color: transparent; border: none; color: #c8c8c8;"><i class="fa-solid fa-plus fa-2xl" style="color: #c8c8c8;"></i><p style="padding-top: 10px;">My List</p></button>
+                  </div>
+                  <div>
+                    <button class="zoom-btn" style="width: 80px; height: 80px; background-color: transparent; border: none; color: #c8c8c8;"><i class="fa-regular fa-thumbs-up fa-2xl" style="color: #c8c8c8;"></i><p style="padding-top: 10px;">Rate</p></button>
+                  </div>
+                  <div>
+                    <button class="zoom-btn" style="width: 100px; height: 80px; background-color: transparent; border: none; color: #c8c8c8;"><i class="fa-solid fa-arrow-down fa-2xl" style="color: #c8c8c8;"></i><p style="padding-top: 10px;">Download</p></button>
+                  </div>
+                </div>
+
+                <div class="d-flex" style="gap: 20px; margin-top: 20px;">
+                  <div class="card1" style="width: 20rem;">
+                    <img src="https://occ-0-4994-2186.1.nflxso.net/dnm/api/v6/rkETp35xJVj-6WaffQsS77awykM/AAAABdYfDMEGiOTCsGaXhX_G_tq73Ocf-Wa0wllMoTMKLETkfqXWaB9knMiMXcujEc65rLGH1rhmqMACAmwVqZAl8n8W8GP3I3wvWoU.webp?r=c60" class="card-img-top" alt="...">
+                  </div>
+                  <div class="card1" style="width: 20rem;">
+                    <img src="https://occ-0-2484-3663.1.nflxso.net/dnm/api/v6/rkETp35xJVj-6WaffQsS77awykM/AAAABdqS3LsYpbKa8-kl2GluHxRpXlk1SetRT8M1uF9REOlL6XceHYYB1BGUMvslZroEuDgYptaXjmhgrGiuSmugpuCbn6vZepbbptX5X-eTDwyRSyCJilsIDvAJM0LWpjixsQxc.jpg?r=4b3" class="card-img-top" alt="...">
+                  </div>
+                </div>
+                <div class="d-flex" style="gap: 20px; margin-top: 20px; margin-bottom: 20px;">
+                  <div class="card1" style="width: 20rem;">
+                    <img src="https://occ-0-4994-2186.1.nflxso.net/dnm/api/v6/rkETp35xJVj-6WaffQsS77awykM/AAAABdYfDMEGiOTCsGaXhX_G_tq73Ocf-Wa0wllMoTMKLETkfqXWaB9knMiMXcujEc65rLGH1rhmqMACAmwVqZAl8n8W8GP3I3wvWoU.webp?r=c60" class="card-img-top" alt="...">
+                  </div>
+                  <div class="card1" style="width: 20rem;">
+                    <img src="https://occ-0-2484-3663.1.nflxso.net/dnm/api/v6/rkETp35xJVj-6WaffQsS77awykM/AAAABdqS3LsYpbKa8-kl2GluHxRpXlk1SetRT8M1uF9REOlL6XceHYYB1BGUMvslZroEuDgYptaXjmhgrGiuSmugpuCbn6vZepbbptX5X-eTDwyRSyCJilsIDvAJM0LWpjixsQxc.jpg?r=4b3" class="card-img-top" alt="...">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="card1" style="width: 14rem;">
+        <img src="https://occ-0-2484-3663.1.nflxso.net/dnm/api/v6/rkETp35xJVj-6WaffQsS77awykM/AAAABdnPVqdINkEkklh5b1igDcreTl4RDTK4wtQ023N71mgTeKvfHLZelYFQfLyNWM1GGOnk-pwWDRR-BQtQ4KRvxYThdfMLctaC7Pz51s9IDPHdg6jl5iRddjug7dYytcVndiOn.jpg?r=832" data-bs-toggle="modal" data-bs-target="#exampleModal04" class="card-img-top" alt="...">
+        <!-- Modal -->
+        <div class="modal fade" id="exampleModal04" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+          <div class="modal-dialog">
+            <img src="./image/Fast & Furious.png" style="width: 700px;" alt="">
+            <div class="modal-content" style="width: 700px; border: none; color: #c8c8c8;">
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              <div class="modal-body" style="background-color: #222222; padding-left: 40px; padding-right: 40px; margin-top: -30px;">
+                <h2 style="font-size: 28px; color: white;"><b>Fast & Furious</b></h2>
+                <img src="./image/Fast and Furious 1.png" alt="">
+                <p style="margin-top: 10px;">After six years on the lam, fugitive Dom Toretto returns to Los Angeles and teams up with rouge FBI agent Brian O'conner to bring down a common enemy.</p>
+                <p>Cast : Vin Diesel, Paul Walker, Jordana Brewster <br>
+                  Director : Justin Lin</p>
+                <div class="d-flex" style="margin-left: -23px; margin-top: 20px;">
+                  <div>
+                    <button class="zoom-btn" style="width: 100px; height: 80px; background-color: transparent; border: none; color: #c8c8c8;"><i class="fa-solid fa-plus fa-2xl" style="color: #c8c8c8;"></i><p style="padding-top: 10px;">My List</p></button>
+                  </div>
+                  <div>
+                    <button class="zoom-btn" style="width: 80px; height: 80px; background-color: transparent; border: none; color: #c8c8c8;"><i class="fa-regular fa-thumbs-up fa-2xl" style="color: #c8c8c8;"></i><p style="padding-top: 10px;">Rate</p></button>
+                  </div>
+                  <div>
+                    <button class="zoom-btn" style="width: 100px; height: 80px; background-color: transparent; border: none; color: #c8c8c8;"><i class="fa-solid fa-arrow-down fa-2xl" style="color: #c8c8c8;"></i><p style="padding-top: 10px;">Download</p></button>
+                  </div>
+                </div>
+
+                <div class="d-flex" style="gap: 20px; margin-top: 20px;">
+                  <div class="card1" style="width: 20rem;">
+                    <img src="https://occ-0-4994-2186.1.nflxso.net/dnm/api/v6/rkETp35xJVj-6WaffQsS77awykM/AAAABdYfDMEGiOTCsGaXhX_G_tq73Ocf-Wa0wllMoTMKLETkfqXWaB9knMiMXcujEc65rLGH1rhmqMACAmwVqZAl8n8W8GP3I3wvWoU.webp?r=c60" class="card-img-top" alt="...">
+                  </div>
+                  <div class="card1" style="width: 20rem;">
+                    <img src="https://occ-0-2484-3663.1.nflxso.net/dnm/api/v6/rkETp35xJVj-6WaffQsS77awykM/AAAABdqS3LsYpbKa8-kl2GluHxRpXlk1SetRT8M1uF9REOlL6XceHYYB1BGUMvslZroEuDgYptaXjmhgrGiuSmugpuCbn6vZepbbptX5X-eTDwyRSyCJilsIDvAJM0LWpjixsQxc.jpg?r=4b3" class="card-img-top" alt="...">
+                  </div>
+                </div>
+                <div class="d-flex" style="gap: 20px; margin-top: 20px; margin-bottom: 20px;">
+                  <div class="card1" style="width: 20rem;">
+                    <img src="https://occ-0-4994-2186.1.nflxso.net/dnm/api/v6/rkETp35xJVj-6WaffQsS77awykM/AAAABdYfDMEGiOTCsGaXhX_G_tq73Ocf-Wa0wllMoTMKLETkfqXWaB9knMiMXcujEc65rLGH1rhmqMACAmwVqZAl8n8W8GP3I3wvWoU.webp?r=c60" class="card-img-top" alt="...">
+                  </div>
+                  <div class="card1" style="width: 20rem;">
+                    <img src="https://occ-0-2484-3663.1.nflxso.net/dnm/api/v6/rkETp35xJVj-6WaffQsS77awykM/AAAABdqS3LsYpbKa8-kl2GluHxRpXlk1SetRT8M1uF9REOlL6XceHYYB1BGUMvslZroEuDgYptaXjmhgrGiuSmugpuCbn6vZepbbptX5X-eTDwyRSyCJilsIDvAJM0LWpjixsQxc.jpg?r=4b3" class="card-img-top" alt="...">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="card1" style="width: 14rem;">
+        <img src="https://occ-0-2484-3663.1.nflxso.net/dnm/api/v6/rkETp35xJVj-6WaffQsS77awykM/AAAABcM1HCnVvo6req90HFYIqOMDz3Q0GgwYfIvvgdblSEFew60lAasUU8nCo6C9OwPczhWjKm_RNAj9ka6Dezh9GZjG5RJeIoW03sA.webp?r=805" data-bs-toggle="modal" data-bs-target="#exampleModal05" class="card-img-top" alt="...">
+        <!-- Modal -->
+        <div class="modal fade" id="exampleModal05" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+          <div class="modal-dialog">
+            <img src="./image/Thunivu.png" style="width: 700px;" alt="">
+            <div class="modal-content" style="width: 700px; border: none; color: #c8c8c8;">
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              <div class="modal-body" style="background-color: #222222; padding-left: 40px; padding-right: 40px; margin-top: -30px;">
+                <h2 style="font-size: 28px; color: white;"><b>Thunivu (Malayalam)</b></h2>
+                <img src="./image/Thunivu 1.png" alt="">
+                <p style="margin-top: 10px;">A major bank heist takes an unnerving turn when a mysterious interloper known only as Dark Devil Begins to hijack the operation.</p>
+                <div class="d-flex" style="margin-left: -23px; margin-top: 20px;">
+                  <div>
+                    <button class="zoom-btn" style="width: 100px; height: 80px; background-color: transparent; border: none; color: #c8c8c8;"><i class="fa-solid fa-plus fa-2xl" style="color: #c8c8c8;"></i><p style="padding-top: 10px;">My List</p></button>
+                  </div>
+                  <div>
+                    <button class="zoom-btn" style="width: 80px; height: 80px; background-color: transparent; border: none; color: #c8c8c8;"><i class="fa-regular fa-thumbs-up fa-2xl" style="color: #c8c8c8;"></i><p style="padding-top: 10px;">Rate</p></button>
+                  </div>
+                  <div>
+                    <button class="zoom-btn" style="width: 100px; height: 80px; background-color: transparent; border: none; color: #c8c8c8;"><i class="fa-solid fa-arrow-down fa-2xl" style="color: #c8c8c8;"></i><p style="padding-top: 10px;">Download</p></button>
+                  </div>
+                </div>
+
+                <div class="d-flex" style="gap: 20px; margin-top: 20px;">
+                  <div class="card1" style="width: 20rem;">
+                    <img src="https://occ-0-4994-2186.1.nflxso.net/dnm/api/v6/rkETp35xJVj-6WaffQsS77awykM/AAAABdYfDMEGiOTCsGaXhX_G_tq73Ocf-Wa0wllMoTMKLETkfqXWaB9knMiMXcujEc65rLGH1rhmqMACAmwVqZAl8n8W8GP3I3wvWoU.webp?r=c60" class="card-img-top" alt="...">
+                  </div>
+                  <div class="card1" style="width: 20rem;">
+                    <img src="https://occ-0-2484-3663.1.nflxso.net/dnm/api/v6/rkETp35xJVj-6WaffQsS77awykM/AAAABdqS3LsYpbKa8-kl2GluHxRpXlk1SetRT8M1uF9REOlL6XceHYYB1BGUMvslZroEuDgYptaXjmhgrGiuSmugpuCbn6vZepbbptX5X-eTDwyRSyCJilsIDvAJM0LWpjixsQxc.jpg?r=4b3" class="card-img-top" alt="...">
+                  </div>
+                </div>
+                <div class="d-flex" style="gap: 20px; margin-top: 20px; margin-bottom: 20px;">
+                  <div class="card1" style="width: 20rem;">
+                    <img src="https://occ-0-4994-2186.1.nflxso.net/dnm/api/v6/rkETp35xJVj-6WaffQsS77awykM/AAAABdYfDMEGiOTCsGaXhX_G_tq73Ocf-Wa0wllMoTMKLETkfqXWaB9knMiMXcujEc65rLGH1rhmqMACAmwVqZAl8n8W8GP3I3wvWoU.webp?r=c60" class="card-img-top" alt="...">
+                  </div>
+                  <div class="card1" style="width: 20rem;">
+                    <img src="https://occ-0-2484-3663.1.nflxso.net/dnm/api/v6/rkETp35xJVj-6WaffQsS77awykM/AAAABdqS3LsYpbKa8-kl2GluHxRpXlk1SetRT8M1uF9REOlL6XceHYYB1BGUMvslZroEuDgYptaXjmhgrGiuSmugpuCbn6vZepbbptX5X-eTDwyRSyCJilsIDvAJM0LWpjixsQxc.jpg?r=4b3" class="card-img-top" alt="...">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Top 10 TV Shows in India Today  sec 3-->
+
+    <h1 style="color: white; font-size: 23px; font-weight: 550; margin-top: 50px; padding-left: 50px;">Top 10 TV Shows in India Today</h1>
+
+    <div class="card-container1">
+      <div class="card1" style="width: 14rem;">
+        <div class="d-flex" style="margin-left: 35px;">
+          <div>
+            <img src="./image/1.png" style="width: 78px;" data-bs-toggle="modal" data-bs-target="#exampleModal00" alt="">
+          </div>
+          <div>
+            <img src="https://occ-0-2484-3663.1.nflxso.net/dnm/api/v6/WNk1mr9x_Cd_2itp6pUM7-lXMJg/AAAABamuSjoGWWanxYA3520QXd1eonFyut48CX5mkBD3uBnYB7ahUeOa40kjjXklzDazuCRjJACbl1WeYwhuDsFFamIN8FKIG-4j1vE-vByguT8KYgc4Khv8mhmyqi-KNhLEfFTCODrucB1iNPdWb1QcYRfi8mMExpF1J9nzSle7UQ_XyXNvZyM4lFIDbOM2qw4xuJYiG75obv24LvF8FQo2N3ZbxsipOlrYMJZ7D8zDwx88Hr6G8FXUAayOFXNgBd0iwhe_DGivxsCVb1BrwsQkR0hAFwIsg52g2yExWaD0lTBbb9SIGD2ZxP7ueg.jpg?r=79a" style="width: 120px; margin-left: -10px; padding-top: 2px;" class="card-img-top" data-bs-toggle="modal" data-bs-target="#exampleModal00" alt="...">
+          </div>
+        </div>
+
+          <!-- Modal -->
+          <div class="modal fade" id="exampleModal00" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+              <img src="./image/Salar.png" style="width: 700px;" alt="">
+              <div class="modal-content" style="width: 700px; border: none; color: #c8c8c8;">
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                <div class="modal-body" style="background-color: #222222; padding-left: 40px; padding-right: 40px; margin-top: -30px;">
+                  <h2 style="font-size: 28px; color: white;"><b>Salar (Kannada)</b></h2>
+                  <img src="./image/Salar 1.png" alt="">
+                  <p style="margin-top: 10px;">The fate of a violently contested kingdom hangs on the fraught bond between two friends turned-foes in this saga of power, bloodshed and betrayal.</p>
+                  <p>cast : Prabhas, Prithviraj Sukumaran, Shruthi Hassan <br>
+                    Director : Prashanth Neel</p>
+                  <div class="d-flex" style="margin-left: -23px; margin-top: 20px;">
+                    <div>
+                      <button class="zoom-btn" style="width: 100px; height: 80px; background-color: transparent; border: none; color: #c8c8c8;"><i class="fa-solid fa-plus fa-2xl" style="color: #c8c8c8;"></i><p style="padding-top: 10px;">My List</p></button>
+                    </div>
+                    <div>
+                      <button class="zoom-btn" style="width: 80px; height: 80px; background-color: transparent; border: none; color: #c8c8c8;"><i class="fa-regular fa-thumbs-up fa-2xl" style="color: #c8c8c8;"></i><p style="padding-top: 10px;">Rate</p></button>
+                    </div>
+                    <div>
+                      <button class="zoom-btn" style="width: 100px; height: 80px; background-color: transparent; border: none; color: #c8c8c8;"><i class="fa-solid fa-arrow-down fa-2xl" style="color: #c8c8c8;"></i><p style="padding-top: 10px;">Download</p></button>
+                    </div>
+                  </div>
+
+                  <div class="d-flex" style="gap: 20px; margin-top: 20px;">
+                    <div class="card1" style="width: 20rem;">
+                      <img src="https://occ-0-4994-2186.1.nflxso.net/dnm/api/v6/rkETp35xJVj-6WaffQsS77awykM/AAAABdYfDMEGiOTCsGaXhX_G_tq73Ocf-Wa0wllMoTMKLETkfqXWaB9knMiMXcujEc65rLGH1rhmqMACAmwVqZAl8n8W8GP3I3wvWoU.webp?r=c60" class="card-img-top" alt="...">
+                    </div>
+                    <div class="card1" style="width: 20rem;">
+                      <img src="https://occ-0-2484-3663.1.nflxso.net/dnm/api/v6/rkETp35xJVj-6WaffQsS77awykM/AAAABdqS3LsYpbKa8-kl2GluHxRpXlk1SetRT8M1uF9REOlL6XceHYYB1BGUMvslZroEuDgYptaXjmhgrGiuSmugpuCbn6vZepbbptX5X-eTDwyRSyCJilsIDvAJM0LWpjixsQxc.jpg?r=4b3" class="card-img-top" alt="...">
+                    </div>
+                  </div>
+                  <div class="d-flex" style="gap: 20px; margin-top: 20px; margin-bottom: 20px;">
+                    <div class="card1" style="width: 20rem;">
+                      <img src="https://occ-0-4994-2186.1.nflxso.net/dnm/api/v6/rkETp35xJVj-6WaffQsS77awykM/AAAABdYfDMEGiOTCsGaXhX_G_tq73Ocf-Wa0wllMoTMKLETkfqXWaB9knMiMXcujEc65rLGH1rhmqMACAmwVqZAl8n8W8GP3I3wvWoU.webp?r=c60" class="card-img-top" alt="...">
+                    </div>
+                    <div class="card1" style="width: 20rem;">
+                      <img src="https://occ-0-2484-3663.1.nflxso.net/dnm/api/v6/rkETp35xJVj-6WaffQsS77awykM/AAAABdqS3LsYpbKa8-kl2GluHxRpXlk1SetRT8M1uF9REOlL6XceHYYB1BGUMvslZroEuDgYptaXjmhgrGiuSmugpuCbn6vZepbbptX5X-eTDwyRSyCJilsIDvAJM0LWpjixsQxc.jpg?r=4b3" class="card-img-top" alt="...">
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+      </div>
+      <div class="card1" style="width: 14rem;">
+        <div class="d-flex" style="margin-left: 8px">
+          <div>
+            <img src="./image/2.png" style="width: 120px;" data-bs-toggle="modal" data-bs-target="#exampleModal01" alt="">
+          </div>
+          <div>
+            <img src="https://occ-0-2484-3663.1.nflxso.net/dnm/api/v6/WNk1mr9x_Cd_2itp6pUM7-lXMJg/AAAABeEcWIPMo9AGA-rFigjx90EWS8yhe6vrrxY70otFNDFYF8eo-qLUA36sSaTJb68XqotYv0v1Y2Jel1azgYrnlGDFCJNkNUSslEUtDZ-kYrn8FcySm7ZzHNayn6_jHH2h5NNfxdx_n23QOowiYX5stHDYJaequa7xTDwDr56MX_wIxF0Xi2I5bbVornyCe3J4uSReAN_xNF3BB93X5aeqeUGtmMN4oRfXwlSP_6YZ2WociF-nzZXXkavY9Pz-qZJvTvALjU0HGLNLzp9l0r6x699WD9gy_PoTotoFIIiQ3Sw78e4eovEI0uNmTg.jpg?r=307" style="width: 120px; margin-left: -25px; padding-top: 2px;" class="card-img-top" data-bs-toggle="modal" data-bs-target="#exampleModal01" alt="...">
+          </div>
+        </div>
+        <!-- Modal -->
+        <div class="modal fade" id="exampleModal01" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+          <div class="modal-dialog">
+            <img src="./image/60 sec.png" style="width: 700px;" alt="">
+            <div class="modal-content" style="width: 700px; border: none; color: #c8c8c8;">
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              <div class="modal-body" style="background-color: #222222; padding-left: 40px; padding-right: 40px; margin-top: -30px;">
+                <h2 style="font-size: 28px; color: white;"><b>Sixty Minutes</b></h2>
+                <img src="./image/60 sec 1.png" alt="">
+                <p style="margin-top: 10px;">Desperate to keep custody of his daughter, a mixed arts fighter abondons a big match and race across Berlin to attend her birthday party.</p>
+                <p>Cast : Emilio Sakraya, Dennis Mojen, Marie Mouroum <br>
+                  Director : Oliver Kienle</p>
+                <div class="d-flex" style="margin-left: -23px; margin-top: 20px;">
+                  <div>
+                    <button class="zoom-btn" style="width: 100px; height: 80px; background-color: transparent; border: none; color: #c8c8c8;"><i class="fa-solid fa-plus fa-2xl" style="color: #c8c8c8;"></i><p style="padding-top: 10px;">My List</p></button>
+                  </div>
+                  <div>
+                    <button class="zoom-btn" style="width: 80px; height: 80px; background-color: transparent; border: none; color: #c8c8c8;"><i class="fa-regular fa-thumbs-up fa-2xl" style="color: #c8c8c8;"></i><p style="padding-top: 10px;">Rate</p></button>
+                  </div>
+                  <div>
+                    <button class="zoom-btn" style="width: 100px; height: 80px; background-color: transparent; border: none; color: #c8c8c8;"><i class="fa-solid fa-arrow-down fa-2xl" style="color: #c8c8c8;"></i><p style="padding-top: 10px;">Download</p></button>
+                  </div>
+                </div>
+
+                <div class="d-flex" style="gap: 20px; margin-top: 20px;">
+                  <div class="card1" style="width: 20rem;">
+                    <img src="https://occ-0-4994-2186.1.nflxso.net/dnm/api/v6/rkETp35xJVj-6WaffQsS77awykM/AAAABdYfDMEGiOTCsGaXhX_G_tq73Ocf-Wa0wllMoTMKLETkfqXWaB9knMiMXcujEc65rLGH1rhmqMACAmwVqZAl8n8W8GP3I3wvWoU.webp?r=c60" data-bs-toggle="modal" data-bs-target="#exampleModal2" class="card-img-top" alt="...">
+                  </div>
+                  <div class="card1" style="width: 20rem;">
+                    <img src="https://occ-0-2484-3663.1.nflxso.net/dnm/api/v6/rkETp35xJVj-6WaffQsS77awykM/AAAABdqS3LsYpbKa8-kl2GluHxRpXlk1SetRT8M1uF9REOlL6XceHYYB1BGUMvslZroEuDgYptaXjmhgrGiuSmugpuCbn6vZepbbptX5X-eTDwyRSyCJilsIDvAJM0LWpjixsQxc.jpg?r=4b3" data-bs-toggle="modal" data-bs-target="#exampleModal3" class="card-img-top" alt="...">
+                  </div>
+                </div>
+                <div class="d-flex" style="gap: 20px; margin-top: 20px; margin-bottom: 20px;">
+                  <div class="card1" style="width: 20rem;">
+                    <img src="https://occ-0-4994-2186.1.nflxso.net/dnm/api/v6/rkETp35xJVj-6WaffQsS77awykM/AAAABdYfDMEGiOTCsGaXhX_G_tq73Ocf-Wa0wllMoTMKLETkfqXWaB9knMiMXcujEc65rLGH1rhmqMACAmwVqZAl8n8W8GP3I3wvWoU.webp?r=c60" data-bs-toggle="modal" data-bs-target="#exampleModal4" class="card-img-top" alt="...">
+                  </div>
+                  <div class="card1" style="width: 20rem;">
+                    <img src="https://occ-0-2484-3663.1.nflxso.net/dnm/api/v6/rkETp35xJVj-6WaffQsS77awykM/AAAABdqS3LsYpbKa8-kl2GluHxRpXlk1SetRT8M1uF9REOlL6XceHYYB1BGUMvslZroEuDgYptaXjmhgrGiuSmugpuCbn6vZepbbptX5X-eTDwyRSyCJilsIDvAJM0LWpjixsQxc.jpg?r=4b3" data-bs-toggle="modal" data-bs-target="#exampleModal5" class="card-img-top" alt="...">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="card1" style="width: 14rem;">
+        <div class="d-flex" style="margin-left: 8px">
+          <div>
+            <img src="./image/3.png" style="width: 119px;" data-bs-toggle="modal" data-bs-target="#exampleModal01" alt="">
+          </div>
+          <div>
+            <img src="https://occ-0-2484-3663.1.nflxso.net/dnm/api/v6/WNk1mr9x_Cd_2itp6pUM7-lXMJg/AAAABWSz-4UpfpH3VaA7q0KSLq2jvfd6VTnFLOrj0Tlsclkr8LEasVQ9gd1W8--2TtJT71eiYbnnpAmd3n2sC1n8PirEbaerubHCIJTjzlM08piP-Fm7E52xONlfkktoMfin_u_anlsvA-WcoEdeeO9OPM4bpgnGccbDBvER_42gOwgp0XG6nNwszjOPt0Sot376aZ6WWXz1VHRRC118uEXPvSb5YN5qm45cwjkp2aj9d8LsxFeK0AHLv7QsCCkovZXnQVrqy3bLPzIk5MK1s-HcWOxkPGFZFH8yZxm1zwm1nPFMcH5gwjtZcOdqhA.jpg?r=a00" style="width: 120px; margin-left: -25px; padding-top: 2px;" class="card-img-top" data-bs-toggle="modal" data-bs-target="#exampleModal01" alt="...">
+          </div>
+        </div>
+        <!-- Modal -->
+        <div class="modal fade" id="exampleModal02" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+          <div class="modal-dialog">
+            <img src="./image/Outer Banks.png" style="width: 700px;" alt="">
+            <div class="modal-content" style="width: 700px; border: none; color: #c8c8c8;">
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              <div class="modal-body" style="background-color: #222222; padding-left: 40px; padding-right: 40px; margin-top: -30px;">
+                <h2 style="font-size: 28px; color: white;"><b>Outer Banks</b></h2>
+                <img src="./image/Outer Banks 1.png" alt="">
+                <p style="margin-top: 10px;">After a hurricane, Jhon B, JJ, Pope and Kiara plunge headlong into danger and adventure when they find a mysterious sunken wreck.</p>
+                <p>cast : Chase Stokes, Madelyn Cline, Madison Bailey <br>
+                  Creators : Josh Pate, Jonas Pate, Shannon Burke</p>
+                <div class="d-flex" style="margin-left: -23px; margin-top: 20px;">
+                  <div>
+                    <button class="zoom-btn" style="width: 100px; height: 80px; background-color: transparent; border: none; color: #c8c8c8;"><i class="fa-solid fa-plus fa-2xl" style="color: #c8c8c8;"></i><p style="padding-top: 10px;">My List</p></button>
+                  </div>
+                  <div>
+                    <button class="zoom-btn" style="width: 80px; height: 80px; background-color: transparent; border: none; color: #c8c8c8;"><i class="fa-regular fa-thumbs-up fa-2xl" style="color: #c8c8c8;"></i><p style="padding-top: 10px;">Rate</p></button>
+                  </div>
+                  <div>
+                    <button class="zoom-btn" style="width: 100px; height: 80px; background-color: transparent; border: none; color: #c8c8c8;"><i class="fa-solid fa-arrow-down fa-2xl" style="color: #c8c8c8;"></i><p style="padding-top: 10px;">Download</p></button>
+                  </div>
+                </div>
+
+                <div class="d-flex" style="gap: 20px; margin-top: 20px;">
+                  <div class="card1" style="width: 20rem;">
+                    <img src="https://occ-0-4994-2186.1.nflxso.net/dnm/api/v6/rkETp35xJVj-6WaffQsS77awykM/AAAABdYfDMEGiOTCsGaXhX_G_tq73Ocf-Wa0wllMoTMKLETkfqXWaB9knMiMXcujEc65rLGH1rhmqMACAmwVqZAl8n8W8GP3I3wvWoU.webp?r=c60" class="card-img-top" alt="...">
+                  </div>
+                  <div class="card1" style="width: 20rem;">
+                    <img src="https://occ-0-2484-3663.1.nflxso.net/dnm/api/v6/rkETp35xJVj-6WaffQsS77awykM/AAAABdqS3LsYpbKa8-kl2GluHxRpXlk1SetRT8M1uF9REOlL6XceHYYB1BGUMvslZroEuDgYptaXjmhgrGiuSmugpuCbn6vZepbbptX5X-eTDwyRSyCJilsIDvAJM0LWpjixsQxc.jpg?r=4b3" class="card-img-top" alt="...">
+                  </div>
+                </div>
+                <div class="d-flex" style="gap: 20px; margin-top: 20px; margin-bottom: 20px;">
+                  <div class="card1" style="width: 20rem;">
+                    <img src="https://occ-0-4994-2186.1.nflxso.net/dnm/api/v6/rkETp35xJVj-6WaffQsS77awykM/AAAABdYfDMEGiOTCsGaXhX_G_tq73Ocf-Wa0wllMoTMKLETkfqXWaB9knMiMXcujEc65rLGH1rhmqMACAmwVqZAl8n8W8GP3I3wvWoU.webp?r=c60" class="card-img-top" alt="...">
+                  </div>
+                  <div class="card1" style="width: 20rem;">
+                    <img src="https://occ-0-2484-3663.1.nflxso.net/dnm/api/v6/rkETp35xJVj-6WaffQsS77awykM/AAAABdqS3LsYpbKa8-kl2GluHxRpXlk1SetRT8M1uF9REOlL6XceHYYB1BGUMvslZroEuDgYptaXjmhgrGiuSmugpuCbn6vZepbbptX5X-eTDwyRSyCJilsIDvAJM0LWpjixsQxc.jpg?r=4b3" class="card-img-top" alt="...">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="card1" style="width: 14rem;">
+        <div class="d-flex" style="margin-left: 8px">
+          <div>
+            <img src="./image/4.png" style="width: 127px;" data-bs-toggle="modal" data-bs-target="#exampleModal01" alt="">
+          </div>
+          <div>
+            <img src="https://occ-0-2484-3663.1.nflxso.net/dnm/api/v6/WNk1mr9x_Cd_2itp6pUM7-lXMJg/AAAABTvSWKrwopHxL16UFsoOoeM9GPytzGdl1FDaVQNDH_rbFoWFrcTFun9c7DS0S7I2sy58FTz7U1uisZtULsARpnTzbg5KAv1kSUgkXN_iet97rcDP9gzAGmpj0W6zCmwp7ZqRTaQ2Zj1wQQ5JejmG8UJ4I-0r1qiHQHEQ0QoRsWbiBQfMKE5M0opY7umBptl84MpXgm5LDwtjfsLKnV-4a89TFvWHOA7Imy_22rTCNDL_b6owwR7VeHuKXqwp4n7iYGzI7XzdFNb0T-67nx-T7noxkgATOvd2cwl59k6F7wL5FbDJv0lA4Bpsp9mMLHkIeKCgWUzLzD7M5sToq7yFAD9sJ2RrD2KPpJ1XRb_uoBpeNE-VMa2DxC954ofydOatcXdFrs1XPtNEh_18lS_K-7NO-7Mt_9kL9ChlsVbWz_UmRRFC4GA9GCS7XTnKtmFGWk8CXd41qg.jpg?r=e3c" style="width: 120px; margin-left: -32px; padding-top: 2px;" class="card-img-top" data-bs-toggle="modal" data-bs-target="#exampleModal01" alt="...">
+          </div>
+        </div>
+        <!-- Modal -->
+        <div class="modal fade" id="exampleModal03" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+          <div class="modal-dialog">
+            <img src="./image/The Dark Knight.png" style="width: 700px;" alt="">
+            <div class="modal-content" style="width: 700px; border: none; color: #c8c8c8;">
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              <div class="modal-body" style="background-color: #222222; padding-left: 40px; padding-right: 40px; margin-top: -30px;">
+                <h2 style="font-size: 28px; color: white;"><b>The Dark Knight</b></h2>
+                <img src="./image/The Dark Knight 1.png" alt="">
+                <p style="margin-top: 10px;">Batman, Lieutenant Gordon and District Attorney Harvey Dent go up against the Joker, a criminal mastermind in ghoulish makeup terrorizing Gotham City.</p>
+                <p>Cast : Christian Bale, Heath Ledger, Aaron Eckhart <br>
+                  Director : Christopher Nolan</p>
+                <div class="d-flex" style="margin-left: -23px; margin-top: 20px;">
+                  <div>
+                    <button class="zoom-btn" style="width: 100px; height: 80px; background-color: transparent; border: none; color: #c8c8c8;"><i class="fa-solid fa-plus fa-2xl" style="color: #c8c8c8;"></i><p style="padding-top: 10px;">My List</p></button>
+                  </div>
+                  <div>
+                    <button class="zoom-btn" style="width: 80px; height: 80px; background-color: transparent; border: none; color: #c8c8c8;"><i class="fa-regular fa-thumbs-up fa-2xl" style="color: #c8c8c8;"></i><p style="padding-top: 10px;">Rate</p></button>
+                  </div>
+                  <div>
+                    <button class="zoom-btn" style="width: 100px; height: 80px; background-color: transparent; border: none; color: #c8c8c8;"><i class="fa-solid fa-arrow-down fa-2xl" style="color: #c8c8c8;"></i><p style="padding-top: 10px;">Download</p></button>
+                  </div>
+                </div>
+
+                <div class="d-flex" style="gap: 20px; margin-top: 20px;">
+                  <div class="card1" style="width: 20rem;">
+                    <img src="https://occ-0-4994-2186.1.nflxso.net/dnm/api/v6/rkETp35xJVj-6WaffQsS77awykM/AAAABdYfDMEGiOTCsGaXhX_G_tq73Ocf-Wa0wllMoTMKLETkfqXWaB9knMiMXcujEc65rLGH1rhmqMACAmwVqZAl8n8W8GP3I3wvWoU.webp?r=c60" class="card-img-top" alt="...">
+                  </div>
+                  <div class="card1" style="width: 20rem;">
+                    <img src="https://occ-0-2484-3663.1.nflxso.net/dnm/api/v6/rkETp35xJVj-6WaffQsS77awykM/AAAABdqS3LsYpbKa8-kl2GluHxRpXlk1SetRT8M1uF9REOlL6XceHYYB1BGUMvslZroEuDgYptaXjmhgrGiuSmugpuCbn6vZepbbptX5X-eTDwyRSyCJilsIDvAJM0LWpjixsQxc.jpg?r=4b3" class="card-img-top" alt="...">
+                  </div>
+                </div>
+                <div class="d-flex" style="gap: 20px; margin-top: 20px; margin-bottom: 20px;">
+                  <div class="card1" style="width: 20rem;">
+                    <img src="https://occ-0-4994-2186.1.nflxso.net/dnm/api/v6/rkETp35xJVj-6WaffQsS77awykM/AAAABdYfDMEGiOTCsGaXhX_G_tq73Ocf-Wa0wllMoTMKLETkfqXWaB9knMiMXcujEc65rLGH1rhmqMACAmwVqZAl8n8W8GP3I3wvWoU.webp?r=c60" class="card-img-top" alt="...">
+                  </div>
+                  <div class="card1" style="width: 20rem;">
+                    <img src="https://occ-0-2484-3663.1.nflxso.net/dnm/api/v6/rkETp35xJVj-6WaffQsS77awykM/AAAABdqS3LsYpbKa8-kl2GluHxRpXlk1SetRT8M1uF9REOlL6XceHYYB1BGUMvslZroEuDgYptaXjmhgrGiuSmugpuCbn6vZepbbptX5X-eTDwyRSyCJilsIDvAJM0LWpjixsQxc.jpg?r=4b3" class="card-img-top" alt="...">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="card1" style="width: 14rem;">
+        <div class="d-flex" style="margin-left: 8px">
+          <div>
+            <img src="./image/5.png" style="width: 118px;" data-bs-toggle="modal" data-bs-target="#exampleModal01" alt="">
+          </div>
+          <div>
+            <img src="https://occ-0-2484-3663.1.nflxso.net/dnm/api/v6/WNk1mr9x_Cd_2itp6pUM7-lXMJg/AAAABe5ufQQpSBHHnRpzC8LWxMXwhqiRvD_OUgO4WKvz0QL3L52hhcoc2Ul9g-99laZZQMrLBGSUmdz0VKm26UT0nZaiPR-4RGGLf5_Y7vovT9E3H52kySnc_pJTsa_KwHUNE7vBAA.jpg?r=002" style="width: 120px; margin-left: -23px; padding-top: 2px;" class="card-img-top" data-bs-toggle="modal" data-bs-target="#exampleModal01" alt="...">
+          </div>
+        </div>
+        <!-- Modal -->
+        <div class="modal fade" id="exampleModal04" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+          <div class="modal-dialog">
+            <img src="./image/Fast & Furious.png" style="width: 700px;" alt="">
+            <div class="modal-content" style="width: 700px; border: none; color: #c8c8c8;">
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              <div class="modal-body" style="background-color: #222222; padding-left: 40px; padding-right: 40px; margin-top: -30px;">
+                <h2 style="font-size: 28px; color: white;"><b>Fast & Furious</b></h2>
+                <img src="./image/Fast and Furious 1.png" alt="">
+                <p style="margin-top: 10px;">After six years on the lam, fugitive Dom Toretto returns to Los Angeles and teams up with rouge FBI agent Brian O'conner to bring down a common enemy.</p>
+                <p>Cast : Vin Diesel, Paul Walker, Jordana Brewster <br>
+                  Director : Justin Lin</p>
+                <div class="d-flex" style="margin-left: -23px; margin-top: 20px;">
+                  <div>
+                    <button class="zoom-btn" style="width: 100px; height: 80px; background-color: transparent; border: none; color: #c8c8c8;"><i class="fa-solid fa-plus fa-2xl" style="color: #c8c8c8;"></i><p style="padding-top: 10px;">My List</p></button>
+                  </div>
+                  <div>
+                    <button class="zoom-btn" style="width: 80px; height: 80px; background-color: transparent; border: none; color: #c8c8c8;"><i class="fa-regular fa-thumbs-up fa-2xl" style="color: #c8c8c8;"></i><p style="padding-top: 10px;">Rate</p></button>
+                  </div>
+                  <div>
+                    <button class="zoom-btn" style="width: 100px; height: 80px; background-color: transparent; border: none; color: #c8c8c8;"><i class="fa-solid fa-arrow-down fa-2xl" style="color: #c8c8c8;"></i><p style="padding-top: 10px;">Download</p></button>
+                  </div>
+                </div>
+
+                <div class="d-flex" style="gap: 20px; margin-top: 20px;">
+                  <div class="card1" style="width: 20rem;">
+                    <img src="https://occ-0-4994-2186.1.nflxso.net/dnm/api/v6/rkETp35xJVj-6WaffQsS77awykM/AAAABdYfDMEGiOTCsGaXhX_G_tq73Ocf-Wa0wllMoTMKLETkfqXWaB9knMiMXcujEc65rLGH1rhmqMACAmwVqZAl8n8W8GP3I3wvWoU.webp?r=c60" class="card-img-top" alt="...">
+                  </div>
+                  <div class="card1" style="width: 20rem;">
+                    <img src="https://occ-0-2484-3663.1.nflxso.net/dnm/api/v6/rkETp35xJVj-6WaffQsS77awykM/AAAABdqS3LsYpbKa8-kl2GluHxRpXlk1SetRT8M1uF9REOlL6XceHYYB1BGUMvslZroEuDgYptaXjmhgrGiuSmugpuCbn6vZepbbptX5X-eTDwyRSyCJilsIDvAJM0LWpjixsQxc.jpg?r=4b3" class="card-img-top" alt="...">
+                  </div>
+                </div>
+                <div class="d-flex" style="gap: 20px; margin-top: 20px; margin-bottom: 20px;">
+                  <div class="card1" style="width: 20rem;">
+                    <img src="https://occ-0-4994-2186.1.nflxso.net/dnm/api/v6/rkETp35xJVj-6WaffQsS77awykM/AAAABdYfDMEGiOTCsGaXhX_G_tq73Ocf-Wa0wllMoTMKLETkfqXWaB9knMiMXcujEc65rLGH1rhmqMACAmwVqZAl8n8W8GP3I3wvWoU.webp?r=c60" class="card-img-top" alt="...">
+                  </div>
+                  <div class="card1" style="width: 20rem;">
+                    <img src="https://occ-0-2484-3663.1.nflxso.net/dnm/api/v6/rkETp35xJVj-6WaffQsS77awykM/AAAABdqS3LsYpbKa8-kl2GluHxRpXlk1SetRT8M1uF9REOlL6XceHYYB1BGUMvslZroEuDgYptaXjmhgrGiuSmugpuCbn6vZepbbptX5X-eTDwyRSyCJilsIDvAJM0LWpjixsQxc.jpg?r=4b3" class="card-img-top" alt="...">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="card1" style="width: 14rem;">
+        <div class="d-flex" style="margin-left: 8px">
+          <div>
+            <img src="./image/6.png" style="width: 119px;" data-bs-toggle="modal" data-bs-target="#exampleModal01" alt="">
+          </div>
+          <div>
+            <img src="https://occ-0-2484-3663.1.nflxso.net/dnm/api/v6/WNk1mr9x_Cd_2itp6pUM7-lXMJg/AAAABcSCV-U_JS2RBfGn0jBerkheN0sXBHtb1dPiDJJmg43CeQMI323gnRXE8fxkoIKd89LkV_iuuALnBh7Slh9F1-DWNzRoLwNOQXIFVdOgNyhJYW71CpOb8cJZHnreUqFFfWzEUThI0UmnaikhkMI9nyk-srrJssavfceg7sSla2POUYRRIHfU943VAms-Zjl-DWFwzk_A9xfYHBZoLBSo45QfPAp_sFS6RZWtFMGoQ7IefuYtzkk8wB_GmbkmraA1KUm1co7ks5yFwjvWyZnIwgDj1KgObn8XS5Mx81iq35O3BU7CJcbGFaa9xw.jpg?r=bdc" style="width: 120px; margin-left: -24px; padding-top: 2px;" class="card-img-top" data-bs-toggle="modal" data-bs-target="#exampleModal01" alt="...">
+          </div>
+        </div>
+        <!-- Modal -->
+        <div class="modal fade" id="exampleModal05" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+          <div class="modal-dialog">
+            <img src="./image/Thunivu.png" style="width: 700px;" alt="">
+            <div class="modal-content" style="width: 700px; border: none; color: #c8c8c8;">
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              <div class="modal-body" style="background-color: #222222; padding-left: 40px; padding-right: 40px; margin-top: -30px;">
+                <h2 style="font-size: 28px; color: white;"><b>Thunivu (Malayalam)</b></h2>
+                <img src="./image/Thunivu 1.png" alt="">
+                <p style="margin-top: 10px;">A major bank heist takes an unnerving turn when a mysterious interloper known only as Dark Devil Begins to hijack the operation.</p>
+                <div class="d-flex" style="margin-left: -23px; margin-top: 20px;">
+                  <div>
+                    <button class="zoom-btn" style="width: 100px; height: 80px; background-color: transparent; border: none; color: #c8c8c8;"><i class="fa-solid fa-plus fa-2xl" style="color: #c8c8c8;"></i><p style="padding-top: 10px;">My List</p></button>
+                  </div>
+                  <div>
+                    <button class="zoom-btn" style="width: 80px; height: 80px; background-color: transparent; border: none; color: #c8c8c8;"><i class="fa-regular fa-thumbs-up fa-2xl" style="color: #c8c8c8;"></i><p style="padding-top: 10px;">Rate</p></button>
+                  </div>
+                  <div>
+                    <button class="zoom-btn" style="width: 100px; height: 80px; background-color: transparent; border: none; color: #c8c8c8;"><i class="fa-solid fa-arrow-down fa-2xl" style="color: #c8c8c8;"></i><p style="padding-top: 10px;">Download</p></button>
+                  </div>
+                </div>
+
+                <div class="d-flex" style="gap: 20px; margin-top: 20px;">
+                  <div class="card1" style="width: 20rem;">
+                    <img src="https://occ-0-4994-2186.1.nflxso.net/dnm/api/v6/rkETp35xJVj-6WaffQsS77awykM/AAAABdYfDMEGiOTCsGaXhX_G_tq73Ocf-Wa0wllMoTMKLETkfqXWaB9knMiMXcujEc65rLGH1rhmqMACAmwVqZAl8n8W8GP3I3wvWoU.webp?r=c60" class="card-img-top" alt="...">
+                  </div>
+                  <div class="card1" style="width: 20rem;">
+                    <img src="https://occ-0-2484-3663.1.nflxso.net/dnm/api/v6/rkETp35xJVj-6WaffQsS77awykM/AAAABdqS3LsYpbKa8-kl2GluHxRpXlk1SetRT8M1uF9REOlL6XceHYYB1BGUMvslZroEuDgYptaXjmhgrGiuSmugpuCbn6vZepbbptX5X-eTDwyRSyCJilsIDvAJM0LWpjixsQxc.jpg?r=4b3" class="card-img-top" alt="...">
+                  </div>
+                </div>
+                <div class="d-flex" style="gap: 20px; margin-top: 20px; margin-bottom: 20px;">
+                  <div class="card1" style="width: 20rem;">
+                    <img src="https://occ-0-4994-2186.1.nflxso.net/dnm/api/v6/rkETp35xJVj-6WaffQsS77awykM/AAAABdYfDMEGiOTCsGaXhX_G_tq73Ocf-Wa0wllMoTMKLETkfqXWaB9knMiMXcujEc65rLGH1rhmqMACAmwVqZAl8n8W8GP3I3wvWoU.webp?r=c60" class="card-img-top" alt="...">
+                  </div>
+                  <div class="card1" style="width: 20rem;">
+                    <img src="https://occ-0-2484-3663.1.nflxso.net/dnm/api/v6/rkETp35xJVj-6WaffQsS77awykM/AAAABdqS3LsYpbKa8-kl2GluHxRpXlk1SetRT8M1uF9REOlL6XceHYYB1BGUMvslZroEuDgYptaXjmhgrGiuSmugpuCbn6vZepbbptX5X-eTDwyRSyCJilsIDvAJM0LWpjixsQxc.jpg?r=4b3" class="card-img-top" alt="...">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Indian Movies  sec 4-->
+
+    <h1 style="color: white; font-size: 23px; font-weight: 550; margin-top: 50px; padding-left: 50px;">Indian Movies</h1>
+
+    <div class="card-container1">
+      <div class="card1" style="width: 14rem;">
+        <img src="https://occ-0-2484-3663.1.nflxso.net/dnm/api/v6/rkETp35xJVj-6WaffQsS77awykM/AAAABV4w68xqoDvZi0MfJWOxixAt9UoO9rEFEVdAVv8pZ7nmdQxaOjXkfjbLSts443bZ9AGSTrEKtkezs-i5YP2Lh2Z_u_Gb9a9O1jwCdyEgoU9Au6xsLLn6bbRBzkaA4t5TumZk52wdN6FJDxtMGN_bvc_6J3ktRS1IH-6M5wDf5CS51Edo329LiR2_KL1O9C94Ph0XN7m3eGlprelUK9loJZtFWd2yimBTOYW-dE4yV9UTZ78jyfPMaobJDfG_c8ywiyy5h1nzTaFgu6c-LIH2msyREg.webp?r=358" class="card-img-top" data-bs-toggle="modal" data-bs-target="#exampleModal00" alt="...">
+          <!-- Modal -->
+          <div class="modal fade" id="exampleModal00" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+              <img src="./image/Salar.png" style="width: 700px;" alt="">
+              <div class="modal-content" style="width: 700px; border: none; color: #c8c8c8;">
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                <div class="modal-body" style="background-color: #222222; padding-left: 40px; padding-right: 40px; margin-top: -30px;">
+                  <h2 style="font-size: 28px; color: white;"><b>Salar (Kannada)</b></h2>
+                  <img src="./image/Salar 1.png" alt="">
+                  <p style="margin-top: 10px;">The fate of a violently contested kingdom hangs on the fraught bond between two friends turned-foes in this saga of power, bloodshed and betrayal.</p>
+                  <p>cast : Prabhas, Prithviraj Sukumaran, Shruthi Hassan <br>
+                    Director : Prashanth Neel</p>
+                  <div class="d-flex" style="margin-left: -23px; margin-top: 20px;">
+                    <div>
+                      <button class="zoom-btn" style="width: 100px; height: 80px; background-color: transparent; border: none; color: #c8c8c8;"><i class="fa-solid fa-plus fa-2xl" style="color: #c8c8c8;"></i><p style="padding-top: 10px;">My List</p></button>
+                    </div>
+                    <div>
+                      <button class="zoom-btn" style="width: 80px; height: 80px; background-color: transparent; border: none; color: #c8c8c8;"><i class="fa-regular fa-thumbs-up fa-2xl" style="color: #c8c8c8;"></i><p style="padding-top: 10px;">Rate</p></button>
+                    </div>
+                    <div>
+                      <button class="zoom-btn" style="width: 100px; height: 80px; background-color: transparent; border: none; color: #c8c8c8;"><i class="fa-solid fa-arrow-down fa-2xl" style="color: #c8c8c8;"></i><p style="padding-top: 10px;">Download</p></button>
+                    </div>
+                  </div>
+
+                  <div class="d-flex" style="gap: 20px; margin-top: 20px;">
+                    <div class="card1" style="width: 20rem;">
+                      <img src="https://occ-0-4994-2186.1.nflxso.net/dnm/api/v6/rkETp35xJVj-6WaffQsS77awykM/AAAABdYfDMEGiOTCsGaXhX_G_tq73Ocf-Wa0wllMoTMKLETkfqXWaB9knMiMXcujEc65rLGH1rhmqMACAmwVqZAl8n8W8GP3I3wvWoU.webp?r=c60" class="card-img-top" alt="...">
+                    </div>
+                    <div class="card1" style="width: 20rem;">
+                      <img src="https://occ-0-2484-3663.1.nflxso.net/dnm/api/v6/rkETp35xJVj-6WaffQsS77awykM/AAAABdqS3LsYpbKa8-kl2GluHxRpXlk1SetRT8M1uF9REOlL6XceHYYB1BGUMvslZroEuDgYptaXjmhgrGiuSmugpuCbn6vZepbbptX5X-eTDwyRSyCJilsIDvAJM0LWpjixsQxc.jpg?r=4b3" class="card-img-top" alt="...">
+                    </div>
+                  </div>
+                  <div class="d-flex" style="gap: 20px; margin-top: 20px; margin-bottom: 20px;">
+                    <div class="card1" style="width: 20rem;">
+                      <img src="https://occ-0-4994-2186.1.nflxso.net/dnm/api/v6/rkETp35xJVj-6WaffQsS77awykM/AAAABdYfDMEGiOTCsGaXhX_G_tq73Ocf-Wa0wllMoTMKLETkfqXWaB9knMiMXcujEc65rLGH1rhmqMACAmwVqZAl8n8W8GP3I3wvWoU.webp?r=c60" class="card-img-top" alt="...">
+                    </div>
+                    <div class="card1" style="width: 20rem;">
+                      <img src="https://occ-0-2484-3663.1.nflxso.net/dnm/api/v6/rkETp35xJVj-6WaffQsS77awykM/AAAABdqS3LsYpbKa8-kl2GluHxRpXlk1SetRT8M1uF9REOlL6XceHYYB1BGUMvslZroEuDgYptaXjmhgrGiuSmugpuCbn6vZepbbptX5X-eTDwyRSyCJilsIDvAJM0LWpjixsQxc.jpg?r=4b3" class="card-img-top" alt="...">
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+      </div>
+      <div class="card1" style="width: 14rem;">
+        <img src="https://occ-0-2484-3663.1.nflxso.net/dnm/api/v6/rkETp35xJVj-6WaffQsS77awykM/AAAABcjZzmNOrhDFRhM6RCZZyQB9qwFPyDjZaJHwixakcpDiR16FKxwE58qKI3o96D3byfuVuc0lC3QvfWCYs-mW721wdUFlmesOyJI.webp?r=7e9" data-bs-toggle="modal" data-bs-target="#exampleModal01" class="card-img-top" alt="...">
+        <!-- Modal -->
+        <div class="modal fade" id="exampleModal01" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+          <div class="modal-dialog">
+            <img src="./image/60 sec.png" style="width: 700px;" alt="">
+            <div class="modal-content" style="width: 700px; border: none; color: #c8c8c8;">
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              <div class="modal-body" style="background-color: #222222; padding-left: 40px; padding-right: 40px; margin-top: -30px;">
+                <h2 style="font-size: 28px; color: white;"><b>Sixty Minutes</b></h2>
+                <img src="./image/60 sec 1.png" alt="">
+                <p style="margin-top: 10px;">Desperate to keep custody of his daughter, a mixed arts fighter abondons a big match and race across Berlin to attend her birthday party.</p>
+                <p>Cast : Emilio Sakraya, Dennis Mojen, Marie Mouroum <br>
+                  Director : Oliver Kienle</p>
+                <div class="d-flex" style="margin-left: -23px; margin-top: 20px;">
+                  <div>
+                    <button class="zoom-btn" style="width: 100px; height: 80px; background-color: transparent; border: none; color: #c8c8c8;"><i class="fa-solid fa-plus fa-2xl" style="color: #c8c8c8;"></i><p style="padding-top: 10px;">My List</p></button>
+                  </div>
+                  <div>
+                    <button class="zoom-btn" style="width: 80px; height: 80px; background-color: transparent; border: none; color: #c8c8c8;"><i class="fa-regular fa-thumbs-up fa-2xl" style="color: #c8c8c8;"></i><p style="padding-top: 10px;">Rate</p></button>
+                  </div>
+                  <div>
+                    <button class="zoom-btn" style="width: 100px; height: 80px; background-color: transparent; border: none; color: #c8c8c8;"><i class="fa-solid fa-arrow-down fa-2xl" style="color: #c8c8c8;"></i><p style="padding-top: 10px;">Download</p></button>
+                  </div>
+                </div>
+
+                <div class="d-flex" style="gap: 20px; margin-top: 20px;">
+                  <div class="card1" style="width: 20rem;">
+                    <img src="https://occ-0-4994-2186.1.nflxso.net/dnm/api/v6/rkETp35xJVj-6WaffQsS77awykM/AAAABdYfDMEGiOTCsGaXhX_G_tq73Ocf-Wa0wllMoTMKLETkfqXWaB9knMiMXcujEc65rLGH1rhmqMACAmwVqZAl8n8W8GP3I3wvWoU.webp?r=c60" data-bs-toggle="modal" data-bs-target="#exampleModal2" class="card-img-top" alt="...">
+                  </div>
+                  <div class="card1" style="width: 20rem;">
+                    <img src="https://occ-0-2484-3663.1.nflxso.net/dnm/api/v6/rkETp35xJVj-6WaffQsS77awykM/AAAABdqS3LsYpbKa8-kl2GluHxRpXlk1SetRT8M1uF9REOlL6XceHYYB1BGUMvslZroEuDgYptaXjmhgrGiuSmugpuCbn6vZepbbptX5X-eTDwyRSyCJilsIDvAJM0LWpjixsQxc.jpg?r=4b3" data-bs-toggle="modal" data-bs-target="#exampleModal3" class="card-img-top" alt="...">
+                  </div>
+                </div>
+                <div class="d-flex" style="gap: 20px; margin-top: 20px; margin-bottom: 20px;">
+                  <div class="card1" style="width: 20rem;">
+                    <img src="https://occ-0-4994-2186.1.nflxso.net/dnm/api/v6/rkETp35xJVj-6WaffQsS77awykM/AAAABdYfDMEGiOTCsGaXhX_G_tq73Ocf-Wa0wllMoTMKLETkfqXWaB9knMiMXcujEc65rLGH1rhmqMACAmwVqZAl8n8W8GP3I3wvWoU.webp?r=c60" data-bs-toggle="modal" data-bs-target="#exampleModal4" class="card-img-top" alt="...">
+                  </div>
+                  <div class="card1" style="width: 20rem;">
+                    <img src="https://occ-0-2484-3663.1.nflxso.net/dnm/api/v6/rkETp35xJVj-6WaffQsS77awykM/AAAABdqS3LsYpbKa8-kl2GluHxRpXlk1SetRT8M1uF9REOlL6XceHYYB1BGUMvslZroEuDgYptaXjmhgrGiuSmugpuCbn6vZepbbptX5X-eTDwyRSyCJilsIDvAJM0LWpjixsQxc.jpg?r=4b3" data-bs-toggle="modal" data-bs-target="#exampleModal5" class="card-img-top" alt="...">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="card1" style="width: 14rem;">
+        <img src="https://occ-0-2484-3663.1.nflxso.net/dnm/api/v6/rkETp35xJVj-6WaffQsS77awykM/AAAABX9nfca07eWKJditkobhgeaFt2Vzb8i4fBF7Via8n0lsN0A1GbKzE-PK3tJJRWo1ko_zgTX8I_W2DpsMjYVZpqZUT0mQUaPqdKo.webp?r=0b6" data-bs-toggle="modal" data-bs-target="#exampleModal02" class="card-img-top" alt="...">
+        <!-- Modal -->
+        <div class="modal fade" id="exampleModal02" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+          <div class="modal-dialog">
+            <img src="./image/Outer Banks.png" style="width: 700px;" alt="">
+            <div class="modal-content" style="width: 700px; border: none; color: #c8c8c8;">
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              <div class="modal-body" style="background-color: #222222; padding-left: 40px; padding-right: 40px; margin-top: -30px;">
+                <h2 style="font-size: 28px; color: white;"><b>Outer Banks</b></h2>
+                <img src="./image/Outer Banks 1.png" alt="">
+                <p style="margin-top: 10px;">After a hurricane, Jhon B, JJ, Pope and Kiara plunge headlong into danger and adventure when they find a mysterious sunken wreck.</p>
+                <p>cast : Chase Stokes, Madelyn Cline, Madison Bailey <br>
+                  Creators : Josh Pate, Jonas Pate, Shannon Burke</p>
+                <div class="d-flex" style="margin-left: -23px; margin-top: 20px;">
+                  <div>
+                    <button class="zoom-btn" style="width: 100px; height: 80px; background-color: transparent; border: none; color: #c8c8c8;"><i class="fa-solid fa-plus fa-2xl" style="color: #c8c8c8;"></i><p style="padding-top: 10px;">My List</p></button>
+                  </div>
+                  <div>
+                    <button class="zoom-btn" style="width: 80px; height: 80px; background-color: transparent; border: none; color: #c8c8c8;"><i class="fa-regular fa-thumbs-up fa-2xl" style="color: #c8c8c8;"></i><p style="padding-top: 10px;">Rate</p></button>
+                  </div>
+                  <div>
+                    <button class="zoom-btn" style="width: 100px; height: 80px; background-color: transparent; border: none; color: #c8c8c8;"><i class="fa-solid fa-arrow-down fa-2xl" style="color: #c8c8c8;"></i><p style="padding-top: 10px;">Download</p></button>
+                  </div>
+                </div>
+
+                <div class="d-flex" style="gap: 20px; margin-top: 20px;">
+                  <div class="card1" style="width: 20rem;">
+                    <img src="https://occ-0-4994-2186.1.nflxso.net/dnm/api/v6/rkETp35xJVj-6WaffQsS77awykM/AAAABdYfDMEGiOTCsGaXhX_G_tq73Ocf-Wa0wllMoTMKLETkfqXWaB9knMiMXcujEc65rLGH1rhmqMACAmwVqZAl8n8W8GP3I3wvWoU.webp?r=c60" class="card-img-top" alt="...">
+                  </div>
+                  <div class="card1" style="width: 20rem;">
+                    <img src="https://occ-0-2484-3663.1.nflxso.net/dnm/api/v6/rkETp35xJVj-6WaffQsS77awykM/AAAABdqS3LsYpbKa8-kl2GluHxRpXlk1SetRT8M1uF9REOlL6XceHYYB1BGUMvslZroEuDgYptaXjmhgrGiuSmugpuCbn6vZepbbptX5X-eTDwyRSyCJilsIDvAJM0LWpjixsQxc.jpg?r=4b3" class="card-img-top" alt="...">
+                  </div>
+                </div>
+                <div class="d-flex" style="gap: 20px; margin-top: 20px; margin-bottom: 20px;">
+                  <div class="card1" style="width: 20rem;">
+                    <img src="https://occ-0-4994-2186.1.nflxso.net/dnm/api/v6/rkETp35xJVj-6WaffQsS77awykM/AAAABdYfDMEGiOTCsGaXhX_G_tq73Ocf-Wa0wllMoTMKLETkfqXWaB9knMiMXcujEc65rLGH1rhmqMACAmwVqZAl8n8W8GP3I3wvWoU.webp?r=c60" class="card-img-top" alt="...">
+                  </div>
+                  <div class="card1" style="width: 20rem;">
+                    <img src="https://occ-0-2484-3663.1.nflxso.net/dnm/api/v6/rkETp35xJVj-6WaffQsS77awykM/AAAABdqS3LsYpbKa8-kl2GluHxRpXlk1SetRT8M1uF9REOlL6XceHYYB1BGUMvslZroEuDgYptaXjmhgrGiuSmugpuCbn6vZepbbptX5X-eTDwyRSyCJilsIDvAJM0LWpjixsQxc.jpg?r=4b3" class="card-img-top" alt="...">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="card1" style="width: 14rem;">
+        <img src="https://occ-0-2484-3663.1.nflxso.net/dnm/api/v6/rkETp35xJVj-6WaffQsS77awykM/AAAABRLauMXTiVoDSNbP-WDgUAkxJhwWJvs_-LRpe1_yMd8QkFa54vFwaGDkJOdDSlHeUF8xQAkCWoMFpkbe2ZWxB15pnwNWBl2fQE24cjZHabX9Xuneg2fTNtLoydYBvPZQBjta.jpg?r=23d" data-bs-toggle="modal" data-bs-target="#exampleModal03" class="card-img-top" alt="...">
+        <!-- Modal -->
+        <div class="modal fade" id="exampleModal03" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+          <div class="modal-dialog">
+            <img src="./image/The Dark Knight.png" style="width: 700px;" alt="">
+            <div class="modal-content" style="width: 700px; border: none; color: #c8c8c8;">
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              <div class="modal-body" style="background-color: #222222; padding-left: 40px; padding-right: 40px; margin-top: -30px;">
+                <h2 style="font-size: 28px; color: white;"><b>The Dark Knight</b></h2>
+                <img src="./image/The Dark Knight 1.png" alt="">
+                <p style="margin-top: 10px;">Batman, Lieutenant Gordon and District Attorney Harvey Dent go up against the Joker, a criminal mastermind in ghoulish makeup terrorizing Gotham City.</p>
+                <p>Cast : Christian Bale, Heath Ledger, Aaron Eckhart <br>
+                  Director : Christopher Nolan</p>
+                <div class="d-flex" style="margin-left: -23px; margin-top: 20px;">
+                  <div>
+                    <button class="zoom-btn" style="width: 100px; height: 80px; background-color: transparent; border: none; color: #c8c8c8;"><i class="fa-solid fa-plus fa-2xl" style="color: #c8c8c8;"></i><p style="padding-top: 10px;">My List</p></button>
+                  </div>
+                  <div>
+                    <button class="zoom-btn" style="width: 80px; height: 80px; background-color: transparent; border: none; color: #c8c8c8;"><i class="fa-regular fa-thumbs-up fa-2xl" style="color: #c8c8c8;"></i><p style="padding-top: 10px;">Rate</p></button>
+                  </div>
+                  <div>
+                    <button class="zoom-btn" style="width: 100px; height: 80px; background-color: transparent; border: none; color: #c8c8c8;"><i class="fa-solid fa-arrow-down fa-2xl" style="color: #c8c8c8;"></i><p style="padding-top: 10px;">Download</p></button>
+                  </div>
+                </div>
+
+                <div class="d-flex" style="gap: 20px; margin-top: 20px;">
+                  <div class="card1" style="width: 20rem;">
+                    <img src="https://occ-0-4994-2186.1.nflxso.net/dnm/api/v6/rkETp35xJVj-6WaffQsS77awykM/AAAABdYfDMEGiOTCsGaXhX_G_tq73Ocf-Wa0wllMoTMKLETkfqXWaB9knMiMXcujEc65rLGH1rhmqMACAmwVqZAl8n8W8GP3I3wvWoU.webp?r=c60" class="card-img-top" alt="...">
+                  </div>
+                  <div class="card1" style="width: 20rem;">
+                    <img src="https://occ-0-2484-3663.1.nflxso.net/dnm/api/v6/rkETp35xJVj-6WaffQsS77awykM/AAAABdqS3LsYpbKa8-kl2GluHxRpXlk1SetRT8M1uF9REOlL6XceHYYB1BGUMvslZroEuDgYptaXjmhgrGiuSmugpuCbn6vZepbbptX5X-eTDwyRSyCJilsIDvAJM0LWpjixsQxc.jpg?r=4b3" class="card-img-top" alt="...">
+                  </div>
+                </div>
+                <div class="d-flex" style="gap: 20px; margin-top: 20px; margin-bottom: 20px;">
+                  <div class="card1" style="width: 20rem;">
+                    <img src="https://occ-0-4994-2186.1.nflxso.net/dnm/api/v6/rkETp35xJVj-6WaffQsS77awykM/AAAABdYfDMEGiOTCsGaXhX_G_tq73Ocf-Wa0wllMoTMKLETkfqXWaB9knMiMXcujEc65rLGH1rhmqMACAmwVqZAl8n8W8GP3I3wvWoU.webp?r=c60" class="card-img-top" alt="...">
+                  </div>
+                  <div class="card1" style="width: 20rem;">
+                    <img src="https://occ-0-2484-3663.1.nflxso.net/dnm/api/v6/rkETp35xJVj-6WaffQsS77awykM/AAAABdqS3LsYpbKa8-kl2GluHxRpXlk1SetRT8M1uF9REOlL6XceHYYB1BGUMvslZroEuDgYptaXjmhgrGiuSmugpuCbn6vZepbbptX5X-eTDwyRSyCJilsIDvAJM0LWpjixsQxc.jpg?r=4b3" class="card-img-top" alt="...">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="card1" style="width: 14rem;">
+        <img src="https://occ-0-2484-3663.1.nflxso.net/dnm/api/v6/rkETp35xJVj-6WaffQsS77awykM/AAAABauMSzHd5Zr0M8GL3vA_vvXJJaTU_Aoncc7xiyPtuHai-bpwRvBHi1dYtPRvXE3GstY2i_F2Yb65-JT-98lNBPJoWyMkUG1NPkY.webp?r=1ed" data-bs-toggle="modal" data-bs-target="#exampleModal04" class="card-img-top" alt="...">
+        <!-- Modal -->
+        <div class="modal fade" id="exampleModal04" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+          <div class="modal-dialog">
+            <img src="./image/Fast & Furious.png" style="width: 700px;" alt="">
+            <div class="modal-content" style="width: 700px; border: none; color: #c8c8c8;">
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              <div class="modal-body" style="background-color: #222222; padding-left: 40px; padding-right: 40px; margin-top: -30px;">
+                <h2 style="font-size: 28px; color: white;"><b>Fast & Furious</b></h2>
+                <img src="./image/Fast and Furious 1.png" alt="">
+                <p style="margin-top: 10px;">After six years on the lam, fugitive Dom Toretto returns to Los Angeles and teams up with rouge FBI agent Brian O'conner to bring down a common enemy.</p>
+                <p>Cast : Vin Diesel, Paul Walker, Jordana Brewster <br>
+                  Director : Justin Lin</p>
+                <div class="d-flex" style="margin-left: -23px; margin-top: 20px;">
+                  <div>
+                    <button class="zoom-btn" style="width: 100px; height: 80px; background-color: transparent; border: none; color: #c8c8c8;"><i class="fa-solid fa-plus fa-2xl" style="color: #c8c8c8;"></i><p style="padding-top: 10px;">My List</p></button>
+                  </div>
+                  <div>
+                    <button class="zoom-btn" style="width: 80px; height: 80px; background-color: transparent; border: none; color: #c8c8c8;"><i class="fa-regular fa-thumbs-up fa-2xl" style="color: #c8c8c8;"></i><p style="padding-top: 10px;">Rate</p></button>
+                  </div>
+                  <div>
+                    <button class="zoom-btn" style="width: 100px; height: 80px; background-color: transparent; border: none; color: #c8c8c8;"><i class="fa-solid fa-arrow-down fa-2xl" style="color: #c8c8c8;"></i><p style="padding-top: 10px;">Download</p></button>
+                  </div>
+                </div>
+
+                <div class="d-flex" style="gap: 20px; margin-top: 20px;">
+                  <div class="card1" style="width: 20rem;">
+                    <img src="https://occ-0-4994-2186.1.nflxso.net/dnm/api/v6/rkETp35xJVj-6WaffQsS77awykM/AAAABdYfDMEGiOTCsGaXhX_G_tq73Ocf-Wa0wllMoTMKLETkfqXWaB9knMiMXcujEc65rLGH1rhmqMACAmwVqZAl8n8W8GP3I3wvWoU.webp?r=c60" class="card-img-top" alt="...">
+                  </div>
+                  <div class="card1" style="width: 20rem;">
+                    <img src="https://occ-0-2484-3663.1.nflxso.net/dnm/api/v6/rkETp35xJVj-6WaffQsS77awykM/AAAABdqS3LsYpbKa8-kl2GluHxRpXlk1SetRT8M1uF9REOlL6XceHYYB1BGUMvslZroEuDgYptaXjmhgrGiuSmugpuCbn6vZepbbptX5X-eTDwyRSyCJilsIDvAJM0LWpjixsQxc.jpg?r=4b3" class="card-img-top" alt="...">
+                  </div>
+                </div>
+                <div class="d-flex" style="gap: 20px; margin-top: 20px; margin-bottom: 20px;">
+                  <div class="card1" style="width: 20rem;">
+                    <img src="https://occ-0-4994-2186.1.nflxso.net/dnm/api/v6/rkETp35xJVj-6WaffQsS77awykM/AAAABdYfDMEGiOTCsGaXhX_G_tq73Ocf-Wa0wllMoTMKLETkfqXWaB9knMiMXcujEc65rLGH1rhmqMACAmwVqZAl8n8W8GP3I3wvWoU.webp?r=c60" class="card-img-top" alt="...">
+                  </div>
+                  <div class="card1" style="width: 20rem;">
+                    <img src="https://occ-0-2484-3663.1.nflxso.net/dnm/api/v6/rkETp35xJVj-6WaffQsS77awykM/AAAABdqS3LsYpbKa8-kl2GluHxRpXlk1SetRT8M1uF9REOlL6XceHYYB1BGUMvslZroEuDgYptaXjmhgrGiuSmugpuCbn6vZepbbptX5X-eTDwyRSyCJilsIDvAJM0LWpjixsQxc.jpg?r=4b3" class="card-img-top" alt="...">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="card1" style="width: 14rem;">
+        <img src="https://occ-0-2484-3663.1.nflxso.net/dnm/api/v6/rkETp35xJVj-6WaffQsS77awykM/AAAABVG17fuu-w3fhDJXZ-MffArxpcbBPrCjGa_on9epZ9ETARgF3ZPBS744TLAHewkYCvb97BvEzySqy5ezmpqeN1oTA9imTlTKfRvxs6mvWIKNpDsXYe3opJ09CyoKzX3C5v0soFmVwoT0fenJB7-U6VFKgSjDAba4F08I2ulL_-WMCkUskCNo4z-ZSQlBZ-0.jpg?r=46c" data-bs-toggle="modal" data-bs-target="#exampleModal05" class="card-img-top" alt="...">
+        <!-- Modal -->
+        <div class="modal fade" id="exampleModal05" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+          <div class="modal-dialog">
+            <img src="./image/Thunivu.png" style="width: 700px;" alt="">
+            <div class="modal-content" style="width: 700px; border: none; color: #c8c8c8;">
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              <div class="modal-body" style="background-color: #222222; padding-left: 40px; padding-right: 40px; margin-top: -30px;">
+                <h2 style="font-size: 28px; color: white;"><b>Thunivu (Malayalam)</b></h2>
+                <img src="./image/Thunivu 1.png" alt="">
+                <p style="margin-top: 10px;">A major bank heist takes an unnerving turn when a mysterious interloper known only as Dark Devil Begins to hijack the operation.</p>
+                <div class="d-flex" style="margin-left: -23px; margin-top: 20px;">
+                  <div>
+                    <button class="zoom-btn" style="width: 100px; height: 80px; background-color: transparent; border: none; color: #c8c8c8;"><i class="fa-solid fa-plus fa-2xl" style="color: #c8c8c8;"></i><p style="padding-top: 10px;">My List</p></button>
+                  </div>
+                  <div>
+                    <button class="zoom-btn" style="width: 80px; height: 80px; background-color: transparent; border: none; color: #c8c8c8;"><i class="fa-regular fa-thumbs-up fa-2xl" style="color: #c8c8c8;"></i><p style="padding-top: 10px;">Rate</p></button>
+                  </div>
+                  <div>
+                    <button class="zoom-btn" style="width: 100px; height: 80px; background-color: transparent; border: none; color: #c8c8c8;"><i class="fa-solid fa-arrow-down fa-2xl" style="color: #c8c8c8;"></i><p style="padding-top: 10px;">Download</p></button>
+                  </div>
+                </div>
+
+                <div class="d-flex" style="gap: 20px; margin-top: 20px;">
+                  <div class="card1" style="width: 20rem;">
+                    <img src="https://occ-0-4994-2186.1.nflxso.net/dnm/api/v6/rkETp35xJVj-6WaffQsS77awykM/AAAABdYfDMEGiOTCsGaXhX_G_tq73Ocf-Wa0wllMoTMKLETkfqXWaB9knMiMXcujEc65rLGH1rhmqMACAmwVqZAl8n8W8GP3I3wvWoU.webp?r=c60" class="card-img-top" alt="...">
+                  </div>
+                  <div class="card1" style="width: 20rem;">
+                    <img src="https://occ-0-2484-3663.1.nflxso.net/dnm/api/v6/rkETp35xJVj-6WaffQsS77awykM/AAAABdqS3LsYpbKa8-kl2GluHxRpXlk1SetRT8M1uF9REOlL6XceHYYB1BGUMvslZroEuDgYptaXjmhgrGiuSmugpuCbn6vZepbbptX5X-eTDwyRSyCJilsIDvAJM0LWpjixsQxc.jpg?r=4b3" class="card-img-top" alt="...">
+                  </div>
+                </div>
+                <div class="d-flex" style="gap: 20px; margin-top: 20px; margin-bottom: 20px;">
+                  <div class="card1" style="width: 20rem;">
+                    <img src="https://occ-0-4994-2186.1.nflxso.net/dnm/api/v6/rkETp35xJVj-6WaffQsS77awykM/AAAABdYfDMEGiOTCsGaXhX_G_tq73Ocf-Wa0wllMoTMKLETkfqXWaB9knMiMXcujEc65rLGH1rhmqMACAmwVqZAl8n8W8GP3I3wvWoU.webp?r=c60" class="card-img-top" alt="...">
+                  </div>
+                  <div class="card1" style="width: 20rem;">
+                    <img src="https://occ-0-2484-3663.1.nflxso.net/dnm/api/v6/rkETp35xJVj-6WaffQsS77awykM/AAAABdqS3LsYpbKa8-kl2GluHxRpXlk1SetRT8M1uF9REOlL6XceHYYB1BGUMvslZroEuDgYptaXjmhgrGiuSmugpuCbn6vZepbbptX5X-eTDwyRSyCJilsIDvAJM0LWpjixsQxc.jpg?r=4b3" class="card-img-top" alt="...">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Children and Family TV  sec 5-->
+
+    <h1 style="color: white; font-size: 23px; font-weight: 550; margin-top: 50px; padding-left: 50px;">Children and Family TV</h1>
+
+    <div class="card-container1">
+      <div class="card1" style="width: 14rem;">
+        <img src="https://occ-0-2484-3663.1.nflxso.net/dnm/api/v6/rkETp35xJVj-6WaffQsS77awykM/AAAABX5s9IFT2YQRX03bf24kppo4rj7bDlalVRzXBtswqfjXMf7Epu8D2-9c0547IBumMFh26tbmmgAhdIyOCJn8BTJYhdVG4R0Dtww.webp?r=6f8" class="card-img-top" data-bs-toggle="modal" data-bs-target="#exampleModal00" alt="...">
+          <!-- Modal -->
+          <div class="modal fade" id="exampleModal00" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+              <img src="./image/Salar.png" style="width: 700px;" alt="">
+              <div class="modal-content" style="width: 700px; border: none; color: #c8c8c8;">
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                <div class="modal-body" style="background-color: #222222; padding-left: 40px; padding-right: 40px; margin-top: -30px;">
+                  <h2 style="font-size: 28px; color: white;"><b>Salar (Kannada)</b></h2>
+                  <img src="./image/Salar 1.png" alt="">
+                  <p style="margin-top: 10px;">The fate of a violently contested kingdom hangs on the fraught bond between two friends turned-foes in this saga of power, bloodshed and betrayal.</p>
+                  <p>cast : Prabhas, Prithviraj Sukumaran, Shruthi Hassan <br>
+                    Director : Prashanth Neel</p>
+                  <div class="d-flex" style="margin-left: -23px; margin-top: 20px;">
+                    <div>
+                      <button class="zoom-btn" style="width: 100px; height: 80px; background-color: transparent; border: none; color: #c8c8c8;"><i class="fa-solid fa-plus fa-2xl" style="color: #c8c8c8;"></i><p style="padding-top: 10px;">My List</p></button>
+                    </div>
+                    <div>
+                      <button class="zoom-btn" style="width: 80px; height: 80px; background-color: transparent; border: none; color: #c8c8c8;"><i class="fa-regular fa-thumbs-up fa-2xl" style="color: #c8c8c8;"></i><p style="padding-top: 10px;">Rate</p></button>
+                    </div>
+                    <div>
+                      <button class="zoom-btn" style="width: 100px; height: 80px; background-color: transparent; border: none; color: #c8c8c8;"><i class="fa-solid fa-arrow-down fa-2xl" style="color: #c8c8c8;"></i><p style="padding-top: 10px;">Download</p></button>
+                    </div>
+                  </div>
+
+                  <div class="d-flex" style="gap: 20px; margin-top: 20px;">
+                    <div class="card1" style="width: 20rem;">
+                      <img src="https://occ-0-4994-2186.1.nflxso.net/dnm/api/v6/rkETp35xJVj-6WaffQsS77awykM/AAAABdYfDMEGiOTCsGaXhX_G_tq73Ocf-Wa0wllMoTMKLETkfqXWaB9knMiMXcujEc65rLGH1rhmqMACAmwVqZAl8n8W8GP3I3wvWoU.webp?r=c60" class="card-img-top" alt="...">
+                    </div>
+                    <div class="card1" style="width: 20rem;">
+                      <img src="https://occ-0-2484-3663.1.nflxso.net/dnm/api/v6/rkETp35xJVj-6WaffQsS77awykM/AAAABdqS3LsYpbKa8-kl2GluHxRpXlk1SetRT8M1uF9REOlL6XceHYYB1BGUMvslZroEuDgYptaXjmhgrGiuSmugpuCbn6vZepbbptX5X-eTDwyRSyCJilsIDvAJM0LWpjixsQxc.jpg?r=4b3" class="card-img-top" alt="...">
+                    </div>
+                  </div>
+                  <div class="d-flex" style="gap: 20px; margin-top: 20px; margin-bottom: 20px;">
+                    <div class="card1" style="width: 20rem;">
+                      <img src="https://occ-0-4994-2186.1.nflxso.net/dnm/api/v6/rkETp35xJVj-6WaffQsS77awykM/AAAABdYfDMEGiOTCsGaXhX_G_tq73Ocf-Wa0wllMoTMKLETkfqXWaB9knMiMXcujEc65rLGH1rhmqMACAmwVqZAl8n8W8GP3I3wvWoU.webp?r=c60" class="card-img-top" alt="...">
+                    </div>
+                    <div class="card1" style="width: 20rem;">
+                      <img src="https://occ-0-2484-3663.1.nflxso.net/dnm/api/v6/rkETp35xJVj-6WaffQsS77awykM/AAAABdqS3LsYpbKa8-kl2GluHxRpXlk1SetRT8M1uF9REOlL6XceHYYB1BGUMvslZroEuDgYptaXjmhgrGiuSmugpuCbn6vZepbbptX5X-eTDwyRSyCJilsIDvAJM0LWpjixsQxc.jpg?r=4b3" class="card-img-top" alt="...">
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+      </div>
+      <div class="card1" style="width: 14rem;">
+        <img src="https://occ-0-2484-3663.1.nflxso.net/dnm/api/v6/rkETp35xJVj-6WaffQsS77awykM/AAAABTSubvlT43rTxIqU2TEYateyfo4f0RNbGiViSacus1CD444XPvbplgknwnZ2EnJS7U60vIDGNhPx9fNj5B-ph7sUBt8IoGILLtU.webp?r=7d2" data-bs-toggle="modal" data-bs-target="#exampleModal01" class="card-img-top" alt="...">
+        <!-- Modal -->
+        <div class="modal fade" id="exampleModal01" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+          <div class="modal-dialog">
+            <img src="./image/60 sec.png" style="width: 700px;" alt="">
+            <div class="modal-content" style="width: 700px; border: none; color: #c8c8c8;">
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              <div class="modal-body" style="background-color: #222222; padding-left: 40px; padding-right: 40px; margin-top: -30px;">
+                <h2 style="font-size: 28px; color: white;"><b>Sixty Minutes</b></h2>
+                <img src="./image/60 sec 1.png" alt="">
+                <p style="margin-top: 10px;">Desperate to keep custody of his daughter, a mixed arts fighter abondons a big match and race across Berlin to attend her birthday party.</p>
+                <p>Cast : Emilio Sakraya, Dennis Mojen, Marie Mouroum <br>
+                  Director : Oliver Kienle</p>
+                <div class="d-flex" style="margin-left: -23px; margin-top: 20px;">
+                  <div>
+                    <button class="zoom-btn" style="width: 100px; height: 80px; background-color: transparent; border: none; color: #c8c8c8;"><i class="fa-solid fa-plus fa-2xl" style="color: #c8c8c8;"></i><p style="padding-top: 10px;">My List</p></button>
+                  </div>
+                  <div>
+                    <button class="zoom-btn" style="width: 80px; height: 80px; background-color: transparent; border: none; color: #c8c8c8;"><i class="fa-regular fa-thumbs-up fa-2xl" style="color: #c8c8c8;"></i><p style="padding-top: 10px;">Rate</p></button>
+                  </div>
+                  <div>
+                    <button class="zoom-btn" style="width: 100px; height: 80px; background-color: transparent; border: none; color: #c8c8c8;"><i class="fa-solid fa-arrow-down fa-2xl" style="color: #c8c8c8;"></i><p style="padding-top: 10px;">Download</p></button>
+                  </div>
+                </div>
+
+                <div class="d-flex" style="gap: 20px; margin-top: 20px;">
+                  <div class="card1" style="width: 20rem;">
+                    <img src="https://occ-0-4994-2186.1.nflxso.net/dnm/api/v6/rkETp35xJVj-6WaffQsS77awykM/AAAABdYfDMEGiOTCsGaXhX_G_tq73Ocf-Wa0wllMoTMKLETkfqXWaB9knMiMXcujEc65rLGH1rhmqMACAmwVqZAl8n8W8GP3I3wvWoU.webp?r=c60" data-bs-toggle="modal" data-bs-target="#exampleModal2" class="card-img-top" alt="...">
+                  </div>
+                  <div class="card1" style="width: 20rem;">
+                    <img src="https://occ-0-2484-3663.1.nflxso.net/dnm/api/v6/rkETp35xJVj-6WaffQsS77awykM/AAAABdqS3LsYpbKa8-kl2GluHxRpXlk1SetRT8M1uF9REOlL6XceHYYB1BGUMvslZroEuDgYptaXjmhgrGiuSmugpuCbn6vZepbbptX5X-eTDwyRSyCJilsIDvAJM0LWpjixsQxc.jpg?r=4b3" data-bs-toggle="modal" data-bs-target="#exampleModal3" class="card-img-top" alt="...">
+                  </div>
+                </div>
+                <div class="d-flex" style="gap: 20px; margin-top: 20px; margin-bottom: 20px;">
+                  <div class="card1" style="width: 20rem;">
+                    <img src="https://occ-0-4994-2186.1.nflxso.net/dnm/api/v6/rkETp35xJVj-6WaffQsS77awykM/AAAABdYfDMEGiOTCsGaXhX_G_tq73Ocf-Wa0wllMoTMKLETkfqXWaB9knMiMXcujEc65rLGH1rhmqMACAmwVqZAl8n8W8GP3I3wvWoU.webp?r=c60" data-bs-toggle="modal" data-bs-target="#exampleModal4" class="card-img-top" alt="...">
+                  </div>
+                  <div class="card1" style="width: 20rem;">
+                    <img src="https://occ-0-2484-3663.1.nflxso.net/dnm/api/v6/rkETp35xJVj-6WaffQsS77awykM/AAAABdqS3LsYpbKa8-kl2GluHxRpXlk1SetRT8M1uF9REOlL6XceHYYB1BGUMvslZroEuDgYptaXjmhgrGiuSmugpuCbn6vZepbbptX5X-eTDwyRSyCJilsIDvAJM0LWpjixsQxc.jpg?r=4b3" data-bs-toggle="modal" data-bs-target="#exampleModal5" class="card-img-top" alt="...">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="card1" style="width: 14rem;">
+        <img src="https://occ-0-2484-3663.1.nflxso.net/dnm/api/v6/rkETp35xJVj-6WaffQsS77awykM/AAAABSKZh8wvxR5SqTYOBGzK_h2rV22qGJ54XkIyZTshA9q4k_N3GEB4RL-nH6lhawIyMAND10sAZiI6uos7EpXnelTCX2vQitro7nlk7K1b6cRsIVqpWYXt_mkbdOZPhIKCfXSd.jpg?r=67c" data-bs-toggle="modal" data-bs-target="#exampleModal02" class="card-img-top" alt="...">
+        <!-- Modal -->
+        <div class="modal fade" id="exampleModal02" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+          <div class="modal-dialog">
+            <img src="./image/Outer Banks.png" style="width: 700px;" alt="">
+            <div class="modal-content" style="width: 700px; border: none; color: #c8c8c8;">
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              <div class="modal-body" style="background-color: #222222; padding-left: 40px; padding-right: 40px; margin-top: -30px;">
+                <h2 style="font-size: 28px; color: white;"><b>Outer Banks</b></h2>
+                <img src="./image/Outer Banks 1.png" alt="">
+                <p style="margin-top: 10px;">After a hurricane, Jhon B, JJ, Pope and Kiara plunge headlong into danger and adventure when they find a mysterious sunken wreck.</p>
+                <p>cast : Chase Stokes, Madelyn Cline, Madison Bailey <br>
+                  Creators : Josh Pate, Jonas Pate, Shannon Burke</p>
+                <div class="d-flex" style="margin-left: -23px; margin-top: 20px;">
+                  <div>
+                    <button class="zoom-btn" style="width: 100px; height: 80px; background-color: transparent; border: none; color: #c8c8c8;"><i class="fa-solid fa-plus fa-2xl" style="color: #c8c8c8;"></i><p style="padding-top: 10px;">My List</p></button>
+                  </div>
+                  <div>
+                    <button class="zoom-btn" style="width: 80px; height: 80px; background-color: transparent; border: none; color: #c8c8c8;"><i class="fa-regular fa-thumbs-up fa-2xl" style="color: #c8c8c8;"></i><p style="padding-top: 10px;">Rate</p></button>
+                  </div>
+                  <div>
+                    <button class="zoom-btn" style="width: 100px; height: 80px; background-color: transparent; border: none; color: #c8c8c8;"><i class="fa-solid fa-arrow-down fa-2xl" style="color: #c8c8c8;"></i><p style="padding-top: 10px;">Download</p></button>
+                  </div>
+                </div>
+
+                <div class="d-flex" style="gap: 20px; margin-top: 20px;">
+                  <div class="card1" style="width: 20rem;">
+                    <img src="https://occ-0-4994-2186.1.nflxso.net/dnm/api/v6/rkETp35xJVj-6WaffQsS77awykM/AAAABdYfDMEGiOTCsGaXhX_G_tq73Ocf-Wa0wllMoTMKLETkfqXWaB9knMiMXcujEc65rLGH1rhmqMACAmwVqZAl8n8W8GP3I3wvWoU.webp?r=c60" class="card-img-top" alt="...">
+                  </div>
+                  <div class="card1" style="width: 20rem;">
+                    <img src="https://occ-0-2484-3663.1.nflxso.net/dnm/api/v6/rkETp35xJVj-6WaffQsS77awykM/AAAABdqS3LsYpbKa8-kl2GluHxRpXlk1SetRT8M1uF9REOlL6XceHYYB1BGUMvslZroEuDgYptaXjmhgrGiuSmugpuCbn6vZepbbptX5X-eTDwyRSyCJilsIDvAJM0LWpjixsQxc.jpg?r=4b3" class="card-img-top" alt="...">
+                  </div>
+                </div>
+                <div class="d-flex" style="gap: 20px; margin-top: 20px; margin-bottom: 20px;">
+                  <div class="card1" style="width: 20rem;">
+                    <img src="https://occ-0-4994-2186.1.nflxso.net/dnm/api/v6/rkETp35xJVj-6WaffQsS77awykM/AAAABdYfDMEGiOTCsGaXhX_G_tq73Ocf-Wa0wllMoTMKLETkfqXWaB9knMiMXcujEc65rLGH1rhmqMACAmwVqZAl8n8W8GP3I3wvWoU.webp?r=c60" class="card-img-top" alt="...">
+                  </div>
+                  <div class="card1" style="width: 20rem;">
+                    <img src="https://occ-0-2484-3663.1.nflxso.net/dnm/api/v6/rkETp35xJVj-6WaffQsS77awykM/AAAABdqS3LsYpbKa8-kl2GluHxRpXlk1SetRT8M1uF9REOlL6XceHYYB1BGUMvslZroEuDgYptaXjmhgrGiuSmugpuCbn6vZepbbptX5X-eTDwyRSyCJilsIDvAJM0LWpjixsQxc.jpg?r=4b3" class="card-img-top" alt="...">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="card1" style="width: 14rem;">
+        <img src="https://occ-0-2484-3663.1.nflxso.net/dnm/api/v6/rkETp35xJVj-6WaffQsS77awykM/AAAABUINxp9lufviOEz9SJayf3RL_lIZWpIRpfgLQU0L9os7G2WJTqdkVc_3bgcMwK1XSU1P35IjvM8pg8-iGxWx4s2X4TL_e0EP6xU.webp?r=8b3" data-bs-toggle="modal" data-bs-target="#exampleModal03" class="card-img-top" alt="...">
+        <!-- Modal -->
+        <div class="modal fade" id="exampleModal03" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+          <div class="modal-dialog">
+            <img src="./image/The Dark Knight.png" style="width: 700px;" alt="">
+            <div class="modal-content" style="width: 700px; border: none; color: #c8c8c8;">
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              <div class="modal-body" style="background-color: #222222; padding-left: 40px; padding-right: 40px; margin-top: -30px;">
+                <h2 style="font-size: 28px; color: white;"><b>The Dark Knight</b></h2>
+                <img src="./image/The Dark Knight 1.png" alt="">
+                <p style="margin-top: 10px;">Batman, Lieutenant Gordon and District Attorney Harvey Dent go up against the Joker, a criminal mastermind in ghoulish makeup terrorizing Gotham City.</p>
+                <p>Cast : Christian Bale, Heath Ledger, Aaron Eckhart <br>
+                  Director : Christopher Nolan</p>
+                <div class="d-flex" style="margin-left: -23px; margin-top: 20px;">
+                  <div>
+                    <button class="zoom-btn" style="width: 100px; height: 80px; background-color: transparent; border: none; color: #c8c8c8;"><i class="fa-solid fa-plus fa-2xl" style="color: #c8c8c8;"></i><p style="padding-top: 10px;">My List</p></button>
+                  </div>
+                  <div>
+                    <button class="zoom-btn" style="width: 80px; height: 80px; background-color: transparent; border: none; color: #c8c8c8;"><i class="fa-regular fa-thumbs-up fa-2xl" style="color: #c8c8c8;"></i><p style="padding-top: 10px;">Rate</p></button>
+                  </div>
+                  <div>
+                    <button class="zoom-btn" style="width: 100px; height: 80px; background-color: transparent; border: none; color: #c8c8c8;"><i class="fa-solid fa-arrow-down fa-2xl" style="color: #c8c8c8;"></i><p style="padding-top: 10px;">Download</p></button>
+                  </div>
+                </div>
+
+                <div class="d-flex" style="gap: 20px; margin-top: 20px;">
+                  <div class="card1" style="width: 20rem;">
+                    <img src="https://occ-0-4994-2186.1.nflxso.net/dnm/api/v6/rkETp35xJVj-6WaffQsS77awykM/AAAABdYfDMEGiOTCsGaXhX_G_tq73Ocf-Wa0wllMoTMKLETkfqXWaB9knMiMXcujEc65rLGH1rhmqMACAmwVqZAl8n8W8GP3I3wvWoU.webp?r=c60" class="card-img-top" alt="...">
+                  </div>
+                  <div class="card1" style="width: 20rem;">
+                    <img src="https://occ-0-2484-3663.1.nflxso.net/dnm/api/v6/rkETp35xJVj-6WaffQsS77awykM/AAAABdqS3LsYpbKa8-kl2GluHxRpXlk1SetRT8M1uF9REOlL6XceHYYB1BGUMvslZroEuDgYptaXjmhgrGiuSmugpuCbn6vZepbbptX5X-eTDwyRSyCJilsIDvAJM0LWpjixsQxc.jpg?r=4b3" class="card-img-top" alt="...">
+                  </div>
+                </div>
+                <div class="d-flex" style="gap: 20px; margin-top: 20px; margin-bottom: 20px;">
+                  <div class="card1" style="width: 20rem;">
+                    <img src="https://occ-0-4994-2186.1.nflxso.net/dnm/api/v6/rkETp35xJVj-6WaffQsS77awykM/AAAABdYfDMEGiOTCsGaXhX_G_tq73Ocf-Wa0wllMoTMKLETkfqXWaB9knMiMXcujEc65rLGH1rhmqMACAmwVqZAl8n8W8GP3I3wvWoU.webp?r=c60" class="card-img-top" alt="...">
+                  </div>
+                  <div class="card1" style="width: 20rem;">
+                    <img src="https://occ-0-2484-3663.1.nflxso.net/dnm/api/v6/rkETp35xJVj-6WaffQsS77awykM/AAAABdqS3LsYpbKa8-kl2GluHxRpXlk1SetRT8M1uF9REOlL6XceHYYB1BGUMvslZroEuDgYptaXjmhgrGiuSmugpuCbn6vZepbbptX5X-eTDwyRSyCJilsIDvAJM0LWpjixsQxc.jpg?r=4b3" class="card-img-top" alt="...">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="card1" style="width: 14rem;">
+        <img src="https://occ-0-2484-3663.1.nflxso.net/dnm/api/v6/rkETp35xJVj-6WaffQsS77awykM/AAAABaN5JQTJJiWkSY2ZOZ0KjbXpjfSEC5KlJfkoIcg34OZ9I_PvQBZKAPfavufAD2LA1Kx3eTZ9QX_8LWnU3hXw_Dca9buovRk9I-Bge10IpH_GXVnoLo3l2Zf3klfOrtl5Do0SBAKaOaD8j4lS5Y_yucVnvjyNLlE7kbCpM4HA5hCPw-0X3PBFPLExRwoLl6oxOImXyFEoE4FE-bSqJcFh5valoNftrog95gu_nHyHneWjNpcvGFu3RS7M6dIpcWszB_b5zKr6O3CvmxFMVSdRFMc5ozHXA-BRtLjI2Ow2sghAW5lsEH0.jpg?r=32c" data-bs-toggle="modal" data-bs-target="#exampleModal04" class="card-img-top" alt="...">
+        <!-- Modal -->
+        <div class="modal fade" id="exampleModal04" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+          <div class="modal-dialog">
+            <img src="./image/Fast & Furious.png" style="width: 700px;" alt="">
+            <div class="modal-content" style="width: 700px; border: none; color: #c8c8c8;">
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              <div class="modal-body" style="background-color: #222222; padding-left: 40px; padding-right: 40px; margin-top: -30px;">
+                <h2 style="font-size: 28px; color: white;"><b>Fast & Furious</b></h2>
+                <img src="./image/Fast and Furious 1.png" alt="">
+                <p style="margin-top: 10px;">After six years on the lam, fugitive Dom Toretto returns to Los Angeles and teams up with rouge FBI agent Brian O'conner to bring down a common enemy.</p>
+                <p>Cast : Vin Diesel, Paul Walker, Jordana Brewster <br>
+                  Director : Justin Lin</p>
+                <div class="d-flex" style="margin-left: -23px; margin-top: 20px;">
+                  <div>
+                    <button class="zoom-btn" style="width: 100px; height: 80px; background-color: transparent; border: none; color: #c8c8c8;"><i class="fa-solid fa-plus fa-2xl" style="color: #c8c8c8;"></i><p style="padding-top: 10px;">My List</p></button>
+                  </div>
+                  <div>
+                    <button class="zoom-btn" style="width: 80px; height: 80px; background-color: transparent; border: none; color: #c8c8c8;"><i class="fa-regular fa-thumbs-up fa-2xl" style="color: #c8c8c8;"></i><p style="padding-top: 10px;">Rate</p></button>
+                  </div>
+                  <div>
+                    <button class="zoom-btn" style="width: 100px; height: 80px; background-color: transparent; border: none; color: #c8c8c8;"><i class="fa-solid fa-arrow-down fa-2xl" style="color: #c8c8c8;"></i><p style="padding-top: 10px;">Download</p></button>
+                  </div>
+                </div>
+
+                <div class="d-flex" style="gap: 20px; margin-top: 20px;">
+                  <div class="card1" style="width: 20rem;">
+                    <img src="https://occ-0-4994-2186.1.nflxso.net/dnm/api/v6/rkETp35xJVj-6WaffQsS77awykM/AAAABdYfDMEGiOTCsGaXhX_G_tq73Ocf-Wa0wllMoTMKLETkfqXWaB9knMiMXcujEc65rLGH1rhmqMACAmwVqZAl8n8W8GP3I3wvWoU.webp?r=c60" class="card-img-top" alt="...">
+                  </div>
+                  <div class="card1" style="width: 20rem;">
+                    <img src="https://occ-0-2484-3663.1.nflxso.net/dnm/api/v6/rkETp35xJVj-6WaffQsS77awykM/AAAABdqS3LsYpbKa8-kl2GluHxRpXlk1SetRT8M1uF9REOlL6XceHYYB1BGUMvslZroEuDgYptaXjmhgrGiuSmugpuCbn6vZepbbptX5X-eTDwyRSyCJilsIDvAJM0LWpjixsQxc.jpg?r=4b3" class="card-img-top" alt="...">
+                  </div>
+                </div>
+                <div class="d-flex" style="gap: 20px; margin-top: 20px; margin-bottom: 20px;">
+                  <div class="card1" style="width: 20rem;">
+                    <img src="https://occ-0-4994-2186.1.nflxso.net/dnm/api/v6/rkETp35xJVj-6WaffQsS77awykM/AAAABdYfDMEGiOTCsGaXhX_G_tq73Ocf-Wa0wllMoTMKLETkfqXWaB9knMiMXcujEc65rLGH1rhmqMACAmwVqZAl8n8W8GP3I3wvWoU.webp?r=c60" class="card-img-top" alt="...">
+                  </div>
+                  <div class="card1" style="width: 20rem;">
+                    <img src="https://occ-0-2484-3663.1.nflxso.net/dnm/api/v6/rkETp35xJVj-6WaffQsS77awykM/AAAABdqS3LsYpbKa8-kl2GluHxRpXlk1SetRT8M1uF9REOlL6XceHYYB1BGUMvslZroEuDgYptaXjmhgrGiuSmugpuCbn6vZepbbptX5X-eTDwyRSyCJilsIDvAJM0LWpjixsQxc.jpg?r=4b3" class="card-img-top" alt="...">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="card1" style="width: 14rem;">
+        <img src="https://occ-0-2484-3663.1.nflxso.net/dnm/api/v6/rkETp35xJVj-6WaffQsS77awykM/AAAABewaUpVA3wJHOCqYOJsHb_Wr-wGMAcRchaOJOh7qQDw9Jh2wvXmd5OyUYApy4Myyx_pKKh7KrNqq8xVVmbwrHnke-Ar2_waxrt9Pjz5UjBki0enXU7-z2Qni0ysy-BVvJgHw.jpg?r=3ab" data-bs-toggle="modal" data-bs-target="#exampleModal05" class="card-img-top" alt="...">
+        <!-- Modal -->
+        <div class="modal fade" id="exampleModal05" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+          <div class="modal-dialog">
+            <img src="./image/Thunivu.png" style="width: 700px;" alt="">
+            <div class="modal-content" style="width: 700px; border: none; color: #c8c8c8;">
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              <div class="modal-body" style="background-color: #222222; padding-left: 40px; padding-right: 40px; margin-top: -30px;">
+                <h2 style="font-size: 28px; color: white;"><b>Thunivu (Malayalam)</b></h2>
+                <img src="./image/Thunivu 1.png" alt="">
+                <p style="margin-top: 10px;">A major bank heist takes an unnerving turn when a mysterious interloper known only as Dark Devil Begins to hijack the operation.</p>
+                <div class="d-flex" style="margin-left: -23px; margin-top: 20px;">
+                  <div>
+                    <button class="zoom-btn" style="width: 100px; height: 80px; background-color: transparent; border: none; color: #c8c8c8;"><i class="fa-solid fa-plus fa-2xl" style="color: #c8c8c8;"></i><p style="padding-top: 10px;">My List</p></button>
+                  </div>
+                  <div>
+                    <button class="zoom-btn" style="width: 80px; height: 80px; background-color: transparent; border: none; color: #c8c8c8;"><i class="fa-regular fa-thumbs-up fa-2xl" style="color: #c8c8c8;"></i><p style="padding-top: 10px;">Rate</p></button>
+                  </div>
+                  <div>
+                    <button class="zoom-btn" style="width: 100px; height: 80px; background-color: transparent; border: none; color: #c8c8c8;"><i class="fa-solid fa-arrow-down fa-2xl" style="color: #c8c8c8;"></i><p style="padding-top: 10px;">Download</p></button>
+                  </div>
+                </div>
+
+                <div class="d-flex" style="gap: 20px; margin-top: 20px;">
+                  <div class="card1" style="width: 20rem;">
+                    <img src="https://occ-0-4994-2186.1.nflxso.net/dnm/api/v6/rkETp35xJVj-6WaffQsS77awykM/AAAABdYfDMEGiOTCsGaXhX_G_tq73Ocf-Wa0wllMoTMKLETkfqXWaB9knMiMXcujEc65rLGH1rhmqMACAmwVqZAl8n8W8GP3I3wvWoU.webp?r=c60" class="card-img-top" alt="...">
+                  </div>
+                  <div class="card1" style="width: 20rem;">
+                    <img src="https://occ-0-2484-3663.1.nflxso.net/dnm/api/v6/rkETp35xJVj-6WaffQsS77awykM/AAAABdqS3LsYpbKa8-kl2GluHxRpXlk1SetRT8M1uF9REOlL6XceHYYB1BGUMvslZroEuDgYptaXjmhgrGiuSmugpuCbn6vZepbbptX5X-eTDwyRSyCJilsIDvAJM0LWpjixsQxc.jpg?r=4b3" class="card-img-top" alt="...">
+                  </div>
+                </div>
+                <div class="d-flex" style="gap: 20px; margin-top: 20px; margin-bottom: 20px;">
+                  <div class="card1" style="width: 20rem;">
+                    <img src="https://occ-0-4994-2186.1.nflxso.net/dnm/api/v6/rkETp35xJVj-6WaffQsS77awykM/AAAABdYfDMEGiOTCsGaXhX_G_tq73Ocf-Wa0wllMoTMKLETkfqXWaB9knMiMXcujEc65rLGH1rhmqMACAmwVqZAl8n8W8GP3I3wvWoU.webp?r=c60" class="card-img-top" alt="...">
+                  </div>
+                  <div class="card1" style="width: 20rem;">
+                    <img src="https://occ-0-2484-3663.1.nflxso.net/dnm/api/v6/rkETp35xJVj-6WaffQsS77awykM/AAAABdqS3LsYpbKa8-kl2GluHxRpXlk1SetRT8M1uF9REOlL6XceHYYB1BGUMvslZroEuDgYptaXjmhgrGiuSmugpuCbn6vZepbbptX5X-eTDwyRSyCJilsIDvAJM0LWpjixsQxc.jpg?r=4b3" class="card-img-top" alt="...">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Horror Movies  sec 6-->
+
+    <h1 style="color: white; font-size: 23px; font-weight: 550; margin-top: 50px; padding-left: 50px;">Horror Movies</h1>
+
+    <div class="card-container1">
+      <div class="card1" style="width: 14rem;">
+        <img src="https://occ-0-2484-3663.1.nflxso.net/dnm/api/v6/rkETp35xJVj-6WaffQsS77awykM/AAAABfliKZj84VMQ3FAzrZxQH5luTKgpqy7BcajNBeflGVMnj6gPyzhpi-pK3MLYw7ZhKH_TWayl8R3QouTQ_WPZp-Q73ptRi7vq11oqoez_1tNpeWLozAQBUHk0odsmFpM5f-VkRe3SbvcI096pMnuGhteMKXQ1nbR3AlH8_22F1RvFI4yHwf1HjCsistp8tZcM4eDVaw7wY54bFoJ_zKrDprDwSD7_1lVBpeBKUymUtCSyiN0Ki7Zd54MU2weQlDjJVytak-M-30I6HBMZREa_MCraC5Ft.webp?r=a76" class="card-img-top" data-bs-toggle="modal" data-bs-target="#exampleModal00" alt="...">
+          <!-- Modal -->
+          <div class="modal fade" id="exampleModal00" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+              <img src="./image/Salar.png" style="width: 700px;" alt="">
+              <div class="modal-content" style="width: 700px; border: none; color: #c8c8c8;">
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                <div class="modal-body" style="background-color: #222222; padding-left: 40px; padding-right: 40px; margin-top: -30px;">
+                  <h2 style="font-size: 28px; color: white;"><b>Salar (Kannada)</b></h2>
+                  <img src="./image/Salar 1.png" alt="">
+                  <p style="margin-top: 10px;">The fate of a violently contested kingdom hangs on the fraught bond between two friends turned-foes in this saga of power, bloodshed and betrayal.</p>
+                  <p>cast : Prabhas, Prithviraj Sukumaran, Shruthi Hassan <br>
+                    Director : Prashanth Neel</p>
+                  <div class="d-flex" style="margin-left: -23px; margin-top: 20px;">
+                    <div>
+                      <button class="zoom-btn" style="width: 100px; height: 80px; background-color: transparent; border: none; color: #c8c8c8;"><i class="fa-solid fa-plus fa-2xl" style="color: #c8c8c8;"></i><p style="padding-top: 10px;">My List</p></button>
+                    </div>
+                    <div>
+                      <button class="zoom-btn" style="width: 80px; height: 80px; background-color: transparent; border: none; color: #c8c8c8;"><i class="fa-regular fa-thumbs-up fa-2xl" style="color: #c8c8c8;"></i><p style="padding-top: 10px;">Rate</p></button>
+                    </div>
+                    <div>
+                      <button class="zoom-btn" style="width: 100px; height: 80px; background-color: transparent; border: none; color: #c8c8c8;"><i class="fa-solid fa-arrow-down fa-2xl" style="color: #c8c8c8;"></i><p style="padding-top: 10px;">Download</p></button>
+                    </div>
+                  </div>
+
+                  <div class="d-flex" style="gap: 20px; margin-top: 20px;">
+                    <div class="card1" style="width: 20rem;">
+                      <img src="https://occ-0-4994-2186.1.nflxso.net/dnm/api/v6/rkETp35xJVj-6WaffQsS77awykM/AAAABdYfDMEGiOTCsGaXhX_G_tq73Ocf-Wa0wllMoTMKLETkfqXWaB9knMiMXcujEc65rLGH1rhmqMACAmwVqZAl8n8W8GP3I3wvWoU.webp?r=c60" class="card-img-top" alt="...">
+                    </div>
+                    <div class="card1" style="width: 20rem;">
+                      <img src="https://occ-0-2484-3663.1.nflxso.net/dnm/api/v6/rkETp35xJVj-6WaffQsS77awykM/AAAABdqS3LsYpbKa8-kl2GluHxRpXlk1SetRT8M1uF9REOlL6XceHYYB1BGUMvslZroEuDgYptaXjmhgrGiuSmugpuCbn6vZepbbptX5X-eTDwyRSyCJilsIDvAJM0LWpjixsQxc.jpg?r=4b3" class="card-img-top" alt="...">
+                    </div>
+                  </div>
+                  <div class="d-flex" style="gap: 20px; margin-top: 20px; margin-bottom: 20px;">
+                    <div class="card1" style="width: 20rem;">
+                      <img src="https://occ-0-4994-2186.1.nflxso.net/dnm/api/v6/rkETp35xJVj-6WaffQsS77awykM/AAAABdYfDMEGiOTCsGaXhX_G_tq73Ocf-Wa0wllMoTMKLETkfqXWaB9knMiMXcujEc65rLGH1rhmqMACAmwVqZAl8n8W8GP3I3wvWoU.webp?r=c60" class="card-img-top" alt="...">
+                    </div>
+                    <div class="card1" style="width: 20rem;">
+                      <img src="https://occ-0-2484-3663.1.nflxso.net/dnm/api/v6/rkETp35xJVj-6WaffQsS77awykM/AAAABdqS3LsYpbKa8-kl2GluHxRpXlk1SetRT8M1uF9REOlL6XceHYYB1BGUMvslZroEuDgYptaXjmhgrGiuSmugpuCbn6vZepbbptX5X-eTDwyRSyCJilsIDvAJM0LWpjixsQxc.jpg?r=4b3" class="card-img-top" alt="...">
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+      </div>
+      <div class="card1" style="width: 14rem;">
+        <img src="https://occ-0-2484-3663.1.nflxso.net/dnm/api/v6/rkETp35xJVj-6WaffQsS77awykM/AAAABXDkDeKXMsv1T7pj8SMKm76QdAusQTAqjmcXTgPlRu6ZGVu27pugylzFdJwrDMMlPnFwR9zlHdUDQdqo7WNfdlXXy0ZJIuV-RGr94deZE5hteaPRGX4TTWbj09WZtB6oTwr6ApXrjdky8MFjmH21DRvULFX6zC0NjUCNsuwg8Ve0zpYPZo8eQCFyRjQDZw7W8hImK9aMUslDoUntw7_XHP6doOCfQKG6BUhoXCQWXrh_4C4N8pWpqZXXmOJaAD958KyBisPg_oHsAb3mt4BZUQsvdw.webp?r=4b7" data-bs-toggle="modal" data-bs-target="#exampleModal01" class="card-img-top" alt="...">
+        <!-- Modal -->
+        <div class="modal fade" id="exampleModal01" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+          <div class="modal-dialog">
+            <img src="./image/60 sec.png" style="width: 700px;" alt="">
+            <div class="modal-content" style="width: 700px; border: none; color: #c8c8c8;">
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              <div class="modal-body" style="background-color: #222222; padding-left: 40px; padding-right: 40px; margin-top: -30px;">
+                <h2 style="font-size: 28px; color: white;"><b>Sixty Minutes</b></h2>
+                <img src="./image/60 sec 1.png" alt="">
+                <p style="margin-top: 10px;">Desperate to keep custody of his daughter, a mixed arts fighter abondons a big match and race across Berlin to attend her birthday party.</p>
+                <p>Cast : Emilio Sakraya, Dennis Mojen, Marie Mouroum <br>
+                  Director : Oliver Kienle</p>
+                <div class="d-flex" style="margin-left: -23px; margin-top: 20px;">
+                  <div>
+                    <button class="zoom-btn" style="width: 100px; height: 80px; background-color: transparent; border: none; color: #c8c8c8;"><i class="fa-solid fa-plus fa-2xl" style="color: #c8c8c8;"></i><p style="padding-top: 10px;">My List</p></button>
+                  </div>
+                  <div>
+                    <button class="zoom-btn" style="width: 80px; height: 80px; background-color: transparent; border: none; color: #c8c8c8;"><i class="fa-regular fa-thumbs-up fa-2xl" style="color: #c8c8c8;"></i><p style="padding-top: 10px;">Rate</p></button>
+                  </div>
+                  <div>
+                    <button class="zoom-btn" style="width: 100px; height: 80px; background-color: transparent; border: none; color: #c8c8c8;"><i class="fa-solid fa-arrow-down fa-2xl" style="color: #c8c8c8;"></i><p style="padding-top: 10px;">Download</p></button>
+                  </div>
+                </div>
+
+                <div class="d-flex" style="gap: 20px; margin-top: 20px;">
+                  <div class="card1" style="width: 20rem;">
+                    <img src="https://occ-0-4994-2186.1.nflxso.net/dnm/api/v6/rkETp35xJVj-6WaffQsS77awykM/AAAABdYfDMEGiOTCsGaXhX_G_tq73Ocf-Wa0wllMoTMKLETkfqXWaB9knMiMXcujEc65rLGH1rhmqMACAmwVqZAl8n8W8GP3I3wvWoU.webp?r=c60" data-bs-toggle="modal" data-bs-target="#exampleModal2" class="card-img-top" alt="...">
+                  </div>
+                  <div class="card1" style="width: 20rem;">
+                    <img src="https://occ-0-2484-3663.1.nflxso.net/dnm/api/v6/rkETp35xJVj-6WaffQsS77awykM/AAAABdqS3LsYpbKa8-kl2GluHxRpXlk1SetRT8M1uF9REOlL6XceHYYB1BGUMvslZroEuDgYptaXjmhgrGiuSmugpuCbn6vZepbbptX5X-eTDwyRSyCJilsIDvAJM0LWpjixsQxc.jpg?r=4b3" data-bs-toggle="modal" data-bs-target="#exampleModal3" class="card-img-top" alt="...">
+                  </div>
+                </div>
+                <div class="d-flex" style="gap: 20px; margin-top: 20px; margin-bottom: 20px;">
+                  <div class="card1" style="width: 20rem;">
+                    <img src="https://occ-0-4994-2186.1.nflxso.net/dnm/api/v6/rkETp35xJVj-6WaffQsS77awykM/AAAABdYfDMEGiOTCsGaXhX_G_tq73Ocf-Wa0wllMoTMKLETkfqXWaB9knMiMXcujEc65rLGH1rhmqMACAmwVqZAl8n8W8GP3I3wvWoU.webp?r=c60" data-bs-toggle="modal" data-bs-target="#exampleModal4" class="card-img-top" alt="...">
+                  </div>
+                  <div class="card1" style="width: 20rem;">
+                    <img src="https://occ-0-2484-3663.1.nflxso.net/dnm/api/v6/rkETp35xJVj-6WaffQsS77awykM/AAAABdqS3LsYpbKa8-kl2GluHxRpXlk1SetRT8M1uF9REOlL6XceHYYB1BGUMvslZroEuDgYptaXjmhgrGiuSmugpuCbn6vZepbbptX5X-eTDwyRSyCJilsIDvAJM0LWpjixsQxc.jpg?r=4b3" data-bs-toggle="modal" data-bs-target="#exampleModal5" class="card-img-top" alt="...">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="card1" style="width: 14rem;">
+        <img src="https://occ-0-2484-3663.1.nflxso.net/dnm/api/v6/rkETp35xJVj-6WaffQsS77awykM/AAAABVnM7u4Mw7j32H3h_ov2CldER3jj5rIW9GuifO5DtFW9nm8PaEdz_f93ogfOhtF6FVb4eQEK7IK_W2Fz1dBJDLyiJVp9xL7aGac.webp?r=a09" data-bs-toggle="modal" data-bs-target="#exampleModal02" class="card-img-top" alt="...">
+        <!-- Modal -->
+        <div class="modal fade" id="exampleModal02" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+          <div class="modal-dialog">
+            <img src="./image/Outer Banks.png" style="width: 700px;" alt="">
+            <div class="modal-content" style="width: 700px; border: none; color: #c8c8c8;">
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              <div class="modal-body" style="background-color: #222222; padding-left: 40px; padding-right: 40px; margin-top: -30px;">
+                <h2 style="font-size: 28px; color: white;"><b>Outer Banks</b></h2>
+                <img src="./image/Outer Banks 1.png" alt="">
+                <p style="margin-top: 10px;">After a hurricane, Jhon B, JJ, Pope and Kiara plunge headlong into danger and adventure when they find a mysterious sunken wreck.</p>
+                <p>cast : Chase Stokes, Madelyn Cline, Madison Bailey <br>
+                  Creators : Josh Pate, Jonas Pate, Shannon Burke</p>
+                <div class="d-flex" style="margin-left: -23px; margin-top: 20px;">
+                  <div>
+                    <button class="zoom-btn" style="width: 100px; height: 80px; background-color: transparent; border: none; color: #c8c8c8;"><i class="fa-solid fa-plus fa-2xl" style="color: #c8c8c8;"></i><p style="padding-top: 10px;">My List</p></button>
+                  </div>
+                  <div>
+                    <button class="zoom-btn" style="width: 80px; height: 80px; background-color: transparent; border: none; color: #c8c8c8;"><i class="fa-regular fa-thumbs-up fa-2xl" style="color: #c8c8c8;"></i><p style="padding-top: 10px;">Rate</p></button>
+                  </div>
+                  <div>
+                    <button class="zoom-btn" style="width: 100px; height: 80px; background-color: transparent; border: none; color: #c8c8c8;"><i class="fa-solid fa-arrow-down fa-2xl" style="color: #c8c8c8;"></i><p style="padding-top: 10px;">Download</p></button>
+                  </div>
+                </div>
+
+                <div class="d-flex" style="gap: 20px; margin-top: 20px;">
+                  <div class="card1" style="width: 20rem;">
+                    <img src="https://occ-0-4994-2186.1.nflxso.net/dnm/api/v6/rkETp35xJVj-6WaffQsS77awykM/AAAABdYfDMEGiOTCsGaXhX_G_tq73Ocf-Wa0wllMoTMKLETkfqXWaB9knMiMXcujEc65rLGH1rhmqMACAmwVqZAl8n8W8GP3I3wvWoU.webp?r=c60" class="card-img-top" alt="...">
+                  </div>
+                  <div class="card1" style="width: 20rem;">
+                    <img src="https://occ-0-2484-3663.1.nflxso.net/dnm/api/v6/rkETp35xJVj-6WaffQsS77awykM/AAAABdqS3LsYpbKa8-kl2GluHxRpXlk1SetRT8M1uF9REOlL6XceHYYB1BGUMvslZroEuDgYptaXjmhgrGiuSmugpuCbn6vZepbbptX5X-eTDwyRSyCJilsIDvAJM0LWpjixsQxc.jpg?r=4b3" class="card-img-top" alt="...">
+                  </div>
+                </div>
+                <div class="d-flex" style="gap: 20px; margin-top: 20px; margin-bottom: 20px;">
+                  <div class="card1" style="width: 20rem;">
+                    <img src="https://occ-0-4994-2186.1.nflxso.net/dnm/api/v6/rkETp35xJVj-6WaffQsS77awykM/AAAABdYfDMEGiOTCsGaXhX_G_tq73Ocf-Wa0wllMoTMKLETkfqXWaB9knMiMXcujEc65rLGH1rhmqMACAmwVqZAl8n8W8GP3I3wvWoU.webp?r=c60" class="card-img-top" alt="...">
+                  </div>
+                  <div class="card1" style="width: 20rem;">
+                    <img src="https://occ-0-2484-3663.1.nflxso.net/dnm/api/v6/rkETp35xJVj-6WaffQsS77awykM/AAAABdqS3LsYpbKa8-kl2GluHxRpXlk1SetRT8M1uF9REOlL6XceHYYB1BGUMvslZroEuDgYptaXjmhgrGiuSmugpuCbn6vZepbbptX5X-eTDwyRSyCJilsIDvAJM0LWpjixsQxc.jpg?r=4b3" class="card-img-top" alt="...">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="card1" style="width: 14rem;">
+        <img src="https://occ-0-2484-3663.1.nflxso.net/dnm/api/v6/rkETp35xJVj-6WaffQsS77awykM/AAAABZ7iSqkSti_CzQVADRqwbamJLLdb8DO_Du-TlGZlYn_O0J7gW-aYndUB3sbMFIH66WkTGqTOZe5a2JnDwh8gHFhktvtDM329AxA.webp?r=9e7" data-bs-toggle="modal" data-bs-target="#exampleModal03" class="card-img-top" alt="...">
+        <!-- Modal -->
+        <div class="modal fade" id="exampleModal03" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+          <div class="modal-dialog">
+            <img src="./image/The Dark Knight.png" style="width: 700px;" alt="">
+            <div class="modal-content" style="width: 700px; border: none; color: #c8c8c8;">
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              <div class="modal-body" style="background-color: #222222; padding-left: 40px; padding-right: 40px; margin-top: -30px;">
+                <h2 style="font-size: 28px; color: white;"><b>The Dark Knight</b></h2>
+                <img src="./image/The Dark Knight 1.png" alt="">
+                <p style="margin-top: 10px;">Batman, Lieutenant Gordon and District Attorney Harvey Dent go up against the Joker, a criminal mastermind in ghoulish makeup terrorizing Gotham City.</p>
+                <p>Cast : Christian Bale, Heath Ledger, Aaron Eckhart <br>
+                  Director : Christopher Nolan</p>
+                <div class="d-flex" style="margin-left: -23px; margin-top: 20px;">
+                  <div>
+                    <button class="zoom-btn" style="width: 100px; height: 80px; background-color: transparent; border: none; color: #c8c8c8;"><i class="fa-solid fa-plus fa-2xl" style="color: #c8c8c8;"></i><p style="padding-top: 10px;">My List</p></button>
+                  </div>
+                  <div>
+                    <button class="zoom-btn" style="width: 80px; height: 80px; background-color: transparent; border: none; color: #c8c8c8;"><i class="fa-regular fa-thumbs-up fa-2xl" style="color: #c8c8c8;"></i><p style="padding-top: 10px;">Rate</p></button>
+                  </div>
+                  <div>
+                    <button class="zoom-btn" style="width: 100px; height: 80px; background-color: transparent; border: none; color: #c8c8c8;"><i class="fa-solid fa-arrow-down fa-2xl" style="color: #c8c8c8;"></i><p style="padding-top: 10px;">Download</p></button>
+                  </div>
+                </div>
+
+                <div class="d-flex" style="gap: 20px; margin-top: 20px;">
+                  <div class="card1" style="width: 20rem;">
+                    <img src="https://occ-0-4994-2186.1.nflxso.net/dnm/api/v6/rkETp35xJVj-6WaffQsS77awykM/AAAABdYfDMEGiOTCsGaXhX_G_tq73Ocf-Wa0wllMoTMKLETkfqXWaB9knMiMXcujEc65rLGH1rhmqMACAmwVqZAl8n8W8GP3I3wvWoU.webp?r=c60" class="card-img-top" alt="...">
+                  </div>
+                  <div class="card1" style="width: 20rem;">
+                    <img src="https://occ-0-2484-3663.1.nflxso.net/dnm/api/v6/rkETp35xJVj-6WaffQsS77awykM/AAAABdqS3LsYpbKa8-kl2GluHxRpXlk1SetRT8M1uF9REOlL6XceHYYB1BGUMvslZroEuDgYptaXjmhgrGiuSmugpuCbn6vZepbbptX5X-eTDwyRSyCJilsIDvAJM0LWpjixsQxc.jpg?r=4b3" class="card-img-top" alt="...">
+                  </div>
+                </div>
+                <div class="d-flex" style="gap: 20px; margin-top: 20px; margin-bottom: 20px;">
+                  <div class="card1" style="width: 20rem;">
+                    <img src="https://occ-0-4994-2186.1.nflxso.net/dnm/api/v6/rkETp35xJVj-6WaffQsS77awykM/AAAABdYfDMEGiOTCsGaXhX_G_tq73Ocf-Wa0wllMoTMKLETkfqXWaB9knMiMXcujEc65rLGH1rhmqMACAmwVqZAl8n8W8GP3I3wvWoU.webp?r=c60" class="card-img-top" alt="...">
+                  </div>
+                  <div class="card1" style="width: 20rem;">
+                    <img src="https://occ-0-2484-3663.1.nflxso.net/dnm/api/v6/rkETp35xJVj-6WaffQsS77awykM/AAAABdqS3LsYpbKa8-kl2GluHxRpXlk1SetRT8M1uF9REOlL6XceHYYB1BGUMvslZroEuDgYptaXjmhgrGiuSmugpuCbn6vZepbbptX5X-eTDwyRSyCJilsIDvAJM0LWpjixsQxc.jpg?r=4b3" class="card-img-top" alt="...">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="card1" style="width: 14rem;">
+        <img src="https://occ-0-2484-3663.1.nflxso.net/dnm/api/v6/rkETp35xJVj-6WaffQsS77awykM/AAAABW1DDGatnVkmNv4qxuU6VhZ3O7aExK84hRwS3zn7Up1DNEuyXJ6gOjbZWg1H06Lq4HT9tIyaQEgudWwWxFtfCcRmE5cZFM2i-Ww.webp?r=f2b" data-bs-toggle="modal" data-bs-target="#exampleModal04" class="card-img-top" alt="...">
+        <!-- Modal -->
+        <div class="modal fade" id="exampleModal04" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+          <div class="modal-dialog">
+            <img src="./image/Fast & Furious.png" style="width: 700px;" alt="">
+            <div class="modal-content" style="width: 700px; border: none; color: #c8c8c8;">
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              <div class="modal-body" style="background-color: #222222; padding-left: 40px; padding-right: 40px; margin-top: -30px;">
+                <h2 style="font-size: 28px; color: white;"><b>Fast & Furious</b></h2>
+                <img src="./image/Fast and Furious 1.png" alt="">
+                <p style="margin-top: 10px;">After six years on the lam, fugitive Dom Toretto returns to Los Angeles and teams up with rouge FBI agent Brian O'conner to bring down a common enemy.</p>
+                <p>Cast : Vin Diesel, Paul Walker, Jordana Brewster <br>
+                  Director : Justin Lin</p>
+                <div class="d-flex" style="margin-left: -23px; margin-top: 20px;">
+                  <div>
+                    <button class="zoom-btn" style="width: 100px; height: 80px; background-color: transparent; border: none; color: #c8c8c8;"><i class="fa-solid fa-plus fa-2xl" style="color: #c8c8c8;"></i><p style="padding-top: 10px;">My List</p></button>
+                  </div>
+                  <div>
+                    <button class="zoom-btn" style="width: 80px; height: 80px; background-color: transparent; border: none; color: #c8c8c8;"><i class="fa-regular fa-thumbs-up fa-2xl" style="color: #c8c8c8;"></i><p style="padding-top: 10px;">Rate</p></button>
+                  </div>
+                  <div>
+                    <button class="zoom-btn" style="width: 100px; height: 80px; background-color: transparent; border: none; color: #c8c8c8;"><i class="fa-solid fa-arrow-down fa-2xl" style="color: #c8c8c8;"></i><p style="padding-top: 10px;">Download</p></button>
+                  </div>
+                </div>
+
+                <div class="d-flex" style="gap: 20px; margin-top: 20px;">
+                  <div class="card1" style="width: 20rem;">
+                    <img src="https://occ-0-4994-2186.1.nflxso.net/dnm/api/v6/rkETp35xJVj-6WaffQsS77awykM/AAAABdYfDMEGiOTCsGaXhX_G_tq73Ocf-Wa0wllMoTMKLETkfqXWaB9knMiMXcujEc65rLGH1rhmqMACAmwVqZAl8n8W8GP3I3wvWoU.webp?r=c60" class="card-img-top" alt="...">
+                  </div>
+                  <div class="card1" style="width: 20rem;">
+                    <img src="https://occ-0-2484-3663.1.nflxso.net/dnm/api/v6/rkETp35xJVj-6WaffQsS77awykM/AAAABdqS3LsYpbKa8-kl2GluHxRpXlk1SetRT8M1uF9REOlL6XceHYYB1BGUMvslZroEuDgYptaXjmhgrGiuSmugpuCbn6vZepbbptX5X-eTDwyRSyCJilsIDvAJM0LWpjixsQxc.jpg?r=4b3" class="card-img-top" alt="...">
+                  </div>
+                </div>
+                <div class="d-flex" style="gap: 20px; margin-top: 20px; margin-bottom: 20px;">
+                  <div class="card1" style="width: 20rem;">
+                    <img src="https://occ-0-4994-2186.1.nflxso.net/dnm/api/v6/rkETp35xJVj-6WaffQsS77awykM/AAAABdYfDMEGiOTCsGaXhX_G_tq73Ocf-Wa0wllMoTMKLETkfqXWaB9knMiMXcujEc65rLGH1rhmqMACAmwVqZAl8n8W8GP3I3wvWoU.webp?r=c60" class="card-img-top" alt="...">
+                  </div>
+                  <div class="card1" style="width: 20rem;">
+                    <img src="https://occ-0-2484-3663.1.nflxso.net/dnm/api/v6/rkETp35xJVj-6WaffQsS77awykM/AAAABdqS3LsYpbKa8-kl2GluHxRpXlk1SetRT8M1uF9REOlL6XceHYYB1BGUMvslZroEuDgYptaXjmhgrGiuSmugpuCbn6vZepbbptX5X-eTDwyRSyCJilsIDvAJM0LWpjixsQxc.jpg?r=4b3" class="card-img-top" alt="...">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="card1" style="width: 14rem;">
+        <img src="https://occ-0-2484-3663.1.nflxso.net/dnm/api/v6/rkETp35xJVj-6WaffQsS77awykM/AAAABYuUFIBkbNFXzxcs_8wtp3m7Vb2HUacM3KjYWB1L_SYh2DrN2jjVTNddyA6Koqd81NgbPyCEmLKIjfBx-Yomwj4SKy0LZ9eP5Zc.webp?r=503" data-bs-toggle="modal" data-bs-target="#exampleModal05" class="card-img-top" alt="...">
+        <!-- Modal -->
+        <div class="modal fade" id="exampleModal05" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+          <div class="modal-dialog">
+            <img src="./image/Thunivu.png" style="width: 700px;" alt="">
+            <div class="modal-content" style="width: 700px; border: none; color: #c8c8c8;">
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              <div class="modal-body" style="background-color: #222222; padding-left: 40px; padding-right: 40px; margin-top: -30px;">
+                <h2 style="font-size: 28px; color: white;"><b>Thunivu (Malayalam)</b></h2>
+                <img src="./image/Thunivu 1.png" alt="">
+                <p style="margin-top: 10px;">A major bank heist takes an unnerving turn when a mysterious interloper known only as Dark Devil Begins to hijack the operation.</p>
+                <div class="d-flex" style="margin-left: -23px; margin-top: 20px;">
+                  <div>
+                    <button class="zoom-btn" style="width: 100px; height: 80px; background-color: transparent; border: none; color: #c8c8c8;"><i class="fa-solid fa-plus fa-2xl" style="color: #c8c8c8;"></i><p style="padding-top: 10px;">My List</p></button>
+                  </div>
+                  <div>
+                    <button class="zoom-btn" style="width: 80px; height: 80px; background-color: transparent; border: none; color: #c8c8c8;"><i class="fa-regular fa-thumbs-up fa-2xl" style="color: #c8c8c8;"></i><p style="padding-top: 10px;">Rate</p></button>
+                  </div>
+                  <div>
+                    <button class="zoom-btn" style="width: 100px; height: 80px; background-color: transparent; border: none; color: #c8c8c8;"><i class="fa-solid fa-arrow-down fa-2xl" style="color: #c8c8c8;"></i><p style="padding-top: 10px;">Download</p></button>
+                  </div>
+                </div>
+
+                <div class="d-flex" style="gap: 20px; margin-top: 20px;">
+                  <div class="card1" style="width: 20rem;">
+                    <img src="https://occ-0-4994-2186.1.nflxso.net/dnm/api/v6/rkETp35xJVj-6WaffQsS77awykM/AAAABdYfDMEGiOTCsGaXhX_G_tq73Ocf-Wa0wllMoTMKLETkfqXWaB9knMiMXcujEc65rLGH1rhmqMACAmwVqZAl8n8W8GP3I3wvWoU.webp?r=c60" class="card-img-top" alt="...">
+                  </div>
+                  <div class="card1" style="width: 20rem;">
+                    <img src="https://occ-0-2484-3663.1.nflxso.net/dnm/api/v6/rkETp35xJVj-6WaffQsS77awykM/AAAABdqS3LsYpbKa8-kl2GluHxRpXlk1SetRT8M1uF9REOlL6XceHYYB1BGUMvslZroEuDgYptaXjmhgrGiuSmugpuCbn6vZepbbptX5X-eTDwyRSyCJilsIDvAJM0LWpjixsQxc.jpg?r=4b3" class="card-img-top" alt="...">
+                  </div>
+                </div>
+                <div class="d-flex" style="gap: 20px; margin-top: 20px; margin-bottom: 20px;">
+                  <div class="card1" style="width: 20rem;">
+                    <img src="https://occ-0-4994-2186.1.nflxso.net/dnm/api/v6/rkETp35xJVj-6WaffQsS77awykM/AAAABdYfDMEGiOTCsGaXhX_G_tq73Ocf-Wa0wllMoTMKLETkfqXWaB9knMiMXcujEc65rLGH1rhmqMACAmwVqZAl8n8W8GP3I3wvWoU.webp?r=c60" class="card-img-top" alt="...">
+                  </div>
+                  <div class="card1" style="width: 20rem;">
+                    <img src="https://occ-0-2484-3663.1.nflxso.net/dnm/api/v6/rkETp35xJVj-6WaffQsS77awykM/AAAABdqS3LsYpbKa8-kl2GluHxRpXlk1SetRT8M1uF9REOlL6XceHYYB1BGUMvslZroEuDgYptaXjmhgrGiuSmugpuCbn6vZepbbptX5X-eTDwyRSyCJilsIDvAJM0LWpjixsQxc.jpg?r=4b3" class="card-img-top" alt="...">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <!-- Thriller Movies  sec 7-->
+
+    <h1 style="color: white; font-size: 23px; font-weight: 550; margin-top: 50px; padding-left: 50px;">Thriller Movie</h1>
+
+    <div class="card-container1">
+      <div class="card1" style="width: 14rem;">
+        <img src="https://occ-0-2484-3663.1.nflxso.net/dnm/api/v6/rkETp35xJVj-6WaffQsS77awykM/AAAABZss2ZUrA6Tm1BQER3qQ5Vq9lalYjsHVG9YHXDt2fN7AajI8BaKNGP4Wq7b87iEUoQB3RpRPD1W7sf0YUpUpW62x00ei80MkXmrc3IcjK1Ay1afwe1pTBg01r9Q1LA_py5HC.jpg?r=ebb" class="card-img-top" data-bs-toggle="modal" data-bs-target="#exampleModal00" alt="...">
+          <!-- Modal -->
+          <div class="modal fade" id="exampleModal00" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+              <img src="./image/Salar.png" style="width: 700px;" alt="">
+              <div class="modal-content" style="width: 700px; border: none; color: #c8c8c8;">
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                <div class="modal-body" style="background-color: #222222; padding-left: 40px; padding-right: 40px; margin-top: -30px;">
+                  <h2 style="font-size: 28px; color: white;"><b>Salar (Kannada)</b></h2>
+                  <img src="./image/Salar 1.png" alt="">
+                  <p style="margin-top: 10px;">The fate of a violently contested kingdom hangs on the fraught bond between two friends turned-foes in this saga of power, bloodshed and betrayal.</p>
+                  <p>cast : Prabhas, Prithviraj Sukumaran, Shruthi Hassan <br>
+                    Director : Prashanth Neel</p>
+                  <div class="d-flex" style="margin-left: -23px; margin-top: 20px;">
+                    <div>
+                      <button class="zoom-btn" style="width: 100px; height: 80px; background-color: transparent; border: none; color: #c8c8c8;"><i class="fa-solid fa-plus fa-2xl" style="color: #c8c8c8;"></i><p style="padding-top: 10px;">My List</p></button>
+                    </div>
+                    <div>
+                      <button class="zoom-btn" style="width: 80px; height: 80px; background-color: transparent; border: none; color: #c8c8c8;"><i class="fa-regular fa-thumbs-up fa-2xl" style="color: #c8c8c8;"></i><p style="padding-top: 10px;">Rate</p></button>
+                    </div>
+                    <div>
+                      <button class="zoom-btn" style="width: 100px; height: 80px; background-color: transparent; border: none; color: #c8c8c8;"><i class="fa-solid fa-arrow-down fa-2xl" style="color: #c8c8c8;"></i><p style="padding-top: 10px;">Download</p></button>
+                    </div>
+                  </div>
+
+                  <div class="d-flex" style="gap: 20px; margin-top: 20px;">
+                    <div class="card1" style="width: 20rem;">
+                      <img src="https://occ-0-4994-2186.1.nflxso.net/dnm/api/v6/rkETp35xJVj-6WaffQsS77awykM/AAAABdYfDMEGiOTCsGaXhX_G_tq73Ocf-Wa0wllMoTMKLETkfqXWaB9knMiMXcujEc65rLGH1rhmqMACAmwVqZAl8n8W8GP3I3wvWoU.webp?r=c60" class="card-img-top" alt="...">
+                    </div>
+                    <div class="card1" style="width: 20rem;">
+                      <img src="https://occ-0-2484-3663.1.nflxso.net/dnm/api/v6/rkETp35xJVj-6WaffQsS77awykM/AAAABdqS3LsYpbKa8-kl2GluHxRpXlk1SetRT8M1uF9REOlL6XceHYYB1BGUMvslZroEuDgYptaXjmhgrGiuSmugpuCbn6vZepbbptX5X-eTDwyRSyCJilsIDvAJM0LWpjixsQxc.jpg?r=4b3" class="card-img-top" alt="...">
+                    </div>
+                  </div>
+                  <div class="d-flex" style="gap: 20px; margin-top: 20px; margin-bottom: 20px;">
+                    <div class="card1" style="width: 20rem;">
+                      <img src="https://occ-0-4994-2186.1.nflxso.net/dnm/api/v6/rkETp35xJVj-6WaffQsS77awykM/AAAABdYfDMEGiOTCsGaXhX_G_tq73Ocf-Wa0wllMoTMKLETkfqXWaB9knMiMXcujEc65rLGH1rhmqMACAmwVqZAl8n8W8GP3I3wvWoU.webp?r=c60" class="card-img-top" alt="...">
+                    </div>
+                    <div class="card1" style="width: 20rem;">
+                      <img src="https://occ-0-2484-3663.1.nflxso.net/dnm/api/v6/rkETp35xJVj-6WaffQsS77awykM/AAAABdqS3LsYpbKa8-kl2GluHxRpXlk1SetRT8M1uF9REOlL6XceHYYB1BGUMvslZroEuDgYptaXjmhgrGiuSmugpuCbn6vZepbbptX5X-eTDwyRSyCJilsIDvAJM0LWpjixsQxc.jpg?r=4b3" class="card-img-top" alt="...">
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+      </div>
+      <div class="card1" style="width: 14rem;">
+        <img src="https://occ-0-2484-3663.1.nflxso.net/dnm/api/v6/rkETp35xJVj-6WaffQsS77awykM/AAAABcCpJqXqzfjdMNX5ZwKp2dLlhQrps-u-lKsQprDjJZe_WYjvj-2nypWVc-6xlRlrouF-u8GoTzF4TqmnTYxjjFAlM5OV28116dU.webp?r=648" data-bs-toggle="modal" data-bs-target="#exampleModal01" class="card-img-top" alt="...">
+        <!-- Modal -->
+        <div class="modal fade" id="exampleModal01" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+          <div class="modal-dialog">
+            <img src="./image/60 sec.png" style="width: 700px;" alt="">
+            <div class="modal-content" style="width: 700px; border: none; color: #c8c8c8;">
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              <div class="modal-body" style="background-color: #222222; padding-left: 40px; padding-right: 40px; margin-top: -30px;">
+                <h2 style="font-size: 28px; color: white;"><b>Sixty Minutes</b></h2>
+                <img src="./image/60 sec 1.png" alt="">
+                <p style="margin-top: 10px;">Desperate to keep custody of his daughter, a mixed arts fighter abondons a big match and race across Berlin to attend her birthday party.</p>
+                <p>Cast : Emilio Sakraya, Dennis Mojen, Marie Mouroum <br>
+                  Director : Oliver Kienle</p>
+                <div class="d-flex" style="margin-left: -23px; margin-top: 20px;">
+                  <div>
+                    <button class="zoom-btn" style="width: 100px; height: 80px; background-color: transparent; border: none; color: #c8c8c8;"><i class="fa-solid fa-plus fa-2xl" style="color: #c8c8c8;"></i><p style="padding-top: 10px;">My List</p></button>
+                  </div>
+                  <div>
+                    <button class="zoom-btn" style="width: 80px; height: 80px; background-color: transparent; border: none; color: #c8c8c8;"><i class="fa-regular fa-thumbs-up fa-2xl" style="color: #c8c8c8;"></i><p style="padding-top: 10px;">Rate</p></button>
+                  </div>
+                  <div>
+                    <button class="zoom-btn" style="width: 100px; height: 80px; background-color: transparent; border: none; color: #c8c8c8;"><i class="fa-solid fa-arrow-down fa-2xl" style="color: #c8c8c8;"></i><p style="padding-top: 10px;">Download</p></button>
+                  </div>
+                </div>
+
+                <div class="d-flex" style="gap: 20px; margin-top: 20px;">
+                  <div class="card1" style="width: 20rem;">
+                    <img src="https://occ-0-4994-2186.1.nflxso.net/dnm/api/v6/rkETp35xJVj-6WaffQsS77awykM/AAAABdYfDMEGiOTCsGaXhX_G_tq73Ocf-Wa0wllMoTMKLETkfqXWaB9knMiMXcujEc65rLGH1rhmqMACAmwVqZAl8n8W8GP3I3wvWoU.webp?r=c60" data-bs-toggle="modal" data-bs-target="#exampleModal2" class="card-img-top" alt="...">
+                  </div>
+                  <div class="card1" style="width: 20rem;">
+                    <img src="https://occ-0-2484-3663.1.nflxso.net/dnm/api/v6/rkETp35xJVj-6WaffQsS77awykM/AAAABdqS3LsYpbKa8-kl2GluHxRpXlk1SetRT8M1uF9REOlL6XceHYYB1BGUMvslZroEuDgYptaXjmhgrGiuSmugpuCbn6vZepbbptX5X-eTDwyRSyCJilsIDvAJM0LWpjixsQxc.jpg?r=4b3" data-bs-toggle="modal" data-bs-target="#exampleModal3" class="card-img-top" alt="...">
+                  </div>
+                </div>
+                <div class="d-flex" style="gap: 20px; margin-top: 20px; margin-bottom: 20px;">
+                  <div class="card1" style="width: 20rem;">
+                    <img src="https://occ-0-4994-2186.1.nflxso.net/dnm/api/v6/rkETp35xJVj-6WaffQsS77awykM/AAAABdYfDMEGiOTCsGaXhX_G_tq73Ocf-Wa0wllMoTMKLETkfqXWaB9knMiMXcujEc65rLGH1rhmqMACAmwVqZAl8n8W8GP3I3wvWoU.webp?r=c60" data-bs-toggle="modal" data-bs-target="#exampleModal4" class="card-img-top" alt="...">
+                  </div>
+                  <div class="card1" style="width: 20rem;">
+                    <img src="https://occ-0-2484-3663.1.nflxso.net/dnm/api/v6/rkETp35xJVj-6WaffQsS77awykM/AAAABdqS3LsYpbKa8-kl2GluHxRpXlk1SetRT8M1uF9REOlL6XceHYYB1BGUMvslZroEuDgYptaXjmhgrGiuSmugpuCbn6vZepbbptX5X-eTDwyRSyCJilsIDvAJM0LWpjixsQxc.jpg?r=4b3" data-bs-toggle="modal" data-bs-target="#exampleModal5" class="card-img-top" alt="...">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="card1" style="width: 14rem;">
+        <img src="https://occ-0-2484-3663.1.nflxso.net/dnm/api/v6/rkETp35xJVj-6WaffQsS77awykM/AAAABVdnv7IJqjh8K22-c_N-BYmc8g-q_u1s122-oLLTMuQnHKovMMKAU6ZHPO5voO6ViGyKIcvXHeGDp1R8wIvHeVX1jWnA2-4BKeTEWCeWnXmIe5VQKnqc8e1eSVehtOd48tUS.jpg?r=4f8" data-bs-toggle="modal" data-bs-target="#exampleModal02" class="card-img-top" alt="...">
+        <!-- Modal -->
+        <div class="modal fade" id="exampleModal02" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+          <div class="modal-dialog">
+            <img src="./image/Outer Banks.png" style="width: 700px;" alt="">
+            <div class="modal-content" style="width: 700px; border: none; color: #c8c8c8;">
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              <div class="modal-body" style="background-color: #222222; padding-left: 40px; padding-right: 40px; margin-top: -30px;">
+                <h2 style="font-size: 28px; color: white;"><b>Outer Banks</b></h2>
+                <img src="./image/Outer Banks 1.png" alt="">
+                <p style="margin-top: 10px;">After a hurricane, Jhon B, JJ, Pope and Kiara plunge headlong into danger and adventure when they find a mysterious sunken wreck.</p>
+                <p>cast : Chase Stokes, Madelyn Cline, Madison Bailey <br>
+                  Creators : Josh Pate, Jonas Pate, Shannon Burke</p>
+                <div class="d-flex" style="margin-left: -23px; margin-top: 20px;">
+                  <div>
+                    <button class="zoom-btn" style="width: 100px; height: 80px; background-color: transparent; border: none; color: #c8c8c8;"><i class="fa-solid fa-plus fa-2xl" style="color: #c8c8c8;"></i><p style="padding-top: 10px;">My List</p></button>
+                  </div>
+                  <div>
+                    <button class="zoom-btn" style="width: 80px; height: 80px; background-color: transparent; border: none; color: #c8c8c8;"><i class="fa-regular fa-thumbs-up fa-2xl" style="color: #c8c8c8;"></i><p style="padding-top: 10px;">Rate</p></button>
+                  </div>
+                  <div>
+                    <button class="zoom-btn" style="width: 100px; height: 80px; background-color: transparent; border: none; color: #c8c8c8;"><i class="fa-solid fa-arrow-down fa-2xl" style="color: #c8c8c8;"></i><p style="padding-top: 10px;">Download</p></button>
+                  </div>
+                </div>
+
+                <div class="d-flex" style="gap: 20px; margin-top: 20px;">
+                  <div class="card1" style="width: 20rem;">
+                    <img src="https://occ-0-4994-2186.1.nflxso.net/dnm/api/v6/rkETp35xJVj-6WaffQsS77awykM/AAAABdYfDMEGiOTCsGaXhX_G_tq73Ocf-Wa0wllMoTMKLETkfqXWaB9knMiMXcujEc65rLGH1rhmqMACAmwVqZAl8n8W8GP3I3wvWoU.webp?r=c60" class="card-img-top" alt="...">
+                  </div>
+                  <div class="card1" style="width: 20rem;">
+                    <img src="https://occ-0-2484-3663.1.nflxso.net/dnm/api/v6/rkETp35xJVj-6WaffQsS77awykM/AAAABdqS3LsYpbKa8-kl2GluHxRpXlk1SetRT8M1uF9REOlL6XceHYYB1BGUMvslZroEuDgYptaXjmhgrGiuSmugpuCbn6vZepbbptX5X-eTDwyRSyCJilsIDvAJM0LWpjixsQxc.jpg?r=4b3" class="card-img-top" alt="...">
+                  </div>
+                </div>
+                <div class="d-flex" style="gap: 20px; margin-top: 20px; margin-bottom: 20px;">
+                  <div class="card1" style="width: 20rem;">
+                    <img src="https://occ-0-4994-2186.1.nflxso.net/dnm/api/v6/rkETp35xJVj-6WaffQsS77awykM/AAAABdYfDMEGiOTCsGaXhX_G_tq73Ocf-Wa0wllMoTMKLETkfqXWaB9knMiMXcujEc65rLGH1rhmqMACAmwVqZAl8n8W8GP3I3wvWoU.webp?r=c60" class="card-img-top" alt="...">
+                  </div>
+                  <div class="card1" style="width: 20rem;">
+                    <img src="https://occ-0-2484-3663.1.nflxso.net/dnm/api/v6/rkETp35xJVj-6WaffQsS77awykM/AAAABdqS3LsYpbKa8-kl2GluHxRpXlk1SetRT8M1uF9REOlL6XceHYYB1BGUMvslZroEuDgYptaXjmhgrGiuSmugpuCbn6vZepbbptX5X-eTDwyRSyCJilsIDvAJM0LWpjixsQxc.jpg?r=4b3" class="card-img-top" alt="...">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="card1" style="width: 14rem;">
+        <img src="https://occ-0-2484-3663.1.nflxso.net/dnm/api/v6/rkETp35xJVj-6WaffQsS77awykM/AAAABbUpCAofw63864GKel6IIuZbWN9k5lL-2ti5BMy-BX3YHYDZheXqDnPLdDjakhIeo3n1yVxSNt-QoNbdXpiBY7jmD8HigvwfFZQ.webp?r=3b6" data-bs-toggle="modal" data-bs-target="#exampleModal03" class="card-img-top" alt="...">
+        <!-- Modal -->
+        <div class="modal fade" id="exampleModal03" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+          <div class="modal-dialog">
+            <img src="./image/The Dark Knight.png" style="width: 700px;" alt="">
+            <div class="modal-content" style="width: 700px; border: none; color: #c8c8c8;">
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              <div class="modal-body" style="background-color: #222222; padding-left: 40px; padding-right: 40px; margin-top: -30px;">
+                <h2 style="font-size: 28px; color: white;"><b>The Dark Knight</b></h2>
+                <img src="./image/The Dark Knight 1.png" alt="">
+                <p style="margin-top: 10px;">Batman, Lieutenant Gordon and District Attorney Harvey Dent go up against the Joker, a criminal mastermind in ghoulish makeup terrorizing Gotham City.</p>
+                <p>Cast : Christian Bale, Heath Ledger, Aaron Eckhart <br>
+                  Director : Christopher Nolan</p>
+                <div class="d-flex" style="margin-left: -23px; margin-top: 20px;">
+                  <div>
+                    <button class="zoom-btn" style="width: 100px; height: 80px; background-color: transparent; border: none; color: #c8c8c8;"><i class="fa-solid fa-plus fa-2xl" style="color: #c8c8c8;"></i><p style="padding-top: 10px;">My List</p></button>
+                  </div>
+                  <div>
+                    <button class="zoom-btn" style="width: 80px; height: 80px; background-color: transparent; border: none; color: #c8c8c8;"><i class="fa-regular fa-thumbs-up fa-2xl" style="color: #c8c8c8;"></i><p style="padding-top: 10px;">Rate</p></button>
+                  </div>
+                  <div>
+                    <button class="zoom-btn" style="width: 100px; height: 80px; background-color: transparent; border: none; color: #c8c8c8;"><i class="fa-solid fa-arrow-down fa-2xl" style="color: #c8c8c8;"></i><p style="padding-top: 10px;">Download</p></button>
+                  </div>
+                </div>
+
+                <div class="d-flex" style="gap: 20px; margin-top: 20px;">
+                  <div class="card1" style="width: 20rem;">
+                    <img src="https://occ-0-4994-2186.1.nflxso.net/dnm/api/v6/rkETp35xJVj-6WaffQsS77awykM/AAAABdYfDMEGiOTCsGaXhX_G_tq73Ocf-Wa0wllMoTMKLETkfqXWaB9knMiMXcujEc65rLGH1rhmqMACAmwVqZAl8n8W8GP3I3wvWoU.webp?r=c60" class="card-img-top" alt="...">
+                  </div>
+                  <div class="card1" style="width: 20rem;">
+                    <img src="https://occ-0-2484-3663.1.nflxso.net/dnm/api/v6/rkETp35xJVj-6WaffQsS77awykM/AAAABdqS3LsYpbKa8-kl2GluHxRpXlk1SetRT8M1uF9REOlL6XceHYYB1BGUMvslZroEuDgYptaXjmhgrGiuSmugpuCbn6vZepbbptX5X-eTDwyRSyCJilsIDvAJM0LWpjixsQxc.jpg?r=4b3" class="card-img-top" alt="...">
+                  </div>
+                </div>
+                <div class="d-flex" style="gap: 20px; margin-top: 20px; margin-bottom: 20px;">
+                  <div class="card1" style="width: 20rem;">
+                    <img src="https://occ-0-4994-2186.1.nflxso.net/dnm/api/v6/rkETp35xJVj-6WaffQsS77awykM/AAAABdYfDMEGiOTCsGaXhX_G_tq73Ocf-Wa0wllMoTMKLETkfqXWaB9knMiMXcujEc65rLGH1rhmqMACAmwVqZAl8n8W8GP3I3wvWoU.webp?r=c60" class="card-img-top" alt="...">
+                  </div>
+                  <div class="card1" style="width: 20rem;">
+                    <img src="https://occ-0-2484-3663.1.nflxso.net/dnm/api/v6/rkETp35xJVj-6WaffQsS77awykM/AAAABdqS3LsYpbKa8-kl2GluHxRpXlk1SetRT8M1uF9REOlL6XceHYYB1BGUMvslZroEuDgYptaXjmhgrGiuSmugpuCbn6vZepbbptX5X-eTDwyRSyCJilsIDvAJM0LWpjixsQxc.jpg?r=4b3" class="card-img-top" alt="...">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="card1" style="width: 14rem;">
+        <img src="https://occ-0-2484-3663.1.nflxso.net/dnm/api/v6/rkETp35xJVj-6WaffQsS77awykM/AAAABRZY9dmiTt6sp8egLIGoOxgrwlGi-MJtxUdxtP7uiSozA9S9nbPeWcRaJ0os44f_mPdNgT9lq66XB0K0CBFWS1j_Li451K29d_ESWG--Yo3Cs6D7qfBAf5sHuiJRJVaqt6RfPFuwZf5tzi8EQ59dJ6QGxr-FMo4ht3ggbzx8rhrXxoGzyxj8yHN-4kGO8e8nqhk4lQBPUX3zJYhfW7AtdxTeyaM-PxnMTXFprZgrQuUI-gB2azhBsNHo9cav0JBCt-Hsp40AMqD3PcXolbPAET9FL1IJ.webp?r=863" data-bs-toggle="modal" data-bs-target="#exampleModal04" class="card-img-top" alt="...">
+        <!-- Modal -->
+        <div class="modal fade" id="exampleModal04" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+          <div class="modal-dialog">
+            <img src="./image/Fast & Furious.png" style="width: 700px;" alt="">
+            <div class="modal-content" style="width: 700px; border: none; color: #c8c8c8;">
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              <div class="modal-body" style="background-color: #222222; padding-left: 40px; padding-right: 40px; margin-top: -30px;">
+                <h2 style="font-size: 28px; color: white;"><b>Fast & Furious</b></h2>
+                <img src="./image/Fast and Furious 1.png" alt="">
+                <p style="margin-top: 10px;">After six years on the lam, fugitive Dom Toretto returns to Los Angeles and teams up with rouge FBI agent Brian O'conner to bring down a common enemy.</p>
+                <p>Cast : Vin Diesel, Paul Walker, Jordana Brewster <br>
+                  Director : Justin Lin</p>
+                <div class="d-flex" style="margin-left: -23px; margin-top: 20px;">
+                  <div>
+                    <button class="zoom-btn" style="width: 100px; height: 80px; background-color: transparent; border: none; color: #c8c8c8;"><i class="fa-solid fa-plus fa-2xl" style="color: #c8c8c8;"></i><p style="padding-top: 10px;">My List</p></button>
+                  </div>
+                  <div>
+                    <button class="zoom-btn" style="width: 80px; height: 80px; background-color: transparent; border: none; color: #c8c8c8;"><i class="fa-regular fa-thumbs-up fa-2xl" style="color: #c8c8c8;"></i><p style="padding-top: 10px;">Rate</p></button>
+                  </div>
+                  <div>
+                    <button class="zoom-btn" style="width: 100px; height: 80px; background-color: transparent; border: none; color: #c8c8c8;"><i class="fa-solid fa-arrow-down fa-2xl" style="color: #c8c8c8;"></i><p style="padding-top: 10px;">Download</p></button>
+                  </div>
+                </div>
+
+                <div class="d-flex" style="gap: 20px; margin-top: 20px;">
+                  <div class="card1" style="width: 20rem;">
+                    <img src="https://occ-0-4994-2186.1.nflxso.net/dnm/api/v6/rkETp35xJVj-6WaffQsS77awykM/AAAABdYfDMEGiOTCsGaXhX_G_tq73Ocf-Wa0wllMoTMKLETkfqXWaB9knMiMXcujEc65rLGH1rhmqMACAmwVqZAl8n8W8GP3I3wvWoU.webp?r=c60" class="card-img-top" alt="...">
+                  </div>
+                  <div class="card1" style="width: 20rem;">
+                    <img src="https://occ-0-2484-3663.1.nflxso.net/dnm/api/v6/rkETp35xJVj-6WaffQsS77awykM/AAAABdqS3LsYpbKa8-kl2GluHxRpXlk1SetRT8M1uF9REOlL6XceHYYB1BGUMvslZroEuDgYptaXjmhgrGiuSmugpuCbn6vZepbbptX5X-eTDwyRSyCJilsIDvAJM0LWpjixsQxc.jpg?r=4b3" class="card-img-top" alt="...">
+                  </div>
+                </div>
+                <div class="d-flex" style="gap: 20px; margin-top: 20px; margin-bottom: 20px;">
+                  <div class="card1" style="width: 20rem;">
+                    <img src="https://occ-0-4994-2186.1.nflxso.net/dnm/api/v6/rkETp35xJVj-6WaffQsS77awykM/AAAABdYfDMEGiOTCsGaXhX_G_tq73Ocf-Wa0wllMoTMKLETkfqXWaB9knMiMXcujEc65rLGH1rhmqMACAmwVqZAl8n8W8GP3I3wvWoU.webp?r=c60" class="card-img-top" alt="...">
+                  </div>
+                  <div class="card1" style="width: 20rem;">
+                    <img src="https://occ-0-2484-3663.1.nflxso.net/dnm/api/v6/rkETp35xJVj-6WaffQsS77awykM/AAAABdqS3LsYpbKa8-kl2GluHxRpXlk1SetRT8M1uF9REOlL6XceHYYB1BGUMvslZroEuDgYptaXjmhgrGiuSmugpuCbn6vZepbbptX5X-eTDwyRSyCJilsIDvAJM0LWpjixsQxc.jpg?r=4b3" class="card-img-top" alt="...">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="card1" style="width: 14rem;">
+        <img src="https://occ-0-2484-3663.1.nflxso.net/dnm/api/v6/rkETp35xJVj-6WaffQsS77awykM/AAAABdPijk8tU6STDD1lQu4X5_rME94LLtlEB5N0mWZyxobuGRx_hgsVW_odXB12dZjWagsYswrrlaOJklcOCKRLNevHTDRtVBrWpAo.webp?r=1fa" data-bs-toggle="modal" data-bs-target="#exampleModal05" class="card-img-top" alt="...">
+        <!-- Modal -->
+        <div class="modal fade" id="exampleModal05" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+          <div class="modal-dialog">
+            <img src="./image/Thunivu.png" style="width: 700px;" alt="">
+            <div class="modal-content" style="width: 700px; border: none; color: #c8c8c8;">
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              <div class="modal-body" style="background-color: #222222; padding-left: 40px; padding-right: 40px; margin-top: -30px;">
+                <h2 style="font-size: 28px; color: white;"><b>Thunivu (Malayalam)</b></h2>
+                <img src="./image/Thunivu 1.png" alt="">
+                <p style="margin-top: 10px;">A major bank heist takes an unnerving turn when a mysterious interloper known only as Dark Devil Begins to hijack the operation.</p>
+                <div class="d-flex" style="margin-left: -23px; margin-top: 20px;">
+                  <div>
+                    <button class="zoom-btn" style="width: 100px; height: 80px; background-color: transparent; border: none; color: #c8c8c8;"><i class="fa-solid fa-plus fa-2xl" style="color: #c8c8c8;"></i><p style="padding-top: 10px;">My List</p></button>
+                  </div>
+                  <div>
+                    <button class="zoom-btn" style="width: 80px; height: 80px; background-color: transparent; border: none; color: #c8c8c8;"><i class="fa-regular fa-thumbs-up fa-2xl" style="color: #c8c8c8;"></i><p style="padding-top: 10px;">Rate</p></button>
+                  </div>
+                  <div>
+                    <button class="zoom-btn" style="width: 100px; height: 80px; background-color: transparent; border: none; color: #c8c8c8;"><i class="fa-solid fa-arrow-down fa-2xl" style="color: #c8c8c8;"></i><p style="padding-top: 10px;">Download</p></button>
+                  </div>
+                </div>
+
+                <div class="d-flex" style="gap: 20px; margin-top: 20px;">
+                  <div class="card1" style="width: 20rem;">
+                    <img src="https://occ-0-4994-2186.1.nflxso.net/dnm/api/v6/rkETp35xJVj-6WaffQsS77awykM/AAAABdYfDMEGiOTCsGaXhX_G_tq73Ocf-Wa0wllMoTMKLETkfqXWaB9knMiMXcujEc65rLGH1rhmqMACAmwVqZAl8n8W8GP3I3wvWoU.webp?r=c60" class="card-img-top" alt="...">
+                  </div>
+                  <div class="card1" style="width: 20rem;">
+                    <img src="https://occ-0-2484-3663.1.nflxso.net/dnm/api/v6/rkETp35xJVj-6WaffQsS77awykM/AAAABdqS3LsYpbKa8-kl2GluHxRpXlk1SetRT8M1uF9REOlL6XceHYYB1BGUMvslZroEuDgYptaXjmhgrGiuSmugpuCbn6vZepbbptX5X-eTDwyRSyCJilsIDvAJM0LWpjixsQxc.jpg?r=4b3" class="card-img-top" alt="...">
+                  </div>
+                </div>
+                <div class="d-flex" style="gap: 20px; margin-top: 20px; margin-bottom: 20px;">
+                  <div class="card1" style="width: 20rem;">
+                    <img src="https://occ-0-4994-2186.1.nflxso.net/dnm/api/v6/rkETp35xJVj-6WaffQsS77awykM/AAAABdYfDMEGiOTCsGaXhX_G_tq73Ocf-Wa0wllMoTMKLETkfqXWaB9knMiMXcujEc65rLGH1rhmqMACAmwVqZAl8n8W8GP3I3wvWoU.webp?r=c60" class="card-img-top" alt="...">
+                  </div>
+                  <div class="card1" style="width: 20rem;">
+                    <img src="https://occ-0-2484-3663.1.nflxso.net/dnm/api/v6/rkETp35xJVj-6WaffQsS77awykM/AAAABdqS3LsYpbKa8-kl2GluHxRpXlk1SetRT8M1uF9REOlL6XceHYYB1BGUMvslZroEuDgYptaXjmhgrGiuSmugpuCbn6vZepbbptX5X-eTDwyRSyCJilsIDvAJM0LWpjixsQxc.jpg?r=4b3" class="card-img-top" alt="...">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class=" text-white" style="background-color:#222222; margin-top: 80px; margin-left: 12%;">
+      <!-- Grid container -->
+      <div class="container p-4">
+    
+        <!-- Section: Social media -->
+        <section class="mb-4">
+          <!-- Facebook -->
+          <a class="btn btn-primary btn-floating m-1" style="background-color: transparent; border: none;" href="#!" role="button"><i class="fab fa-facebook-f"></i></a>
+
+          <!-- Instagram -->
+          <a class="btn btn-primary btn-floating m-1" style="background-color: transparent; border: none;" href="#!" role="button"><i class="fab fa-instagram"></i></a>
+    
+          <!-- Twitter -->
+          <a class="btn btn-primary btn-floating m-1" style="background-color: transparent; border: none;" href="#!" role="button"><i class="fab fa-twitter"></i></a>
+          
+          <!-- YouTube -->
+          <a class="btn btn-primary btn-floating m-1" style="background-color: transparent; border: none;" href="#!" role="button"><i class="fab fa-youtube"></i></a>
+    
+        </section>
+        <!-- Section: Social media -->
+    
+    
+    
+    
+        <!-- Section: Links -->
+        <section class="" style="color: #8a8a8a;">
+          <!--Grid row-->
+          <div class="row">
+            <!--Grid column-->
+            <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+    
+              <ul class="list-unstyled mb-0">
+                <li>
+                  <p>Audio Description</p>
+                </li>
+                <li>
+                  <p>Investor Relations</p>
+                </li>
+                <li>
+                  <p>Legal Notices</p>
+                </li>
+                <li>
+                  <button style="border: 1px solid #8a8a8a; background-color: transparent; padding-left: 5px; padding-right: 5px; color: #8a8a8a; margin-top: 15px;">224-018</button>
+                </li>
+                <li>
+                  <p style="margin-top: 15px;"><i class="fa-regular fa-copyright fa-2xs" style="color: #8a8a8a;"></i>&nbsp;1997-2024 Netflix, Inc</p>
+                </li>
+              </ul>
+            </div>
+            <!--Grid column-->
+    
+            <!--Grid column-->
+            <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+    
+              <ul class="list-unstyled mb-0">
+                <li>
+                  <p>Help Centre</p>
+                </li>
+                <li>
+                  <p>Jobs</p>
+                </li>
+                <li>
+                  <p>Cookie Preferences</p>
+                </li>
+              </ul>
+            </div>
+            <!--Grid column-->
+    
+            <!--Grid column-->
+            <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+    
+              <ul class="list-unstyled mb-0">
+                <li>
+                  <p>Gift Cards</p>
+                </li>
+                <li>
+                  <p>Terms of Use</p>
+                </li>
+                <li>
+                  <p>Corporate information</p>
+                </li>
+              </ul>
+            </div>
+            <!--Grid column-->
+    
+            <!--Grid column-->
+            <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+    
+              <ul class="list-unstyled mb-0">
+                <li>
+                  <p>Media Centre</p>
+                </li>
+                <li>
+                  <p>Privacy</p>
+                </li>
+                <li>
+                  <p>Contact Us</p>
+                </li>
+              </ul>
+            </div>
+            <!--Grid column-->
+          </div>
+          <!--Grid row-->
+        </section>
+        <!-- Section: Links -->
+      </div>
+      <!-- Grid container -->
+    </footer>
+</body>
+</html>

@@ -1,0 +1,87 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+header {
+    position: fixed;
+    width: 100%;
+    z-index: 1000;
+}
+
+.navbar{
+    height: 70px;
+    background-color: transparent;
+    transition: background-color 0.3s ease;
+}
+
+.navbar a {
+    text-decoration: none;
+    color: white;
+    padding: 10px;
+}
+
+.navbar-scrolled {
+    background-color: #333; 
+}
+
+/* Banner */
+
+.background-video {
+    background-size: cover;
+    background-position: center;
+  }
+  
+  .content {
+    margin-top: 80px;
+    padding: 20px;
+}
+
+.text-overlay {
+    position: absolute;
+    transform: translate(0%, -155%);
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.btn1{
+    border: none;
+    font-size: 18px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    color: rgb(0, 0, 0);
+}
+
+.btn1:hover{
+    background-color: rgb(255, 0, 0);
+}
+
+/* sec */
+
+.card-container1{
+    justify-content: center;
+    display: flex;
+    gap: 5px;
+}
+
+.btn-close {
+    position: absolute;
+    transform: translate(670px, -460px);
+    padding: 10px;
+    color: white;
+}
+
+.zoom-btn {
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.zoom-btn:hover {
+    transform: scale(1.1);
+    background-color: #ffffff; 
+}
